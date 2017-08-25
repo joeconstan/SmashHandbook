@@ -6,41 +6,13 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp" >
 
-    <android.support.design.widget.TabLayout
+
+    <ListView
+        android:id="@+id/am_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_height="match_parent">
 
-        <android.support.design.widget.TabItem
-            android:id="@+id/characters"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Characters"
-            />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/matchups"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Matchups" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/techniques"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Techniques" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/terms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Terms" />
-
-        <android.support.design.widget.TabItem
-            android:id="@+id/more"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="More" />
-    </android.support.design.widget.TabLayout>
+    </ListView>
+    <!--characters, MUs, techs, terms, more-->
 
 </RelativeLayout>
