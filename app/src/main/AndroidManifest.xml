@@ -25,6 +25,12 @@
         <activity android:name=".PGR">
 
         </activity>
+        <activity android:name=".TierList">
+
+        </activity>
+        <activity android:name=".Bayo">
+
+        </activity>
     </application>
 
 </manifest>

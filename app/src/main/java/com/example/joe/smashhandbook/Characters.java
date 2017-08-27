@@ -1,8 +1,11 @@
 package com.example.joe.smashhandbook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -15,7 +18,7 @@ public class Characters extends AppCompatActivity{
 
         String[] character_list = new String[57];
 
-        character_list[0] = "Bayonetta";
+        character_list[0] = "Bayonetta"; //-> stats (wall cling, speed, gravity, etc), frame data, bayonetta specific tech, picture of bayo, matchup spread?, top bayo players.
         character_list[1] = "Bowser";
         character_list[2] = "Bowser Jr.";
         character_list[3] = "Captain Falcon";
@@ -77,5 +80,22 @@ public class Characters extends AppCompatActivity{
         ArrayAdapter<String> character_listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, character_list);
         ListView listView = (ListView) findViewById(R.id.ac_listview);
         listView.setAdapter(character_listAdapter);
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        Intent intent = new Intent(view.getContext(), Bayo.class);
+                        startActivity(intent);
+                        break;
+
+                    default:
+                        break;
+                }
+            }
+        });
+
     }
 }

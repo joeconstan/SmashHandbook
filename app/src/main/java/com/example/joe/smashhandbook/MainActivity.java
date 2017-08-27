@@ -15,14 +15,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        String[] items = new String[7];
+        String[] items = new String[6];
         items[0] = "Characters";
         items[1] = "General Tech";
-        items[2] = "Matchups";
-        items[3] = "Frame Data";
-        items[4] = "Terms";
-        items[5] = "Current PGR";
-        items[6] = "Tier List";
+        items[2] = "Frame Data";
+        items[3] = "Terms";
+        items[4] = "Current PGR";
+        items[5] = "Tier List";
         ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
 
         ListView listview = (ListView) findViewById(R.id.am_listview);
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(tech_intent);
                 }
 
-                else if (position == 5){
+                else if (position == 4){
                     Intent PGR_intent = new Intent(view.getContext(), PGR.class);
                     startActivity(PGR_intent);
                 }
