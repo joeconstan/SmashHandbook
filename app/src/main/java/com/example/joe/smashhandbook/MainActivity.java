@@ -41,6 +41,11 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(tech_intent);
                 }
 
+                else if (position == 5){
+                    Intent PGR_intent = new Intent(view.getContext(), PGR.class);
+                    startActivity(PGR_intent);
+                }
+
             }
         });
     }

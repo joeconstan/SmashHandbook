@@ -13,7 +13,7 @@ public class Characters extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character);
 
-        String[] character_list = new String[58];
+        String[] character_list = new String[57];
 
         character_list[0] = "Bayonetta";
         character_list[1] = "Bowser";
