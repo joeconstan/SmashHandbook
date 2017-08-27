@@ -1,6 +1,7 @@
 package com.example.joe.smashhandbook;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -28,8 +29,9 @@ public class Tech extends AppCompatActivity{
         tech_list[12] = "DI/SDI";
         tech_list[13] = "jab lock";
 
+
         ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tech_list);
-        ListView listView = (ListView) findViewById(R.id.at_listview);
-        listView.setAdapter(tech_listAdapter);
+        ListView listView2 = (ListView) findViewById(R.id.at_listvieww);
+        listView2.setAdapter(tech_listAdapter);
     }
 }
