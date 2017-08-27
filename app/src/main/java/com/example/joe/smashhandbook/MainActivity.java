@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         String[] items = new String[7];
         items[0] = "Characters";
-        items[2] = "General Tech";
-        items[1] = "Matchups";
+        items[1] = "General Tech";
+        items[2] = "Matchups";
         items[3] = "Frame Data";
         items[4] = "Terms";
         items[5] = "Current PGR";
@@ -36,6 +36,11 @@ public class MainActivity extends AppCompatActivity {
                     Intent ch_intent = new Intent(view.getContext(), Characters.class);
                     startActivity(ch_intent);
                 }
+                else if (position == 1) {
+                    Intent tech_intent = new Intent(view.getContext(), Tech.class);
+                    startActivity(tech_intent);
+                }
+
             }
         });
     }
