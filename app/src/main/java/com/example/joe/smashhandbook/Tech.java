@@ -14,7 +14,7 @@ public class Tech extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tech);
 
-        String[] tech_list = new String[14];
+        String[] tech_list = new String[13];
         tech_list[0] = "perfect pivot";
         tech_list[1] = "instant ledge wall jump";
         tech_list[2] = "shield drop";
@@ -24,10 +24,10 @@ public class Tech extends AppCompatActivity{
         tech_list[6] = "2 frame";
         tech_list[7] = "wall cling";
         tech_list[8] = "wall jump";
-        tech_list[10] = "wavebounce";
-        tech_list[11] = "instant ledge get up";
-        tech_list[12] = "DI/SDI";
-        tech_list[13] = "jab lock";
+        tech_list[9] = "wavebounce";
+        tech_list[10] = "instant ledge get up";
+        tech_list[11] = "DI/SDI";
+        tech_list[12] = "jab lock";
 
 
         ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tech_list);
