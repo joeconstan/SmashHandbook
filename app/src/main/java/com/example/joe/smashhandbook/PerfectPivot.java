@@ -1,8 +1,25 @@
 package com.example.joe.smashhandbook;
 
-/**
- * Created by Joe on 8/27/2017.
- */
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
 
-public class PerfectPivot {
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
+
+
+public class PerfectPivot extends AppCompatActivity{
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_t_perfect_pivot);
+        ImageView IMAGE_VIEW = (ImageView) findViewById(R.id.perfectpivot_iv);
+        GlideDrawableImageViewTarget iv = new GlideDrawableImageViewTarget(IMAGE_VIEW);
+        Glide.with(this).load(R.raw.ceoo).into((iv));
+
+
+
+
+    }
 }

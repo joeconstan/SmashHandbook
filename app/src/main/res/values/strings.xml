@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">SmashHandbook</string>
-    <color name="mainTheme">#FFFFFF</color>
+    <color name="mainTheme">#111111</color>
     <color name="white">#FFFFFF</color>
 </resources>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         items[3] = "Current PGR";
         items[4] = "Tier List";
         items[5] = "Frame Data Stats";
-        ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+        ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, items);
 
         ListView listview = (ListView) findViewById(R.id.am_listview);
         listview.setAdapter(mainScreenAdapter);

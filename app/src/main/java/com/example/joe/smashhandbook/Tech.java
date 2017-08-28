@@ -42,7 +42,8 @@ public class Tech extends AppCompatActivity{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(view.getContext(), Perfectpivot.class)
+                        Intent intent = new Intent(view.getContext(), PerfectPivot.class);
+                        startActivity(intent);
                         break;
                     default:
                         break;
