@@ -34,6 +34,9 @@
         <activity android:name=".PerfectPivot">
 
         </activity>
+        <activity android:name=".JabLock">
+
+        </activity>
     </application>
 
 </manifest>

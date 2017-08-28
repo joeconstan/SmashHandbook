@@ -7,9 +7,21 @@
 
    <ImageView
        android:layout_width="match_parent"
-       android:layout_height="100dp"
+       android:layout_height="wrap_content"
        android:id="@+id/perfectpivot_iv"
        android:adjustViewBounds="true"
+       android:layout_marginBottom="40dp"
+       />
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/t_pp_text"
+       android:text="@string/t_pp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginRight="15dp"
+       android:textStyle="bold"
+       android:textSize="14dp"
        />
 
 

@@ -2,4 +2,6 @@
     <string name="app_name">SmashHandbook</string>
     <color name="mainTheme">#111111</color>
     <color name="white">#FFFFFF</color>
+    <string name="t_pp">Perfect Pivoting is the smash 4 equivalent of wavedashing. By dashing in one direction, then immediately flicking the stick in the opposite direction, your character will cover a short amount of ground while still facing the initial direction. Distances vary among characters, with captain falcon having the longest, and puff having the shortest. It\'s usage is more or less the same as wavedashing-to trick the opponent into commiting to something, or to manage your spacing.</string>
+    <string name="t_jl"> Jab Locks are similar to jab resets in melee. blah blah blah. include link to list of jab locking moves per character?</string>
 </resources>

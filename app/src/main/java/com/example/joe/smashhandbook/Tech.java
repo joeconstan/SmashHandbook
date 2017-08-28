@@ -19,7 +19,7 @@ public class Tech extends AppCompatActivity{
 
         String[] tech_list = new String[13];
         tech_list[0] = "Perfect Pivot";
-        tech_list[1] = "Instant ledge wall jump";
+        tech_list[1] = "Jab Lock";
         tech_list[2] = "Shield Drop";
         tech_list[3] = "Foxtrot";
         tech_list[4] = "Dash Dance";
@@ -30,7 +30,7 @@ public class Tech extends AppCompatActivity{
         tech_list[9] = "Wavebounce";
         tech_list[10] = "Instant Ledge Get Up";
         tech_list[11] = "DI/SDI";
-        tech_list[12] = "Jab Lock";
+        tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream
 
 
         ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tech_list);
@@ -42,9 +42,12 @@ public class Tech extends AppCompatActivity{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        Intent intent = new Intent(view.getContext(), PerfectPivot.class);
-                        startActivity(intent);
+                        Intent zero_intent = new Intent(view.getContext(), PerfectPivot.class);
+                        startActivity(zero_intent);
                         break;
+                    case 1:
+                        Intent one_intent = new Intent(view.getContext(), JabLock.class);
+                        startActivity(one_intent);
                     default:
                         break;
                 }
