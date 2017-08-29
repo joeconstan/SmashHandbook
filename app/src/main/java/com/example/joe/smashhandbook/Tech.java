@@ -17,6 +17,16 @@ public class Tech extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tech);
 
+        if (getActionBar()!=null) {
+            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
+            getActionBar().setCustomView(R.layout.action_bar_tech);
+        }
+        if (getSupportActionBar()!=null) { // compatible with other versions
+            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.action_bar_tech);
+        }
+
+
         String[] tech_list = new String[13];
         tech_list[0] = "Perfect Pivot";
         tech_list[1] = "Jab Lock";
@@ -33,7 +43,7 @@ public class Tech extends AppCompatActivity{
         tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream
 
 
-        ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, tech_list);
+        ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, tech_list);
         ListView listView = (ListView) findViewById(R.id.at_listview);
         listView.setAdapter(tech_listAdapter);
 

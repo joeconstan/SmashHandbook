@@ -14,6 +14,16 @@ public class PGR extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pgr);
+
+        if (getActionBar()!=null) {
+            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
+            getActionBar().setCustomView(R.layout.action_bar_pgr);
+        }
+        if (getSupportActionBar()!=null) { // compatible with other versions
+            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.action_bar_pgr);
+        }
+
         String[] pgr_list = new String[50];
         pgr_list[0] = "ZeRo";
         pgr_list[1] = "MkLeo";
@@ -66,7 +76,7 @@ public class PGR extends AppCompatActivity {
         pgr_list[48] = "Choco";
         pgr_list[49] = "FOW";
 
-        ArrayAdapter<String> pgr_listadapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, pgr_list);
+        ArrayAdapter<String> pgr_listadapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, pgr_list);
         ListView listView = (ListView) findViewById(R.id.ap_listview);
         listView.setAdapter(pgr_listadapter);
     }

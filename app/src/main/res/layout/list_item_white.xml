@@ -8,6 +8,7 @@
         android:id="@+id/list_item_white_id"
         android:textColor="#FFFFFF"
         android:gravity="center_vertical"
+        android:textSize="18dp"
         android:layout_margin="4dip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,6 +1,7 @@
 package com.example.joe.smashhandbook;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (getActionBar()!=null) {
+            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
+            getActionBar().setCustomView(R.layout.action_bar_custom);
+
+        }
+        if (getSupportActionBar()!=null) { // compatible with other versions
+            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.action_bar_custom);
+        }
+        //set background of action bar to a graphic
+
 
         String[] items = new String[6];
         items[0] = "Characters";

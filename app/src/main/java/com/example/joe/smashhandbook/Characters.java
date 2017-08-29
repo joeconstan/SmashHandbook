@@ -16,6 +16,16 @@ public class Characters extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character);
 
+        if (getActionBar()!=null) {
+            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
+            getActionBar().setCustomView(R.layout.action_bar_characters);
+        }
+        if (getSupportActionBar()!=null) { // compatible with other versions
+            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.action_bar_characters);
+        }
+
+
         String[] character_list = new String[57];
 
         character_list[0] = "Bayonetta"; //-> stats (wall cling, speed, gravity, etc), frame data, bayonetta specific tech, picture of bayo, matchup spread?, top bayo players.
@@ -77,7 +87,7 @@ public class Characters extends AppCompatActivity{
         character_list[56] = "ZSS";
         //missing one character
         //double check alphabetic order
-        ArrayAdapter<String> character_listAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, character_list);
+        ArrayAdapter<String> character_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, character_list);
         ListView listView = (ListView) findViewById(R.id.ac_listview);
         listView.setAdapter(character_listAdapter);
 
