@@ -49,6 +49,9 @@
         <activity android:name=".ILGU">
 
         </activity>
+        <activity android:name=".ShieldDrop">
+
+        </activity>
     </application>
 
 </manifest>

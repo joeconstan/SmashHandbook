@@ -8,5 +8,5 @@
     <string name="t_twoframe">When you grab the ladge, there are two frames of the animation in which you are vulnerable to attacks before gaining ledge invincibility. Certain moves can connect really well during this animation, the most common perhaps being Fox\'s utilt, Little Mac\'s Down Smash, and Sheik\'s Dtilt.</string>
     <string name="t_dashdance">Dash dancing in smash 4 is the same as dash dancing in melee, but much less useful, as all characters have a very short dash distance. Only recently has it been used at all. It is good for mindgames, or for tech chases in some situations.</string>
     <string name="t_ilgu">Lagless ledge get up is a very underused but useful technique. By landing at the apex of your jump (I think?), you can instantly perform any ground attack. </string>
-
+    <string name="t_sd">Shield dropping is a technique that allows you to drop through a platform straight out of shield, avoiding the 8 frames of lag that you experience from normally dropping shield.etc. dont sound too much like msc video</string>
 </resources>
