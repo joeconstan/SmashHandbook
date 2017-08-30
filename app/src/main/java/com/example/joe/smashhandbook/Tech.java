@@ -31,14 +31,14 @@ public class Tech extends AppCompatActivity{
         tech_list[0] = "Perfect Pivot";
         tech_list[1] = "Jab Lock";
         tech_list[2] = "Extended Dash Dancing";
-        tech_list[3] = "Shield Drop";
-        tech_list[4] = "Foxtrot";
-        tech_list[5] = "Dash Dance";
-        tech_list[6] = "2 Frame";
-        tech_list[7] = "Wall Cling";
-        tech_list[8] = "Wall Jump";
-        tech_list[9] = "Wavebounce";
-        tech_list[10] = "Instant Ledge Get Up";
+        tech_list[3] = "Two Frame";
+        tech_list[4] = "Dash Dance";
+        tech_list[5] = "Lagless Ledge Get Up";
+        tech_list[6] = "Shield Drop";
+        tech_list[7] = "Foxtrot";
+        tech_list[8] = "Wall Cling";
+        tech_list[9] = "Wall Jump";
+        tech_list[10] = "Wavebounce";
         tech_list[11] = "DI/SDI";
         tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream
 
@@ -63,6 +63,33 @@ public class Tech extends AppCompatActivity{
                         Intent two_intent = new Intent(view.getContext(), ExDD.class);
                         startActivity(two_intent);
                         break;
+                    case 3:
+                        Intent three_intent = new Intent(view.getContext(), TwoFrame.class);
+                        startActivity(three_intent);
+                        break;
+                    case 4:
+                        Intent four_intent = new Intent(view.getContext(), DashDance.class);
+                        startActivity(four_intent);
+                        break;
+                    case 5:
+                        Intent five_intent = new Intent(view.getContext(), ILGU.class);
+                        startActivity(five_intent);
+                        break;
+                    case 6:
+                        Intent six_intent = new Intent(view.getContext(), DashDance.class);
+                        startActivity(six_intent);
+                        break;
+                    case 7:
+                        Intent seven_intent = new Intent(view.getContext(), TwoFrame.class);
+                        startActivity(seven_intent);
+                        break;
+                    case 8:
+                        Intent eight_intent = new Intent(view.getContext(), DashDance.class);
+                        startActivity(eight_intent);
+                        break;
+
+
+
                     default:
                         break;
                 }
