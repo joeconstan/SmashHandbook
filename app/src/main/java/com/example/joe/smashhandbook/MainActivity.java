@@ -2,6 +2,7 @@ package com.example.joe.smashhandbook;
 
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -17,21 +18,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (getActionBar()!=null) {
-            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
-            getActionBar().setCustomView(R.layout.action_bar_custom);
-
+            android.app.ActionBar actionBar = getActionBar();
+            actionBar.setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
+            actionBar.setCustomView(R.layout.action_bar_custom);
+            actionBar.setIcon(R.drawable.ic_info_action);
         }
-        if (getSupportActionBar()!=null) { // compatible with other versions
-            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
-            getSupportActionBar().setCustomView(R.layout.action_bar_custom);
+        if (getSupportActionBar()!=null) { // compatible with other versions -- my phone uses this one
+            ActionBar actionBar = getSupportActionBar();
+            actionBar.setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
+            actionBar.setCustomView(R.layout.action_bar_custom);
+            actionBar.setDisplayShowHomeEnabled(true);
+            //actionBar.setIcon(R.drawable.ic_info_outline);
         }
         //set background of action bar to a graphic
+        //add MU's?
 
-
-       /* String[] items = new String[6];
+        String[] items = new String[5];
         items[0] = "Characters";
         items[1] = "General Tech";
-        //items[2] = "Terms";
+        items[2] = "Terms";
         items[3] = "Current PGR";
         items[4] = "Tier List";
         //items[5] = "Frame Data Stats"; -- add in later. its a lot of work. listview with like: gravity, airspeed, etc. click on each and it gives ranking of characters with value for each.
@@ -60,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-    */
     }
 
 

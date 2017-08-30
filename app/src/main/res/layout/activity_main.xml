@@ -9,16 +9,15 @@
     >
 
 
-    <!--<ListView
+    <ListView
         android:id="@+id/am_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
 
     </ListView>
-    &lt;!&ndash;characters, MUs, techs, terms, more&ndash;&gt;-->
 
-    <Button
+    <!--<Button
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:text="Characters"
@@ -62,7 +61,7 @@
         android:layout_below="@id/main_pgrbutton"
         android:layout_alignLeft="@id/main_pgrbutton"
         android:id="@+id/main_framedatabutton"
-        />
+        />-->
 
 
 
