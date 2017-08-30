@@ -5,6 +5,8 @@
     <string name="t_pp">Perfect Pivoting is the smash 4 equivalent of wavedashing. By dashing in one direction, then immediately flicking the stick in the opposite direction, your character will cover a short amount of ground while still facing the initial direction. Distances vary among characters, with captain falcon having the longest, and puff having the shortest. It\'s usage is more or less the same as wavedashing-to trick the opponent into commiting to something, or to manage your spacing.</string>
     <string name="t_jl"> Jab Locks are similar to jab resets in melee. If your opponent misses a tech, you can hit them with a low knockback move up to three times. If you do the first one within 25 frames, they will be unable to do anything, and will be forced to do a normal get upblah blah blah. include link to list of jab locking moves per character?</string>
     <string name="t_exdd">Extended dash dancing is very useful for certain characters, namely captain falcon, little mac, and roy.</string>
-
+    <string name="t_twoframe">When you grab the ladge, there are two frames of the animation in which you are vulnerable to attacks before gaining ledge invincibility. Certain moves can connect really well during this animation, the most common perhaps being Fox\'s utilt, Little Mac\'s Down Smash, and Sheik\'s Dtilt.</string>
+    <string name="t_dashdance">Dash dancing in smash 4 is the same as dash dancing in melee, but much less useful, as all characters have a very short dash distance. Only recently has it been used at all. It is good for mindgames, or for tech chases in some situations.</string>
+    <string name="t_ilgu">Lagless ledge get up is a very underused but useful technique. By landing at the apex of your jump (I think?), you can instantly perform any ground attack. </string>
 
 </resources>

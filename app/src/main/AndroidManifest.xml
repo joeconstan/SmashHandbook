@@ -40,6 +40,15 @@
         <activity android:name=".ExDD">
 
         </activity>
+        <activity android:name=".TwoFrame">
+
+        </activity>
+        <activity android:name=".DashDance">
+
+        </activity>
+        <activity android:name=".ILGU">
+
+        </activity>
     </application>
 
 </manifest>

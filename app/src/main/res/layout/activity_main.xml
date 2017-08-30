@@ -9,14 +9,62 @@
     >
 
 
-    <ListView
+    <!--<ListView
         android:id="@+id/am_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
 
     </ListView>
-    <!--characters, MUs, techs, terms, more-->
+    &lt;!&ndash;characters, MUs, techs, terms, more&ndash;&gt;-->
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text="Characters"
+        android:id="@+id/main_charbutton"
+        />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text="Tech"
+        android:layout_toRightOf="@+id/main_charbutton"
+        android:id="@+id/main_techbutton"
+        />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/main_charbutton"
+        android:layout_alignLeft="@+id/main_charbutton"
+        android:text="terms"
+        android:id="@+id/main_termsbutton"
+        />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text="PGR"
+        android:layout_below="@id/main_techbutton"
+        android:layout_alignLeft="@+id/main_techbutton"
+        android:id="@+id/main_pgrbutton"
+        />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text="Tier List"
+        android:layout_below="@+id/main_termsbutton"
+        android:layout_alignLeft="@+id/main_termsbutton"
+        android:id="@+id/main_tierbutton"
+        />
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:text="Frame Data Stats"
+        android:layout_below="@id/main_pgrbutton"
+        android:layout_alignLeft="@id/main_pgrbutton"
+        android:id="@+id/main_framedatabutton"
+        />
+
+
 
 
 </RelativeLayout>

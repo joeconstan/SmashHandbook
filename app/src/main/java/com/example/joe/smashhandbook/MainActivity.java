@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
         //set background of action bar to a graphic
 
 
-        String[] items = new String[6];
+       /* String[] items = new String[6];
         items[0] = "Characters";
         items[1] = "General Tech";
-        items[2] = "Terms";
+        //items[2] = "Terms";
         items[3] = "Current PGR";
         items[4] = "Tier List";
-        items[5] = "Frame Data Stats";
+        //items[5] = "Frame Data Stats"; -- add in later. its a lot of work. listview with like: gravity, airspeed, etc. click on each and it gives ranking of characters with value for each.
         ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, items);
 
         ListView listview = (ListView) findViewById(R.id.am_listview);
@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    */
     }
 
 
