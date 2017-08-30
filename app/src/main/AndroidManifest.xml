@@ -37,6 +37,9 @@
         <activity android:name=".JabLock">
 
         </activity>
+        <activity android:name=".ExDD">
+
+        </activity>
     </application>
 
 </manifest>

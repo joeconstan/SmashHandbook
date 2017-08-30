@@ -30,10 +30,10 @@ public class Tech extends AppCompatActivity{
         String[] tech_list = new String[13];
         tech_list[0] = "Perfect Pivot";
         tech_list[1] = "Jab Lock";
-        tech_list[2] = "Shield Drop";
-        tech_list[3] = "Foxtrot";
-        tech_list[4] = "Dash Dance";
-        tech_list[5] = "Extended Dash Dancing";
+        tech_list[2] = "Extended Dash Dancing";
+        tech_list[3] = "Shield Drop";
+        tech_list[4] = "Foxtrot";
+        tech_list[5] = "Dash Dance";
         tech_list[6] = "2 Frame";
         tech_list[7] = "Wall Cling";
         tech_list[8] = "Wall Jump";
@@ -58,6 +58,11 @@ public class Tech extends AppCompatActivity{
                     case 1:
                         Intent one_intent = new Intent(view.getContext(), JabLock.class);
                         startActivity(one_intent);
+                        break;
+                    case 2:
+                        Intent two_intent = new Intent(view.getContext(), ExDD.class);
+                        startActivity(two_intent);
+                        break;
                     default:
                         break;
                 }

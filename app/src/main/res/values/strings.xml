@@ -4,4 +4,7 @@
     <color name="white">#FFFFFF</color>
     <string name="t_pp">Perfect Pivoting is the smash 4 equivalent of wavedashing. By dashing in one direction, then immediately flicking the stick in the opposite direction, your character will cover a short amount of ground while still facing the initial direction. Distances vary among characters, with captain falcon having the longest, and puff having the shortest. It\'s usage is more or less the same as wavedashing-to trick the opponent into commiting to something, or to manage your spacing.</string>
     <string name="t_jl"> Jab Locks are similar to jab resets in melee. If your opponent misses a tech, you can hit them with a low knockback move up to three times. If you do the first one within 25 frames, they will be unable to do anything, and will be forced to do a normal get upblah blah blah. include link to list of jab locking moves per character?</string>
+    <string name="t_exdd">Extended dash dancing is very useful for certain characters, namely captain falcon, little mac, and roy.</string>
+
+
 </resources>
