@@ -27,7 +27,7 @@ public class Tech extends AppCompatActivity{
         }
 
 
-        String[] tech_list = new String[13];
+        String[] tech_list = new String[14];
         tech_list[0] = "Perfect Pivot";
         tech_list[1] = "Jab Lock";
         tech_list[2] = "Extended Dash Dancing";
@@ -35,12 +35,13 @@ public class Tech extends AppCompatActivity{
         tech_list[4] = "Dash Dance";
         tech_list[5] = "Lagless Ledge Get Up";
         tech_list[6] = "Shield Drop";
-        tech_list[7] = "Wall Cling";
-        tech_list[8] = "Wall Jump";
-        tech_list[9] = "Wavebounce";
-        tech_list[10] = "DI/SDI";
-        tech_list[11] = "Instant ledge wall jump"; //ally does this in locus' analysis stream
-        tech_list[12] = "Foxtrot";
+        tech_list[7] = "B-Reverse";
+        tech_list[8] = "Wavebounce";
+        tech_list[9] = "DI/SDI";
+        tech_list[10] = "Wall Cling";
+        tech_list[11] = "Wall Jump";
+        tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream
+        tech_list[13] = "Foxtrot";
 
 
         ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, tech_list);

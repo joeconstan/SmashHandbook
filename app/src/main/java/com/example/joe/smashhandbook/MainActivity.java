@@ -5,9 +5,11 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             actionBar.setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
             actionBar.setCustomView(R.layout.action_bar_custom);
             actionBar.setDisplayShowHomeEnabled(true);
+            actionBar.setHomeButtonEnabled(true);
             //actionBar.setIcon(R.drawable.ic_info_outline);
         }
         //set background of action bar to a graphic
@@ -63,11 +66,20 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(PGR_intent);
                 }
 
+
             }
         });
+
     }
 
 
+    public boolean onOptionsItemSelected(int featureId, MenuItem item) {
+        if (item.getItemId() == R.id.actionbar_info_button){
+            Intent intent = new Intent(this, Tech.class);
+            startActivity(intent);
+        }
+        return true;
+    }
 
 
 }

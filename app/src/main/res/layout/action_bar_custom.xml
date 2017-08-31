@@ -23,7 +23,6 @@
         android:paddingLeft="200dp"
         android:background="@null"
         android:id="@+id/actionbar_info_button"
-        android:onClick="info_click"
         />
     <ImageButton
         android:layout_width="wrap_content"
@@ -33,7 +32,6 @@
         android:id="@+id/actionbar_settings_button"
         android:layout_toRightOf="@+id/actionbar_info_button"
         android:src="@drawable/ic_settings_button"
-        android:onClick="settings_click"
         />
 
 
