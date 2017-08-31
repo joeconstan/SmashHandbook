@@ -52,6 +52,9 @@
         <activity android:name=".ShieldDrop">
 
         </activity>
+        <activity android:name=".CharacterTemplate">
+
+        </activity>
     </application>
 
 </manifest>

@@ -15,7 +15,7 @@ public class CharacterTemplate extends AppCompatActivity{
         int sel = bundle.getInt("char_select");
         DBHelper db = new DBHelper(this);
         SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
-        //Cursor cursor = sqLiteDatabase.rawQuery("select * from table",null); testing the insert
+        Cursor cursor = sqLiteDatabase.rawQuery("select * from table",null); //testing the insert
 
     }
 
