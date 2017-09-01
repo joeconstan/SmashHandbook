@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
+        setSupportActionBar(tb);
 
         if (getActionBar()!=null) {
             android.app.ActionBar actionBar = getActionBar();
@@ -77,21 +81,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.actionbar_info_button){
-            Intent intent = new Intent(this, Tech.class);
-            startActivity(intent);
-        }
-        else{
-            Intent intent = new Intent(this, Tech.class);
-            startActivity(intent);
-        }
+
+        Intent intent = new Intent(this, Tech.class);
+        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }
