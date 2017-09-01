@@ -8,6 +8,12 @@
     android:background="@color/mainTheme"
     >
 
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"
+        >
+
+    </include>
 
     <ListView
         android:id="@+id/am_listview"

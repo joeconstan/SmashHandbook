@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
 
+
         if (getActionBar()!=null) {
             android.app.ActionBar actionBar = getActionBar();
             actionBar.setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
