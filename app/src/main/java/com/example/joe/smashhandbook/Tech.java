@@ -40,7 +40,7 @@ public class Tech extends AppCompatActivity{
         tech_list[9] = "DI/SDI";
         tech_list[10] = "Wall Cling";
         tech_list[11] = "Wall Jump";
-        tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream
+        tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream. and again in pax west game 3 vs void second ally stock
         tech_list[13] = "Foxtrot";
 
 
