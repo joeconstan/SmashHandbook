@@ -19,21 +19,30 @@ public class DBHelper extends SQLiteOpenHelper{
                 "create table characters " +
                         "(id integer primary key, name text, description text, tier text, framedatalink text)" //plus picture name or pic somehow
         );
-        ContentValues values = new ContentValues(4);
-        values.put("name", "Bayonetta");
-        values.put("description", "bayo is broken");
-        values.put("tier", "SS");
-        values.put("framedatalink", "link");
-        db.insert("characters", null, values);
-        db.close();
 
-        ContentValues values2 = new ContentValues(4);
-        values2.put("name", "Bowser");
-        values2.put("description", "bowser is fat");
-        values2.put("tier", "C");
-        values2.put("framedatalink", "link");
-        long x = db.insert("characters", null, values2);
-        db.close();
+
+        String[] name = new String[2];
+        name[0] = "bayonetta";
+        name[1] = "bowser";
+        String[] desc = new String[2];
+        desc[0] = "bayo is broken";
+        desc[1] = "bowser is fat";
+        String[] tier = new String[2];
+        tier[0] = "SS";
+        tier[1] = "C";
+        String[] framedatalink = new String[2];
+        framedatalink[0] = "link";
+        framedatalink[1] = "linktwo";
+        for (int i=0;i<2;i++) {
+            ContentValues values = new ContentValues(4);
+            values.put("name", name[i]);
+            values.put("description", desc[i]);
+            values.put("tier", tier[i]);
+            values.put("framedatalink", framedatalink[i]);
+            db.insert("characters", null, values);
+        }
+
+        
     }
 
     public String getTableAsString(SQLiteDatabase db, String tableName) {
