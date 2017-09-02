@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/character_image"
+        />
+
+    <TextView
+        android:layout_toRightOf="@+id/character_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/character_tier"
+        />
+    <TextView
+        android:layout_below="@id/character_tier"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/notableplayers"
+        />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/character_spec_tech"
+        android:layout_below="@+id/character_image"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/character_frame_data"
+        android:layout_below="@+id/notableplayers"
+        android:layout_alignLeft="@+id/notableplayers"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/character_desc_playstyle"
+        android:layout_below="@id/character_spec_tech"
+        />
+
+
+
+
+
+</RelativeLayout>

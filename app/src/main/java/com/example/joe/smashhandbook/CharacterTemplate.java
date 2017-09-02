@@ -6,8 +6,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 public class CharacterTemplate extends AppCompatActivity{
+
+    final static String TAG = "test: ";
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +19,8 @@ public class CharacterTemplate extends AppCompatActivity{
         int sel = bundle.getInt("char_select");
         DBHelper db = new DBHelper(this);
         SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
-        Cursor cursor = sqLiteDatabase.rawQuery("select * from table",null); //testing the insert
+        //Log.v(TAG, db.getTableAsString(sqLiteDatabase, "characters"));
+
 
     }
 

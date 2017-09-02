@@ -26,7 +26,7 @@ public class Characters extends AppCompatActivity{
         }
 
 
-        String[] character_list = new String[57];
+        String[] character_list = new String[58];
 
         character_list[0] = "Bayonetta"; //-> stats (wall cling, speed, gravity, etc), frame data, bayonetta specific tech, picture of bayo, matchup spread?, top bayo players.
         character_list[1] = "Bowser";
@@ -34,59 +34,59 @@ public class Characters extends AppCompatActivity{
         character_list[3] = "Captain Falcon";
         character_list[4] = "Charizard";
         character_list[5] = "Cloud";
-        character_list[6] = "Dark Pit";
-        character_list[7] = "Diddy Kong";
-        character_list[8] = "Donkey Kong";
-        character_list[9] = "Duck Hunt";
-        character_list[10] = "Fox";
-        character_list[11] = "Falco";
-        character_list[12] = "Dr Mario";
-        character_list[13] = "Ganondorf";
-        character_list[14] = "Greninja";
-        character_list[15] = "Ike";
-        character_list[16] = "JigglyPuff";
-        character_list[17] = "King Dedede";
-        character_list[18] = "Kirby";
-        character_list[19] = "Link";
-        character_list[20] = "Little Mac";
-        character_list[21] = "Lucario";
-        character_list[22] = "Lucas";
-        character_list[23] = "Lucina";
-        character_list[24] = "Luigi";
-        character_list[25] = "Mario";
-        character_list[26] = "Marth";
-        character_list[27] = "Mega Man";
-        character_list[28] = "Meta Knight";
-        character_list[29] = "Mewtwo";
-        character_list[30] = "Mii Swordfighter";
-        character_list[31] = "Mii Gunner";
-        character_list[32] = "Mii Brawler";
-        character_list[33] = "Mr. G&W";
-        character_list[34] = "Ness";
-        character_list[35] = "Olimar";
-        character_list[36] = "Pac-Man";
-        character_list[37] = "Palutena";
-        character_list[38] = "Peach";
-        character_list[39] = "Pikachu";
-        character_list[40] = "Pit";
-        character_list[41] = "ROB";
-        character_list[42] = "Robin";
-        character_list[43] = "Rosalina";
-        character_list[44] = "Roy";
-        character_list[45] = "Ryu";
-        character_list[46] = "Samus";
-        character_list[47] = "Sheik";
-        character_list[48] = "Shulk";
-        character_list[49] = "Sonic";
-        character_list[50] = "Toon Link";
-        character_list[51] = "Villager";
-        character_list[52] = "Wario";
-        character_list[53] = "Wii Fit Trainer";
-        character_list[54] = "Yoshi";
-        character_list[55] = "Zelda";
-        character_list[56] = "ZSS";
-        //missing one character
-        //double check alphabetic order
+        character_list[6]= "Corrin";
+        character_list[7] = "Dark Pit";
+        character_list[8] = "Diddy Kong";
+        character_list[9] = "Donkey Kong";
+        character_list[10] = "Dr Mario";
+        character_list[11] = "Duck Hunt";
+        character_list[12] = "Fox";
+        character_list[13] = "Falco";
+        character_list[14] = "Ganondorf";
+        character_list[15] = "Greninja";
+        character_list[16] = "Ike";
+        character_list[17] = "Jigglypuff";
+        character_list[18] = "King Dedede";
+        character_list[19] = "Kirby";
+        character_list[20] = "Link";
+        character_list[21] = "Little Mac";
+        character_list[22] = "Lucario";
+        character_list[23] = "Lucas";
+        character_list[24] = "Lucina";
+        character_list[25] = "Luigi";
+        character_list[26] = "Mario";
+        character_list[27] = "Marth";
+        character_list[28] = "Mega Man";
+        character_list[29] = "Meta Knight";
+        character_list[30] = "Mewtwo";
+        character_list[31] = "Mii Swordfighter";
+        character_list[32] = "Mii Gunner";
+        character_list[33] = "Mii Brawler";
+        character_list[34] = "Mr. G&W";
+        character_list[35] = "Ness";
+        character_list[36] = "Olimar";
+        character_list[37] = "Pac-Man";
+        character_list[38] = "Palutena";
+        character_list[39] = "Peach";
+        character_list[40] = "Pikachu";
+        character_list[41] = "Pit";
+        character_list[42] = "ROB";
+        character_list[43] = "Robin";
+        character_list[44] = "Rosalina";
+        character_list[45] = "Roy";
+        character_list[46] = "Ryu";
+        character_list[47] = "Samus";
+        character_list[48] = "Sheik";
+        character_list[49] = "Shulk";
+        character_list[50] = "Sonic";
+        character_list[51] = "Toon Link";
+        character_list[52] = "Villager";
+        character_list[53] = "Wario";
+        character_list[54] = "Wii Fit Trainer";
+        character_list[55] = "Yoshi";
+        character_list[56] = "Zelda";
+        character_list[57] = "ZSS";
+
         ArrayAdapter<String> character_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, character_list);
         ListView listView = (ListView) findViewById(R.id.ac_listview);
         listView.setAdapter(character_listAdapter);
@@ -95,10 +95,15 @@ public class Characters extends AppCompatActivity{
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position) {
+                    case 0:
                         Intent intent = new Intent(view.getContext(), CharacterTemplate.class);
                         intent.putExtra("char_select", 0);
                         startActivity(intent);
-
+                        break;
+                    default:
+                        break;
+                }
             }
         });
 
