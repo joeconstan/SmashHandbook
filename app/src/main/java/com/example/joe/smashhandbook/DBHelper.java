@@ -6,6 +6,9 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+import static com.example.joe.smashhandbook.CharacterTemplate.TAG;
 
 public class DBHelper extends SQLiteOpenHelper{
 
@@ -22,6 +25,15 @@ public class DBHelper extends SQLiteOpenHelper{
         values.put("tier", "SS");
         values.put("framedatalink", "link");
         db.insert("characters", null, values);
+        db.close();
+
+        ContentValues values2 = new ContentValues(4);
+        values2.put("name", "Bowser");
+        values2.put("description", "bowser is fat");
+        values2.put("tier", "C");
+        values2.put("framedatalink", "link");
+        long x = db.insert("characters", null, values2);
+        db.close();
     }
 
     public String getTableAsString(SQLiteDatabase db, String tableName) {
