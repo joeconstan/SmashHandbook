@@ -22,22 +22,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(tb);
 
 
-       /* if (getActionBar()!=null) {
-            android.app.ActionBar actionBar = getActionBar();
-            actionBar.setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
-            actionBar.setCustomView(R.layout.action_bar_custom);
-            actionBar.setIcon(R.drawable.ic_info_action);
-        }
-        if (getSupportActionBar()!=null) { // compatible with other versions -- my phone uses this one
-            ActionBar actionBar = getSupportActionBar();
-            actionBar.setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
-            actionBar.setCustomView(R.layout.action_bar_custom);
-            actionBar.setDisplayShowHomeEnabled(true);
-           // actionBar.setDisplayHomeAsUpEnabled(true);
-            actionBar.setHomeButtonEnabled(true);
-
-            //actionBar.setIcon(R.drawable.ic_info_outline);
-        }*/
         //set background of action bar to a graphic
         //add MU's?
 

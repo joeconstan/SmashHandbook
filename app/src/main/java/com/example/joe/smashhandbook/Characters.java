@@ -16,14 +16,6 @@ public class Characters extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character);
 
-        if (getActionBar()!=null) {
-            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
-            getActionBar().setCustomView(R.layout.action_bar_characters);
-        }
-        if (getSupportActionBar()!=null) { // compatible with other versions
-            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
-            getSupportActionBar().setCustomView(R.layout.action_bar_characters);
-        }
 
 
         String[] character_list = new String[58];
@@ -95,15 +87,11 @@ public class Characters extends AppCompatActivity{
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position) {
-                    case 0:
                         Intent intent = new Intent(view.getContext(), CharacterTemplate.class);
-                        intent.putExtra("char_select", 0);
+                        intent.putExtra("char_select", position);
                         startActivity(intent);
-                        break;
-                    default:
-                        break;
-                }
+
+
             }
         });
 
