@@ -3,6 +3,7 @@ package com.example.joe.smashhandbook;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -21,7 +22,12 @@ public class CharacterTemplate extends AppCompatActivity{
         SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
         //Log.v(TAG, db.getTableAsString(sqLiteDatabase, "characters"));
 
-
+        String tableName = "characters";
+        String selection = "id is ?";
+        String[] selectionArgs = new String[1];
+        selectionArgs[0] = "sel";
+        Cursor results = sqLiteDatabase.query(tableName, null, selection, selectionArgs, null, null, null);
+        Log.v(TAG, results.toString());
     }
 
 
