@@ -84,9 +84,8 @@ public class DBHelper extends SQLiteOpenHelper{
         String[] desc = new String[58];
         String desc_template_1 = "Playstyle: ";
         String desc_template_2 = "Weight: "; //put these in db instead
-        String ddesc_template_2 = "Weight: "; //put these in db instead
         String desc_template_3 = "Fall Speed: ";
-        desc[0] = "bayo is broken";
+        desc[0] = "Playstyle: Weight: Fall Speed:  bayo is broken";
         desc[1] = "bowser is fat";
         desc[2] = "Bowser Jr.";
         desc[3] = "Captain Falcon";
@@ -223,7 +222,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     }
 
-    public String getTableAsString(SQLiteDatabase db, String tableName) {
+    /*public String getTableAsString(SQLiteDatabase db, String tableName) {
         String tableString = String.format("Table %s:\n", tableName);
         Cursor allRows = db.rawQuery("SELECT * FROM " + tableName, null);
         if (allRows.moveToFirst()) {
@@ -239,7 +238,7 @@ public class DBHelper extends SQLiteOpenHelper{
         }
 
         return tableString;
-    }
+    }*/
 
     public DBHelper(Context context){
         super(context, DATABASE_NAME , null, 1);
