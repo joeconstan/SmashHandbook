@@ -82,17 +82,20 @@ public class DBHelper extends SQLiteOpenHelper{
         name[57] = "ZSS";
 
         String[] desc = new String[58];
-        desc[0] = "bayo is broken";
-        desc[1] = "bowser is fat";
-        desc[2] = "Bowser Jr.";
-        desc[3] = "Captain Falcon";
-        desc[4] = "Charizard";
-        desc[5] = "Cloud";
+        desc[0] = "Bayonetta is easily the most controversial character in smash, and has seen a rise lately with players like salem, mistake, and captain zack doing exceptionally well. Her combos depend on reading SDI, but are some of the best, and it is easy to be creative with her combos. She has some specific mecahnics that no other character has.";
+        //bat within and witch time in specific techs page
+        desc[1] = "Bowser is a grappler, very similar to DK. At certain low percents, a grab with bowser means death for your opponent.";
+        //tough guy properties, shell shock percentages.
+        desc[2] = "Bowser Jr. is not a very common character, but high level play with him can be very fun to watch, and fun to pull off as well. idk man i dont know much abt this character";
+        desc[3] = "Captain Falcon is one of the most exciting characters to watch- he has flashy combos and often relies on airdodge reads. However, his recovery is very linear and easy to interrupt.";
+        desc[4] = "Charizard sucks.";
+        desc[5] = "Cloud is clearly the best character in doubles, and top 3 in singles. He has amazing aerials, amazing movement options, and great mixups. His only staggering weakness is his short and linear recovery.";
+        //snapping to ledge with upb - no vertical momentum
         desc[6]= "Corrin";
         desc[7] = "Dark Pit";
         desc[8] = "Diddy is a great all around character who can be played aggressively or defensively. His meta has been pushed farther than many characters, though there are still many useful techniques not being used by diddy mains. His play centers around his banana, giving him great stage control and easy kill confirms. Watch ZeRo play to learn the basic bread and butter combos, and watch zinoto to see some unique combos and set ups.";
         desc[9] = "Donkey Kong has been on the rise lately, with HIKARU and Konga doing well, as well as Tweek and Larry using him as a secondary. He is a grappler through and through, and can kill most characters at extremely low percents. He does struggle at landing, though.";
-        //include ding dong percents
+        //include ding dong percents in specific techs page of dk. do this for other combos like toot toot, shell shock, etc.
         desc[10] = "Dr Mario is essentially a worse version of mario, with a shorter up special, a weaker projectile, and smaller hitboxes.";
         //fact check doc
         desc[11] = "Duck Hunt is one of the most complex characters. His neutral is very good, and his meta has been developing quickly since Raito and the Japanese Duck Hunts started competing more.";
@@ -206,64 +209,64 @@ public class DBHelper extends SQLiteOpenHelper{
 
 
         String[] type = new String[58];
-        desc[0] = "S";
-        desc[1] = "C";
-        desc[2] = "E";
-        desc[3] = "B";
-        desc[4] = "E";
-        desc[5] = "S";
-        desc[6] = "B";
-        desc[7] = "C";
-        desc[8] = "S";
-        desc[9] = "C";
-        desc[10] = "E";
-        desc[11] = "D";
-        desc[12] = "A";
-        desc[13] = "E";
-        desc[14] = "F";
-        desc[15] = "B";
-        desc[16] = "D";
-        desc[17] = "F";
-        desc[18] = "F";
-        desc[19] = "E";
-        desc[20] = "D";
-        desc[21] = "E";
-        desc[22] = "B";
-        desc[23] = "C";
-        desc[24] = "B";
-        desc[25] = "C";
-        desc[26] = "A";
-        desc[27] = "A";
-        desc[28] = "B";
-        desc[29] = "B";
-        desc[30] = "A";
-        desc[31] = "F";
-        desc[32] = "F";
-        desc[33] = "F";
-        desc[34] = "D";
-        desc[35] = "C";
-        desc[36] = "C";
-        desc[37] = "E";
-        desc[38] = "E";
-        desc[39] = "B";
-        desc[40] = "B";
-        desc[41] = "C";
-        desc[42] = "C";
-        desc[43] = "C";
-        desc[44] = "A";
-        desc[45] = "E";
-        desc[46] = "A";
-        desc[47] = "E";
-        desc[48] = "S";
-        desc[49] = "D";
-        desc[50] = "A";
-        desc[51] = "B";
-        desc[52] = "B";
-        desc[53] = "D";
-        desc[54] = "E";
-        desc[55] = "C";
-        desc[56] = "F";
-        desc[57] = "A";
+        name[0] = "All Around";
+        name[1] = "Grappler";
+        name[2] = "Bowser Jr.";
+        name[3] = "Read-heavy, pressure";
+        name[4] = "Charizard";
+        name[5] = "All Around";
+        name[6]= "Corrin";
+        name[7] = "Dark Pit";
+        name[8] = "All Around";
+        name[9] = "Grappler";
+        name[10] = "Dr Mario";
+        name[11] = "Duck Hunt";
+        name[12] = "Rushdown, Pressurer";
+        name[13] = "Falco";
+        name[14] = "Read Heavy";
+        name[15] = "Greninja";
+        name[16] = "Ike";
+        name[17] = "Jigglypuff";
+        name[18] = "King Dedede";
+        name[19] = "Kirby";
+        name[20] = "Zoner";
+        name[21] = "Little Mac";
+        name[22] = "Lucario";
+        name[23] = "Lucas";
+        name[24] = "Lucina";
+        name[25] = "Luigi";
+        name[26] = "Bait & Punish, All Around";
+        name[27] = "Marth";
+        name[28] = "Mega Man";
+        name[29] = "Meta Knight";
+        name[30] = "Mewtwo";
+        name[31] = "Mii Swordfighter";
+        name[32] = "Mii Gunner";
+        name[33] = "Mii Brawler";
+        name[34] = "Mr. G&W";
+        name[35] = "Ness";
+        name[36] = "Olimar";
+        name[37] = "Pac-Man";
+        name[38] = "Palutena";
+        name[39] = "Peach";
+        name[40] = "Pikachu";
+        name[41] = "Pit";
+        name[42] = "ROB";
+        name[43] = "Robin";
+        name[44] = "Rosalina";
+        name[45] = "Roy";
+        name[46] = "Glass Canon, Pressurer";
+        name[47] = "Zoner";
+        name[48] = "Rushdown, All Around";
+        name[49] = "Shulk";
+        name[50] = "Sonic";
+        name[51] = "Toon Link";
+        name[52] = "Villager";
+        name[53] = "Bait & Punish";
+        name[54] = "Wii Fit Trainer";
+        name[55] = "Rushdown";
+        name[56] = "Glass Canon";
+        name[57] = "ZSS";
 
 
         String[] weight = new String[58];
@@ -386,18 +389,20 @@ public class DBHelper extends SQLiteOpenHelper{
         name[55] = "Slow";
         name[56] = "Slow";
         name[57] = "Fast";
+
+
         String[] framedatalink = new String[58];
         framedatalink[0] = "link";
         framedatalink[1] = "linktwo";
 
-        for (int i=0;i<2;i++) {
-            ContentValues values = new ContentValues(4);
+        for (int i=0;i<58;i++) {
+            ContentValues values = new ContentValues(6);
             values.put("name", name[i]);
             values.put("description", desc[i]);
             values.put("tier", tier[i]);
-            values.put("framedatalink", framedatalink[i]);
+            //values.put("framedatalink", framedatalink[i]);
             values.put("weight", weight[i]);
-            //values.put("type", tpye[i]);
+            values.put("type", type[i]);
             values.put("fallspeed", fallspeed[i]);
             db.insert("characters", null, values);
         }
