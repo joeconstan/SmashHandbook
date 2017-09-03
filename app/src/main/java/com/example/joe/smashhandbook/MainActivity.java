@@ -7,17 +7,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.ListView;
+
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
@@ -36,12 +33,6 @@ public class MainActivity extends AppCompatActivity {
         //items[5] = "Frame Data Stats"; -- add in later. its a lot of work. listview with like: gravity, airspeed, etc. click on each and it gives ranking of characters with value for each.
         ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, items);
 
-        Button characters = (Button)(findViewById(R.id.charactersButton));
-        Button generalTech = (Button)(findViewById(R.id.generalTechButton));
-        Button terms = (Button)(findViewById(R.id.termsButton));
-        Button currentPGR = (Button)(findViewById(R.id.currentPGRButton));
-        Button tierList = (Button)(findViewById(R.id.tierListButton));
-        Button stages = (Button)(findViewById(R.id.frameDataButton));
 
 
         }
@@ -71,32 +62,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(v.getContext(), Characters.class);
         startActivity(intent);
     }
-
-    //  ListView listview = (ListView) findViewById(R.id.am_listview);
-       // listview.setAdapter(mainScreenAdapter);
-
-      /*  listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 0) {
-                    Intent ch_intent = new Intent(view.getContext(), Characters.class);
-                    startActivity(ch_intent);
-                }
-                else if (position == 1) {
-                    Intent tech_intent = new Intent(view.getContext(), Tech.class);
-                    startActivity(tech_intent);
-                }
-
-                else if (position == 3){
-                    Intent PGR_intent = new Intent(view.getContext(), PGR.class);
-                    startActivity(PGR_intent);
-                }
-
-
-            }
-        });
-*/
 
 
 
