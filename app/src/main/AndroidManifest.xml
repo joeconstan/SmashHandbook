@@ -55,6 +55,12 @@
         <activity android:name=".CharacterTemplate">
 
         </activity>
+        <activity android:name=".BReverse">
+
+        </activity>
+        <activity android:name=".WaveBounce">
+
+        </activity>
     </application>
 
 </manifest>

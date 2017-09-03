@@ -81,11 +81,11 @@ public class Tech extends AppCompatActivity{
                         startActivity(six_intent);
                         break;
                     case 7:
-                        Intent seven_intent = new Intent(view.getContext(), TwoFrame.class);
+                        Intent seven_intent = new Intent(view.getContext(), BReverse.class);
                         startActivity(seven_intent);
                         break;
                     case 8:
-                        Intent eight_intent = new Intent(view.getContext(), DashDance.class);
+                        Intent eight_intent = new Intent(view.getContext(), WaveBounce.class);
                         startActivity(eight_intent);
                         break;
 
