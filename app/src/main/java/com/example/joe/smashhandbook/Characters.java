@@ -20,7 +20,7 @@ public class Characters extends AppCompatActivity{
 
         String[] character_list = new String[58];
 
-        character_list[0] = "Bayonetta"; //-> stats (wall cling, speed, gravity, etc), frame data, bayonetta specific tech, picture of bayo, matchup spread?, top bayo players.
+        character_list[0] = "Bayonetta";
         character_list[1] = "Bowser";
         character_list[2] = "Bowser Jr.";
         character_list[3] = "Captain Falcon";

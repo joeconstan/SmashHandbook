@@ -17,7 +17,7 @@ public class DBHelper extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(
                 "create table characters " +
-                        "(id integer primary key, name text, description text, tier text, framedatalink text)" //plus picture name or pic somehow
+                        "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text)" //plus picture name or pic somehow
         );
 
 
@@ -82,10 +82,7 @@ public class DBHelper extends SQLiteOpenHelper{
         name[57] = "ZSS";
 
         String[] desc = new String[58];
-        String desc_template_1 = "Playstyle: ";
-        String desc_template_2 = "Weight: "; //put these in db instead
-        String desc_template_3 = "Fall Speed: ";
-        desc[0] = "Playstyle: Weight: Fall Speed:  bayo is broken";
+        desc[0] = "bayo is broken";
         desc[1] = "bowser is fat";
         desc[2] = "Bowser Jr.";
         desc[3] = "Captain Falcon";
@@ -206,6 +203,189 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[56] = "F";
         desc[57] = "A";
 
+
+
+        String[] type = new String[58];
+        desc[0] = "S";
+        desc[1] = "C";
+        desc[2] = "E";
+        desc[3] = "B";
+        desc[4] = "E";
+        desc[5] = "S";
+        desc[6] = "B";
+        desc[7] = "C";
+        desc[8] = "S";
+        desc[9] = "C";
+        desc[10] = "E";
+        desc[11] = "D";
+        desc[12] = "A";
+        desc[13] = "E";
+        desc[14] = "F";
+        desc[15] = "B";
+        desc[16] = "D";
+        desc[17] = "F";
+        desc[18] = "F";
+        desc[19] = "E";
+        desc[20] = "D";
+        desc[21] = "E";
+        desc[22] = "B";
+        desc[23] = "C";
+        desc[24] = "B";
+        desc[25] = "C";
+        desc[26] = "A";
+        desc[27] = "A";
+        desc[28] = "B";
+        desc[29] = "B";
+        desc[30] = "A";
+        desc[31] = "F";
+        desc[32] = "F";
+        desc[33] = "F";
+        desc[34] = "D";
+        desc[35] = "C";
+        desc[36] = "C";
+        desc[37] = "E";
+        desc[38] = "E";
+        desc[39] = "B";
+        desc[40] = "B";
+        desc[41] = "C";
+        desc[42] = "C";
+        desc[43] = "C";
+        desc[44] = "A";
+        desc[45] = "E";
+        desc[46] = "A";
+        desc[47] = "E";
+        desc[48] = "S";
+        desc[49] = "D";
+        desc[50] = "A";
+        desc[51] = "B";
+        desc[52] = "B";
+        desc[53] = "D";
+        desc[54] = "E";
+        desc[55] = "C";
+        desc[56] = "F";
+        desc[57] = "A";
+
+
+        String[] weight = new String[58];
+        name[0] = "Featherweight";
+        name[1] = "Super Heavyweight";
+        name[2] = "Heavyweight";
+        name[3] = "Heavyweight";
+        name[4] = "Super Heavyweight";
+        name[5] = "Heavyweight";
+        name[6]= "Middleweight";
+        name[7] = "Middleweight";
+        name[8] = "Middleweight";
+        name[9] = "Super Heavyweight";
+        name[10] = "Middleweight";
+        name[11] = "Middleweight";
+        name[12] = "Featherweight";
+        name[13] = "Featherweight";
+        name[14] = "Super Heavyweight";
+        name[15] = "Middleweight";
+        name[16] = "Heavyweight";
+        name[17] = "Balloonweight";
+        name[18] = "Super Heavyweight";
+        name[19] = "Featherweight";
+        name[20] = "Heavyweight";
+        name[21] = "Featherweight";
+        name[22] = "Heavyweight";
+        name[23] = "Middleweight";
+        name[24] = "Middleweight";
+        name[25] = "Middleweight";
+        name[26] = "Middleweight";
+        name[27] = "Middleweight";
+        name[28] = "Heavyweight";
+        name[29] = "Featherweight";
+        name[30] = "Balloonweight";
+        name[31] = "Heavyweight";
+        name[32] = "Heavyweight";
+        name[33] = "Heavyweight";
+        name[34] = "Featherweight";
+        name[35] = "Middleweight";
+        name[36] = "Featherweight";
+        name[37] = "Middleweight";
+        name[38] = "Middleweight";
+        name[39] = "Middleweight";
+        name[40] = "Featherweight";
+        name[41] = "Middleweight";
+        name[42] = "Heavyweight";
+        name[43] = "Middleweight";
+        name[44] = "Featherweight";
+        name[45] = "Middleweight";
+        name[46] = "Heavyweight";
+        name[47] = "Heavyweight";
+        name[48] = "Featherweight";
+        name[49] = "Heavyweight";
+        name[50] = "Middleweight";
+        name[51] = "Middleweight";
+        name[52] = "Middleweight";
+        name[53] = "Heavyweight";
+        name[54] = "Middleweight";
+        name[55] = "Heavyweight";
+        name[56] = "Featherweight";
+        name[57] = "Featherweight";
+
+
+        String[] fallspeed = new String[58];
+        name[0] = "Fast";
+        name[1] = "Slow";
+        name[2] = "Fast";
+        name[3] = "Fast";
+        name[4] = "Slow";
+        name[5] = "Fast";
+        name[6]= "Fast";
+        name[7] = "Medium";
+        name[8] = "Fast";
+        name[9] = "Medium";
+        name[10] = "Medium";
+        name[11] = "Medium";
+        name[12] = "Fast";
+        name[13] = "Fast";
+        name[14] = "Medium";
+        name[15] = "Fast";
+        name[16] = "Fast";
+        name[17] = "Slow";
+        name[18] = "Fast";
+        name[19] = "Slow";
+        name[20] = "Medium";
+        name[21] = "Fast";
+        name[22] = "Fast";
+        name[23] = "Slow";
+        name[24] = "Medium";
+        name[25] = "Slow";
+        name[26] = "Medium";
+        name[27] = "Medium";
+        name[28] = "Fast";
+        name[29] = "Fast";
+        name[30] = "Medium";
+        name[31] = "Medium";
+        name[32] = "Slow";
+        name[33] = "Fast";
+        name[34] = "Slow";
+        name[35] = "Slow";
+        name[36] = "Slow";
+        name[37] = "Slow";
+        name[38] = "Slow";
+        name[39] = "Slow";
+        name[40] = "Medium";
+        name[41] = "Medium";
+        name[42] = "Medium";
+        name[43] = "Medium";
+        name[44] = "Slow";
+        name[45] = "Fast";
+        name[46] = "Medium";
+        name[47] = "Slow";
+        name[48] = "Fast";
+        name[49] = "Medium";
+        name[50] = "Medium";
+        name[51] = "Slow";
+        name[52] = "Slow";
+        name[53] = "Medium";
+        name[54] = "Slow";
+        name[55] = "Slow";
+        name[56] = "Slow";
+        name[57] = "Fast";
         String[] framedatalink = new String[58];
         framedatalink[0] = "link";
         framedatalink[1] = "linktwo";
@@ -216,6 +396,9 @@ public class DBHelper extends SQLiteOpenHelper{
             values.put("description", desc[i]);
             values.put("tier", tier[i]);
             values.put("framedatalink", framedatalink[i]);
+            values.put("weight", weight[i]);
+            //values.put("type", tpye[i]);
+            values.put("fallspeed", fallspeed[i]);
             db.insert("characters", null, values);
         }
 
