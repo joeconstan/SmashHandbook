@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+       // setContentView(R.layout.activity_main);
         setContentView(R.layout.activity_main);
-
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
 
@@ -31,14 +32,51 @@ public class MainActivity extends AppCompatActivity {
         items[2] = "Terms";
         items[3] = "Current PGR";
         items[4] = "Tier List";
+
         //items[5] = "Frame Data Stats"; -- add in later. its a lot of work. listview with like: gravity, airspeed, etc. click on each and it gives ranking of characters with value for each.
         ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, items);
 
-        ListView listview = (ListView) findViewById(R.id.am_listview);
-        listview.setAdapter(mainScreenAdapter);
+        Button characters = (Button)(findViewById(R.id.charactersButton));
+        Button generalTech = (Button)(findViewById(R.id.generalTechButton));
+        Button terms = (Button)(findViewById(R.id.termsButton));
+        Button currentPGR = (Button)(findViewById(R.id.currentPGRButton));
+        Button tierList = (Button)(findViewById(R.id.tierListButton));
+        Button stages = (Button)(findViewById(R.id.frameDataButton));
 
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        }
+
+
+    public void characterScreen (View v) {
+        Intent intent = new Intent(v.getContext(), Characters.class);
+        startActivity(intent);
+    }
+    public void techScreen (View v) {
+        Intent intent = new Intent(v.getContext(), Tech.class);
+        startActivity(intent);
+    }
+    public void termsScreen (View v) {
+        Intent intent = new Intent(v.getContext(), Characters.class);
+        startActivity(intent);
+    }
+    public void pgrScreen (View v) {
+        Intent intent = new Intent(v.getContext(), PGR.class);
+        startActivity(intent);
+    }
+    public void tierScreen (View v) {
+        Intent intent = new Intent(v.getContext(), Characters.class);
+        startActivity(intent);
+    }
+    public void stageScreen (View v) {
+        Intent intent = new Intent(v.getContext(), Characters.class);
+        startActivity(intent);
+    }
+
+    //  ListView listview = (ListView) findViewById(R.id.am_listview);
+       // listview.setAdapter(mainScreenAdapter);
+
+      /*  listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (position == 0) {
@@ -58,8 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+*/
 
-    }
+
 
 
     @Override

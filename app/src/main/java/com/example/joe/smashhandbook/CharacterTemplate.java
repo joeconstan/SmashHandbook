@@ -1,6 +1,7 @@
 package com.example.joe.smashhandbook;
 
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
@@ -39,6 +40,7 @@ public class CharacterTemplate extends AppCompatActivity{
         tier.setText(dataa);
         results.close();
     }
+
 
 
 }
