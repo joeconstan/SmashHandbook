@@ -103,7 +103,7 @@
         android:layout_below="@id/battlefieldButton"
         android:layout_alignRight="@+id/towncityButton"
         android:layout_alignEnd="@+id/battlefieldButton"
-        android:text="Final Destinatin"
+        android:text="Final Destination"
         android:background="@drawable/trophypic"
         android:textColor="@color/white"
         android:backgroundTint="@color/gold"

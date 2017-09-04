@@ -82,6 +82,9 @@
         <activity android:name=".TownCity">
 
         </activity>
+        <activity android:name=".Terms">
+
+        </activity>
     </application>
 
 </manifest>

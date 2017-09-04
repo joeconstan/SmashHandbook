@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void termsScreen (View v) {
-        Intent intent = new Intent(v.getContext(), Characters.class);
+        Intent intent = new Intent(v.getContext(), Terms.class);
         startActivity(intent);
     }
     public void pgrScreen (View v) {
