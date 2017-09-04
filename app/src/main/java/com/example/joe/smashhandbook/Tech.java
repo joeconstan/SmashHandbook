@@ -52,6 +52,7 @@ public class Tech extends AppCompatActivity{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
+
                     case 0:
                         Intent zero_intent = new Intent(view.getContext(), PerfectPivot.class);
                         startActivity(zero_intent);
@@ -87,6 +88,18 @@ public class Tech extends AppCompatActivity{
                     case 8:
                         Intent eight_intent = new Intent(view.getContext(), WaveBounce.class);
                         startActivity(eight_intent);
+                        break;
+                    case 9:
+                        Intent nine_intent = new Intent(view.getContext(), DI.class);
+                        startActivity(nine_intent);
+                        break;
+                    case 10:
+                        Intent ten_intent = new Intent(view.getContext(), WallCling.class);
+                        startActivity(ten_intent);
+                        break;
+                    case 11:
+                        Intent eleven_intent = new Intent(view.getContext(), Characters.class);
+                        startActivity(eleven_intent);
                         break;
 
 

@@ -61,6 +61,21 @@
         <activity android:name=".WaveBounce">
 
         </activity>
+        <activity android:name=".DI">
+
+        </activity>
+        <activity android:name=".WallCling">
+
+        </activity>
+        <activity android:name=".Stages">
+
+        </activity>
+        <activity android:name=".FinalDestination">
+
+        </activity>
+        <activity android:name=".SmashVille">
+
+        </activity>
     </application>
 
 </manifest>

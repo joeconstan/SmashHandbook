@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_red_dark"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbartext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Menu"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+
+        <ImageButton
+            android:id="@+id/toolbar_info_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/toolbartext"
+            android:background="@null"
+            android:paddingLeft="200dp"
+            android:src="@drawable/ic_info_outline" />
+
+        <ImageButton
+            android:id="@+id/toolbar_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/toolbar_info_button"
+            android:background="@null"
+            android:paddingLeft="12dp"
+            android:src="@drawable/ic_settings_button" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <Button
+        android:id="@+id/smashvilleButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/battlefieldButton"
+        android:layout_marginLeft="55dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/pikachu"
+        android:backgroundTint="@color/yellow"
+        android:onClick="characterScreen"
+        android:text="Smashville"
+
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/battlefieldButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/custom_toolbar"
+        android:layout_toRightOf="@+id/smashvilleButton"
+        android:text="Battlefield"
+        android:background="@drawable/ryu"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/red"
+        android:onClick="techScreen"
+
+        />
+
+    <Button
+        android:id="@+id/towncityButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/smashvilleButton"
+        android:layout_alignStart="@+id/smashvilleButton"
+        android:layout_below="@+id/smashvilleButton"
+        android:layout_marginTop="30dp"
+        android:text="Town and City"
+        android:background="@drawable/termss"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dodgerblue"
+        android:onClick="termsScreen"
+
+        />
+
+    <Button
+        android:id="@+id/fdButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/battlefieldButton"
+        android:layout_alignRight="@+id/towncityButton"
+        android:layout_alignEnd="@+id/battlefieldButton"
+        android:text="Final Destinatin"
+        android:background="@drawable/trophypic"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gold"
+        android:onClick="pgrScreen"
+        />
+
+    <Button
+        android:id="@+id/dreamlandButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignLeft="@+id/lylatButton"
+        android:layout_alignStart="@+id/towncityButton"
+        android:layout_below="@+id/towncityButton"
+        android:text="Dreamland"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkgreen"
+        android:background="@drawable/firstplace"
+        android:onClick="tierScreen"
+
+        />
+
+    <Button
+        android:id="@+id/lylatButton"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignEnd="@+id/fdButton"
+        android:layout_below="@+id/fdButton"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/dreamlandButton"
+        android:background="@drawable/stages"
+        android:text="Lylat Cruise"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:onClick="stageScreen"
+
+
+        />
+</RelativeLayout>

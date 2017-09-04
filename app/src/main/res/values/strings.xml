@@ -11,4 +11,6 @@
     <string name="t_sd">Shield dropping is a technique that allows you to drop through a platform straight out of shield, avoiding the 8 frames of lag that you experience from normally dropping shield.etc. dont sound too much like msc video</string>
     <string name="t_breverse">temp</string>
     <string name="t_wavebounce">temp</string>
+    <string name="t_di">test</string>
+    <string name="t_wallcling">test</string>
 </resources>

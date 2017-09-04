@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void stageScreen (View v) {
-        Intent intent = new Intent(v.getContext(), Characters.class);
+        Intent intent = new Intent(v.getContext(), Stages.class);
         startActivity(intent);
     }
 
