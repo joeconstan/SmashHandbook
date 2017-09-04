@@ -1,8 +1,12 @@
 package com.example.joe.smashhandbook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -12,6 +16,8 @@ public class Terms extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terms);
+        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
+        setSupportActionBar(tb);
 
         String[] terms = new String[37];
         terms[0] = "Air Dodge";
@@ -57,5 +63,21 @@ public class Terms extends AppCompatActivity{
         ListView lv = (ListView) findViewById(R.id.aterms_listview);
         lv.setAdapter(adapter);
 
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //this adds the icons to the action bar
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = new Intent(this, Tech.class);
+        startActivity(intent);
+        return super.onOptionsItemSelected(item);
     }
 }

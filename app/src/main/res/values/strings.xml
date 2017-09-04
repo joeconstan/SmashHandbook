@@ -77,4 +77,26 @@
     <string name= "Yoshi">Yoshi</string>
     <string name="Zelda">Zelda</string>
     <string name= "ZSS">ZSS</string>
+    <string name= "Battlefield">Battlefield</string>
+    <string name= "BReverse">BReverse</string>
+    <string name= "DashDance">Dash Dance</string>
+    <string name= "DI">Directional Influence</string>
+    <string name= "Dreamland">Dreamland</string>
+    <string name= "ExDD">Extended Dash Dancing</string>
+    <string name= "FinalDestination">Final Destination</string>
+    <string name= "ILGU">Lagless Ledge Get-Up</string>
+    <string name= "JabLock">Jab Lock</string>
+    <string name= "LylatCruise">Lylat Cruise</string>
+    <string name= "PerfectPivot">Perfect Pivot</string>
+    <string name= "ShieldDrop">Shield Drop</string>
+    <string name= "Smashville">Smashville</string>
+    <string name= "TermsTemplate">Terms</string>
+    <string name= "TownCity">Town City </string>
+    <string name= "TwoFerame">Two Frame </string>
+    <string name= "WallCling">Wall Cling </string>
+    <string name= "WaveBounce">Wave Bounce </string>
+
+
+
+
 </resources>
