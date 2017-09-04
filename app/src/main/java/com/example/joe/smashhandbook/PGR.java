@@ -1,8 +1,11 @@
 package com.example.joe.smashhandbook;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -79,5 +82,20 @@ public class PGR extends AppCompatActivity {
         ArrayAdapter<String> pgr_listadapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, pgr_list);
         ListView listView = (ListView) findViewById(R.id.ap_listview);
         listView.setAdapter(pgr_listadapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //this adds the icons to the action bar
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent = new Intent(this, Tech.class);
+        startActivity(intent);
+        return super.onOptionsItemSelected(item);
     }
 }

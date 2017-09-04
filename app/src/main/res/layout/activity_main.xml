@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="Menu"
+            android:text="@string/home"
             android:textColor="#ffffff"
             android:textSize="22dp" />
 
@@ -56,8 +56,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/generalTechButton"
-        android:layout_marginLeft="55dp"
-        android:layout_marginStart="55dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
         android:background="@drawable/pikachu"
         android:backgroundTint="@color/yellow"
         android:onClick="characterScreen"
@@ -133,7 +133,7 @@
         android:id="@+id/frameDataButton"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_alignEnd="@+id/currentPGRButton"
+        android:layout_alignRight="@+id/currentPGRButton"
         android:layout_below="@+id/currentPGRButton"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"

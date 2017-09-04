@@ -6,8 +6,6 @@
     >
 
 
-
-
     <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/custom_toolbar"
@@ -24,7 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:text="Menu"
+            android:text="@string/stages"
             android:textColor="#ffffff"
             android:textSize="22dp" />
 
