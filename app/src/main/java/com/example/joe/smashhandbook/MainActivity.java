@@ -7,7 +7,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -18,24 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
-
-
-        //set background of action bar to a graphic
         //add MU's?
 
-        String[] items = new String[5];
-        items[0] = "Characters";
-        items[1] = "General Tech";
-        items[2] = "Terms"; //spikes? vs meteors
-        items[3] = "Current PGR";
-        items[4] = "Tier List";
-
-        //items[5] = "Frame Data Stats"; -- add in later. its a lot of work. listview with like: gravity, airspeed, etc. click on each and it gives ranking of characters with value for each.
-        ArrayAdapter<String> mainScreenAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, items);
-
-
-
-        }
+    }
 
 
     public void characterScreen (View v) {
@@ -64,11 +48,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        //this adds the icons to the action bar
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -76,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
         Intent intent = new Intent(this, Tech.class);
         startActivity(intent);
         return super.onOptionsItemSelected(item);

@@ -394,7 +394,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
         String[] players = new String[58];
         name[0] = "Salem, Captain Zack, Mistake, 9B, Pink Fresh";
-        name[1] = "Nairo, DeluxeMenu";
+        name[1] = "Nairo, DeluxeMenu, LordMix";
         name[2] = "Tweek, ?";
         name[3] = "Fatality, ?";
         name[4] = "MkLeo, Sharpyzard, ?";
@@ -448,7 +448,7 @@ public class DBHelper extends SQLiteOpenHelper{
         name[52] = "Ranai (sp?), JGH or whatever, ?";
         name[53] = "Gluttony, ?";
         name[54] = "John Numbers, Captain Zack, ?";
-        name[55] = "Sky, the other one, ?";
+        name[55] = "Sky, Raptor, ?";
         name[56] = "Purple Guy, one more";
         name[57] = "Nairo, Marss, quik, choco, ?";
 
