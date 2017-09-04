@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/mainTheme"
+    >
 
 
 
@@ -58,7 +60,6 @@
         android:layout_marginStart="55dp"
         android:background="@drawable/pikachu"
         android:backgroundTint="@color/yellow"
-        android:onClick="characterScreen"
         android:text="Smashville"
 
         android:textColor="@color/white" />
@@ -76,7 +77,6 @@
         android:background="@drawable/ryu"
         android:textColor="@color/white"
         android:backgroundTint="@color/red"
-        android:onClick="techScreen"
 
         />
 
@@ -92,7 +92,6 @@
         android:background="@drawable/termss"
         android:textColor="@color/white"
         android:backgroundTint="@color/dodgerblue"
-        android:onClick="termsScreen"
 
         />
 
@@ -108,7 +107,6 @@
         android:background="@drawable/trophypic"
         android:textColor="@color/white"
         android:backgroundTint="@color/gold"
-        android:onClick="pgrScreen"
         />
 
     <Button
@@ -123,7 +121,6 @@
         android:textColor="@color/white"
         android:backgroundTint="@color/darkgreen"
         android:background="@drawable/firstplace"
-        android:onClick="tierScreen"
 
         />
 
@@ -140,7 +137,6 @@
         android:text="Lylat Cruise"
         android:backgroundTint="@color/purple"
         android:textColor="@color/white"
-        android:onClick="stageScreen"
 
 
         />

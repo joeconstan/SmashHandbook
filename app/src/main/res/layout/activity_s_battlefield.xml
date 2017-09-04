@@ -4,19 +4,19 @@
     android:layout_height="match_parent">
 
 
-    <ImageView android:id="@+id/sv_iv"
+
+    <ImageView android:id="@+id/bf_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/sv"
+        android:src="@drawable/bf"
         />
     <TextView
-        android:id="@+id/svtext"
+        android:id="@+id/bftext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="test"
 
         />
-
 
 
 </LinearLayout>

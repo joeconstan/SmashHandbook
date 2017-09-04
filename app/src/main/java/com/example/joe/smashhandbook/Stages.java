@@ -38,6 +38,24 @@ public class Stages extends AppCompatActivity{
             }
         });
 
+        bf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Battlefield.class);
+                startActivity(intent);
+            }
+        });
+
+        tnc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), TownCity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
     }
 }

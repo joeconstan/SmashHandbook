@@ -76,6 +76,12 @@
         <activity android:name=".SmashVille">
 
         </activity>
+        <activity android:name=".Battlefield">
+
+        </activity>
+        <activity android:name=".TownCity">
+
+        </activity>
     </application>
 
 </manifest>
