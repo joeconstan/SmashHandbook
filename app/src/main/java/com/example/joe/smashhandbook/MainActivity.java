@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         //set background of action bar to a graphic
         //add MU's?
-
+//change
         String[] items = new String[5];
         items[0] = "Characters";
         items[1] = "General Tech";
