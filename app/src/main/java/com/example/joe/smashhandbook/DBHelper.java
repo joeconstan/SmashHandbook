@@ -95,7 +95,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[7] = "Dark Pit";
         desc[8] = "Diddy is a great all around character who can be played aggressively or defensively. His meta has been pushed farther than many characters, though there are still many useful techniques not being used by diddy mains. His play centers around his banana, giving him great stage control and easy kill confirms. Watch ZeRo play to learn the basic bread and butter combos, and watch zinoto to see some unique combos and set ups.";
         desc[9] = "Donkey Kong has been on the rise lately, with HIKARU and Konga doing well, as well as Tweek and Larry using him as a secondary. He is a grappler through and through, and can kill most characters at extremely low percents. He does struggle at landing, though.";
-        //include ding dong percents in specific techs page of dk. do this for other combos like toot toot, shell shock, etc.
+        //include ding dong percents in specific techs page of dk. do this for other combos like toot toot, shell shock, etc. four spikes.
         desc[10] = "Dr Mario is essentially a worse version of mario, with a shorter up special, a weaker projectile, and smaller hitboxes.";
         //fact check doc
         desc[11] = "Duck Hunt is one of the most complex characters. His neutral is very good, and his meta has been developing quickly since Raito and the Japanese Duck Hunts started competing more.";
@@ -104,16 +104,17 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[14] = "Ganondorf is exceptionally slow, and his moves have a lot of lag. However, he has some interesting combos, and his moves hit very hard. His upsmash has deceivingly little end lag, and can catch people off guard.";
         desc[15] = "Greninja";
         desc[16] = "Ike";
-        desc[17] = "Jigglypuff";
+        desc[17] = "Jigglypuff is one of the worst in the game, though some don't think she belongs there. Puff has some redeeming qualities in her aerial movement, good air attacks, and highest number of jumps in the game (6). However, her ground attacks leave some to be desired. She does have true rest setups though, many of which are underused.";
         desc[18] = "King Dedede";
-        desc[19] = "Kirby";
+        desc[19] = "Kirby is a low tier(?) character with a good amount of winning matchups. Kirby has high combo ability on fast fallers, such as fox.";
         desc[20] = "Link";
-        desc[21] = "Little Mac";
+        desc[21] = "Little Mac is definitely one of the most fun characters to play. His ground game is one of the best, and his frame data is ridiculous. He struggles, though, in the air and when recovering. For these reasons he currently has more than a few losing matchups.";
         desc[22] = "Lucario";
+        //aura percents, doubles strat
         desc[23] = "Lucas";
-        desc[24] = "Lucina";
-        desc[25] = "Luigi";
-        desc[26] = "Mario";
+        desc[24] = "Lucina is very similar to marth, with a few exceptions. Lucina has a slightly shorter reach, not because of the length of the sword, but because of the reach of her arm. Her sword has no tipper effect, and the entire length of it does the same amount of damage. So this makes spacing easier,but results in her not having moves as strong as marth's tippers.";
+        desc[25] = "Luigi is represented at the highest level by only a single player. He has very low friction, and therefore relies heavily on power shielding for counterattacks. He has endless combos out of down throw";
+        desc[26] = "Mario has some of the most exciting combos in the game. Most of them start with a down throw, though certain characters are able to break out of the typical combo chains. Therefore mario mains must mix up their combo strategies. He has decent kill power, but not a lot of true kill combos at any percent.";
         desc[27] = "Marth";
         desc[28] = "Mega Man";
         desc[29] = "Meta Knight";
@@ -125,7 +126,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[35] = "Ness";
         desc[36] = "Olimar";
         desc[37] = "Pac-Man";
-        desc[38] = "Palutena";
+        desc[38] = "Palutena"; //moves with invincibility
         desc[39] = "Peach";
         desc[40] = "Pikachu";
         desc[41] = "Pit";
@@ -133,7 +134,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[43] = "Robin";
         desc[44] = "Rosalina";
         desc[45] = "Roy";
-        desc[46] = "Ryu";
+        desc[46] = "Ryu is one of the most exciting characters to use. He has long combo strings on most characters, some of which can lead to death. His dtilt and utilt lead to shoryu, and his nair combos into itself and into dair."; //street fighter inputs
         desc[47] = "Samus";
         desc[48] = "Sheik";
         desc[49] = "Shulk";
@@ -391,12 +392,73 @@ public class DBHelper extends SQLiteOpenHelper{
         name[57] = "Fast";
 
 
+        String[] players = new String[58];
+        name[0] = "Salem, Captain Zack, Mistake, 9B, Pink Fresh";
+        name[1] = "Nairo, DeluxeMenu";
+        name[2] = "Tweek, ?";
+        name[3] = "Fatality, ?";
+        name[4] = "MkLeo, Sharpyzard, ?";
+        name[5] = "MkLeo, Tweek, Komorikiri, ?";
+        name[6]= "Ryuga, Cosmos, MkLeo";
+        name[7] = "Dark Pit";
+        name[8] = "Zero, MVD, Zinoto, Edge, Nietono, ?";
+        name[9] = "Tweek, Larry Lurr, Konga, HIKARU, ?";
+        name[10] = "Dr Mario";
+        name[11] = "Raito, You3, Brood, ?";
+        name[12] = "Larry Lurr, XZAX, ZD, Light, NAKAT, ?";
+        name[13] = "Keitaro, AC";
+        name[14] = "8 Inches, Rickles, Bizarro Flame, ?";
+        name[15] = "phazezero guy, ";
+        name[16] = "Ryuga, Ryo, Izaw, ?";
+        name[17] = "Leet, Puffmaster (? the one from mexico), ?";
+        name[18] = "Girthquake, Big D, ?";
+        name[19] = "Kirby";
+        name[20] = "T, ?";
+        name[21] = "CagT, Sol, way more";
+        name[22] = "Marss, MkLeo, Tsu- or ~, ?, Goma";
+        name[23] = "Mekos, Taiheita (sp?), ?";
+        name[24] = "Mr. E, Zero, Nairo, Pugwest, ?";
+        name[25] = "Elegant, Mr. ConCon, ?";
+        name[26] = "Anti, Zenyou, Ally";
+        name[27] = "Mr. E, MkLeo, Pugwest, ";
+        name[28] = "Kameme, scAtt, ?";
+        name[29] = "Abadango, MkLeo, ?";
+        name[30] = "Abadango, Rich Brown, WaDi, ?";
+        name[31] = "Mii Swordfighter";
+        name[32] = "Mii Gunner";
+        name[33] = "Mii Brawler";
+        name[34] = "Kossismoss, Game7a1, GIMR, ?";
+        name[35] = "FOW, ?";
+        name[36] = "DaBuz, Shuton, ?";
+        name[37] = "Pac-Man";
+        name[38] = "TLTC, Prince Ramen, ?";
+        name[39] = "Peach";
+        name[40] = "ESAM, Captain L I think or maybe Q, Rideau, ?";
+        name[41] = "Earth, ?";
+        name[42] = "Raffi-X, 8Bitman, ?";
+        name[43] = "Dath, Nairo, ?";
+        name[44] = "Rosalina";
+        name[45] = "Roy";
+        name[46] = "Ryu";
+        name[47] = "Samus";
+        name[48] = "Mr. R, v0id (sp?), Nietono, Kameme, lots more";
+        name[49] = "Nicko, kome, ?";
+        name[50] = "Komorikiri, KEN, wrath, ?";
+        name[51] = "Hyuga, MkLeo maybe, Zan, missin one";
+        name[52] = "Villager";
+        name[53] = "Gluttony, ?";
+        name[54] = "John Numbers, Captain Zack, ?";
+        name[55] = "Sky, the other one, ?";
+        name[56] = "Purple Guy, one more";
+        name[57] = "Nairo, Marss, quik, choco, ?";
+
+
         String[] framedatalink = new String[58];
         framedatalink[0] = "link";
         framedatalink[1] = "linktwo";
 
         for (int i=0;i<58;i++) {
-            ContentValues values = new ContentValues(6);
+            ContentValues values = new ContentValues(7);
             values.put("name", name[i]);
             values.put("description", desc[i]);
             values.put("tier", tier[i]);
@@ -404,6 +466,7 @@ public class DBHelper extends SQLiteOpenHelper{
             values.put("weight", weight[i]);
             values.put("type", type[i]);
             values.put("fallspeed", fallspeed[i]);
+            values.put("players", players[i]);
             db.insert("characters", null, values);
         }
 
