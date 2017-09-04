@@ -16,5 +16,6 @@ public class TierList extends AppCompatActivity {
         //https://smashboards.com/tiers/#WiiU
 
 
+
     }
 }

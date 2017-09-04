@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void tierScreen (View v) {
-        Intent intent = new Intent(v.getContext(), Characters.class);
+        Intent intent = new Intent(v.getContext(), TierList.class);
         startActivity(intent);
     }
     public void stageScreen (View v) {
