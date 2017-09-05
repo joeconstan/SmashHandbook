@@ -21,7 +21,7 @@ public class DBHelper extends SQLiteOpenHelper{
     public void createChar(SQLiteDatabase db){
         db.execSQL(
                 "create table if not exists characters " +
-                        "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text)" //plus picture name or pic somehow
+                        "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text, players text)" //plus picture name or pic somehow
         );
 
 
@@ -137,7 +137,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[42] = "ROB";
         desc[43] = "Robin";
         desc[44] = "Rosalina";
-        desc[45] = "Roy";
+        desc[45] = "Roy is traditionally a lower tier character but";
         desc[46] = "Ryu is one of the most exciting characters to use. He has long combo strings on most characters, some of which can lead to death. His dtilt and utilt lead to shoryu, and his nair combos into itself and into dair."; //street fighter inputs
         desc[47] = "Samus";
         desc[48] = "Sheik";
