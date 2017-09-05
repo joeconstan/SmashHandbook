@@ -20,7 +20,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     public void createChar(SQLiteDatabase db){
         db.execSQL(
-                "create table characters " +
+                "create table if not exists characters " +
                         "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text)" //plus picture name or pic somehow
         );
 
