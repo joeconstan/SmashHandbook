@@ -19,7 +19,7 @@ public class Terms extends AppCompatActivity{
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
 
-        String[] terms = new String[37];
+        String[] terms = new String[38];
         terms[0] = "Air Dodge";
         terms[1] = "Pop-Off";
         terms[2] = "Ban";
@@ -58,6 +58,7 @@ public class Terms extends AppCompatActivity{
         terms[34] = "Tilt, Smash, Special attacks";
         terms[35] = "Tomahawk";
         terms[36] = "Trade";
+        terms[37] = "Whispy";
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, terms);
         ListView lv = (ListView) findViewById(R.id.aterms_listview);

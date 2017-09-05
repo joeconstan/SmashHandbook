@@ -14,7 +14,7 @@
         android:id="@+id/fdtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:text="@string/fd_text"
 
         />
 

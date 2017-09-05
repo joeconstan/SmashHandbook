@@ -14,7 +14,7 @@
         android:id="@+id/bftext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:text="@string/bf_text"
 
         />
 
