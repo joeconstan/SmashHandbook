@@ -15,6 +15,10 @@ public class DBHelper extends SQLiteOpenHelper{
     public static final String DATABASE_NAME = "whatever.db";
     @Override
     public void onCreate(SQLiteDatabase db) {
+
+    }
+
+    public void createChar(SQLiteDatabase db){
         db.execSQL(
                 "create table characters " +
                         "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text)" //plus picture name or pic somehow

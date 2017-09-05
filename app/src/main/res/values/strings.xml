@@ -77,13 +77,12 @@
     <string name= "Yoshi">Yoshi</string>
     <string name="Zelda">Zelda</string>
     <string name= "ZSS">ZSS</string>
-    <string name="lc_text">Stage Type: Counterpick
-        Lylat Cruise is thhe most polarizing legal stage in smash 4. A majority of people ban it, but some like it. It has a few glitches, and the entire stage leans to one side or the other sometimes, which can make recoveries more difficult.</string>
-    <string name="fd_text">Final Destination is the only stage with no platforms. For this reason, some characters thrive here. Diddy, Little Mac, and Sonic are great on FD.</string>
-    <string name="bf_text"> Battlefield is a tri-platform stage, which makes it very good for characters like cloud or fox, who can use the platforms to extend their combos. It also has extremely large blast zones, meaning characters will kill much later than usual. This means that if you want to live for a long time, you would consider going here. For example, Lucario will be more likely to gain max aura by going here.</string>
-    <string name="sv_text">Smashville is probably the most neutral and well-liked stage. It has one platform that moves across the stage horizontally. It is sometimes called sheikville because sheik can use the platform to carry people off the side for early kills. Bayonetta also does well here, but then again she does well everywhere.</string>
-    <string name="dl_text">Dreamland has the same layout as Battlefield, except all blastzones are a bit smaller. The only other real difference is Whispy (the tree), who will occasionally start blowing.</string>
-    <string name="tc_text"> Town and City is the stage with the closest side blastzones, making it very good for characters that kill off the side. Never take a Little Mac to Town and City. It has three platforms which are arranged differently than the other tri-plats.</string>
+    <string name="lc_text">Stage Type: Starter\nLylat Cruise is thhe most polarizing legal stage in smash 4. A majority of people ban it, but some like it. It has a few glitches, and the entire stage leans to one side or the other sometimes, which can make recoveries more difficult.</string>
+    <string name="fd_text">Stage Type: Starter\nFinal Destination is the only stage with no platforms. For this reason, some characters thrive here. Diddy, Little Mac, and Sonic are great on FD.</string>
+    <string name="bf_text">Stage Type: Starter\nBattlefield is a tri-platform stage, which makes it very good for characters like cloud or fox, who can use the platforms to extend their combos. It also has extremely large blast zones, meaning characters will kill much later than usual. This means that if you want to live for a long time, you would consider going here. For example, Lucario will be more likely to gain max aura by going here.</string>
+    <string name="sv_text">Stage Type: Starter\nSmashville is probably the most neutral and well-liked stage. It has one platform that moves across the stage horizontally. It is sometimes called sheikville because sheik can use the platform to carry people off the side for early kills. Bayonetta also does well here, but then again she does well everywhere.</string>
+    <string name="dl_text">Stage Type: Counterpick\nDreamland has the same layout as Battlefield, except all blastzones are a bit smaller. The only other real difference is Whispy (the tree), who will occasionally start blowing.</string>
+    <string name="tc_text">Stage Type: Starter\nTown and City is the stage with the closest side blastzones, making it very good for characters that kill off the side. Never take a Little Mac to Town and City. It has three platforms which are arranged differently than the other tri-plats.</string>
 
     <string name= "Battlefield">Battlefield</string>
     <string name= "BReverse">BReverse</string>

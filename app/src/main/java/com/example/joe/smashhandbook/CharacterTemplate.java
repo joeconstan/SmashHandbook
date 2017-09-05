@@ -32,8 +32,10 @@ public class CharacterTemplate extends AppCompatActivity{
         sel++;
         String selstr = Integer.toString(sel);
         DBHelper db = new DBHelper(this);
-        SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
 
+        SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
+        
+        db.createChar(sqLiteDatabase);
         String tableName = "characters";
         String selection = "id=?";
         Cursor results = sqLiteDatabase.query(tableName, null, selection, new String[] {selstr}, null, null, null);
