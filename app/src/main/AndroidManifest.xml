@@ -85,6 +85,12 @@
         <activity android:name=".Terms">
 
         </activity>
+        <activity android:name=".Dreamland">
+
+        </activity>
+        <activity android:name=".LylatCruise">
+
+        </activity>
     </application>
 
 </manifest>

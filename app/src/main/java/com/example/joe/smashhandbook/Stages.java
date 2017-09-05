@@ -54,6 +54,20 @@ public class Stages extends AppCompatActivity{
             }
         });
 
+        dl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Dreamland.class);
+                startActivity(intent);
+            }
+        });
+        lc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), LylatCruise.class);
+                startActivity(intent);
+            }
+        });
 
 
 
