@@ -20,7 +20,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     public void createChar(SQLiteDatabase db){
         db.execSQL(
-                "create table characters " +
+                "create table if not exists characters " +
                         "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text)" //plus picture name or pic somehow
         );
 
@@ -457,9 +457,9 @@ public class DBHelper extends SQLiteOpenHelper{
         name[57] = "Nairo, Marss, quik, choco, ?";
 
 
-        String[] framedatalink = new String[58];
+       /* String[] framedatalink = new String[58];
         framedatalink[0] = "link";
-        framedatalink[1] = "linktwo";
+        framedatalink[1] = "linktwo";*/
 
         for (int i=0;i<58;i++) {
             ContentValues values = new ContentValues(7);

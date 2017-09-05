@@ -34,7 +34,7 @@ public class CharacterTemplate extends AppCompatActivity{
         DBHelper db = new DBHelper(this);
 
         SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
-        
+
         db.createChar(sqLiteDatabase);
         String tableName = "characters";
         String selection = "id=?";
