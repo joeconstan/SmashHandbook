@@ -47,7 +47,7 @@ public class CharacterTemplate extends AppCompatActivity{
         ImageView char_pic = (ImageView) findViewById(R.id.character_image);
         Button spec_tech_button = (Button) findViewById(R.id.character_spec_tech);
 
-        String descStr = "Playstyle: "+ results.getString(results.getColumnIndex("type")) + " \nWeight: " + results.getString(results.getColumnIndex("weight")) + "\nFallspeed: " + results.getString(results.getColumnIndex("fallspeed"));
+        String descStr = "Playstyle: "+ results.getString(results.getColumnIndex("type")) + " \nWeight: " + results.getString(results.getColumnIndex("weight")) + "\nFallspeed: " + results.getString(results.getColumnIndex("fallspeed")) + "\n";
         String tierData = results.getString(results.getColumnIndex("tier"));
         String nameData = results.getString(results.getColumnIndex("name"));
         String descData = results.getString(results.getColumnIndex("description"));

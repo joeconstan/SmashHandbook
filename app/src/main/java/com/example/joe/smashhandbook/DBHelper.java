@@ -113,7 +113,7 @@ public class DBHelper extends SQLiteOpenHelper{
             db.insert("terms", null, values);
         }
 
-    }
+    } //endcreateterms
 
     public void createChar(SQLiteDatabase db){
         db.execSQL(
