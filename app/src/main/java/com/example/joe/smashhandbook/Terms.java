@@ -7,6 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -62,7 +64,14 @@ public class Terms extends AppCompatActivity{
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, terms);
         ListView lv = (ListView) findViewById(R.id.aterms_listview);
         lv.setAdapter(adapter);
-
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(view.getContext(), TermsTemplate.class);
+                intent.putExtra("term_select", position); //should this be after startactivity?
+                startActivity(intent);
+            }
+        });
     }
 
 

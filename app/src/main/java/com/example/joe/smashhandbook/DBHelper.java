@@ -19,6 +19,99 @@ public class DBHelper extends SQLiteOpenHelper{
     }
 
     public void createTerms(SQLiteDatabase db){
+        db.execSQL(
+                "create table if not exists terms " +
+                        "(id integer primary key, termname text, termdescription text)");
+
+        String[] dbterms = new String[39];
+        dbterms[0] = "Air Dodge";
+        dbterms[1] = "Ban";
+        dbterms[2] = "Blastzone";
+        dbterms[3] = "Bread & Butter";
+        dbterms[4] = "Buff-Nerf";
+        dbterms[5] = "Cheesed";
+        dbterms[6] = "Counter";
+        dbterms[7] = "Counterpick";
+        dbterms[8] = "Crews";
+        dbterms[9] = "Ditto - Mirror Match";
+        dbterms[10] = "DSR - Dave's Stupid Rule";
+        dbterms[11] = "Frame";
+        dbterms[12] = "Frame Trap";
+        dbterms[13] = "Gimped";
+        dbterms[14] = "Heavy Armor";
+        dbterms[15] = "Hitbox";
+        dbterms[16] = "Hitstun";
+        dbterms[17] = "Hoo Hah";
+        dbterms[18] = "Hurtbox";
+        dbterms[19] = "Intangibility";
+        dbterms[20] = "Invincibility";
+        dbterms[21] = "Ironman";
+        dbterms[22] = "Jank";
+        dbterms[23] = "Misfire";
+        dbterms[24] = "Pop-Off";
+        dbterms[25] = "Pummel";
+        dbterms[26] = "Read";
+        dbterms[27] = "Sheikville, Starterville";
+        dbterms[28] = "Sourspot, sweetspot";
+        dbterms[29] = "Stage Spike";
+        dbterms[30] = "Stale-Fresh";
+        dbterms[31] = "Star KO";
+        dbterms[32] = "Super Armor";
+        dbterms[33] = "Tilt, Smash, Special attacks";
+        dbterms[34] = "Tomahawk";
+        dbterms[35] = "Trade";
+        dbterms[36] = "True Combo";
+        dbterms[37] = "Whiff, Flub";
+        dbterms[38] = "Whispy";
+
+        String[] dbtermdesc = new String[39];
+        dbtermdesc[0] = "Air dodging is like spot doding in the air. It makes you momentarily intangible to attacks, and comes out for most characters on frames 2,3 or 4, and only lasts about how many frames? You can air dodge multiple times in the air, and it does not affect your ability to perform moves after it. However, airdodges can be read, leading to huge punishes.";
+        dbtermdesc[1] = "Many stages are banned from tournament play in the recommended ruleset. This is due to effects out of the players control, or things that otherwise hinder gameplay. Sometimes, though rarely, characters can be banned as well. Meta Knight was banned for a whihle in Brawl. Many people are pushing for a tournament ban of Bayonetta in smash 4, as well as a ban of Cloud in doubles.";
+        dbtermdesc[2] = "The blastzones are the very edges of the stages. If you ";
+        dbtermdesc[3] = "Bread and butter or bread and butter combos are combos that are true and simple for a certain character, and are used very frequently because of this. For example, Bowser's bread and butter would probably be up throw to neutral air.";
+        dbtermdesc[4] = "Nintento sometimes releases updates with buffs or nerfs in them. Buffs are updates to a character's traits or moveset that makes him better, while nerfs are the opposite. Diddy, Sheik, Bayonetta, and many other characters have been nerfed, more than once. While many have also been buffed. Puff, though, has never been buffed. #Buffpuff";
+        dbtermdesc[5] = "Cheesed";
+        dbtermdesc[6] = "Counter is a move that acts as a counterattack. For example, if you are marth, and hit down special (down B) right as Bowser attacks you, you will not take any damage, and you will hit him instead.";
+        dbtermdesc[7] = "Counterpicking can refer to characters or stages. If you counterpick, then you just lost a game and are changing things to try to turn the next game in your favor.";
+        dbtermdesc[8] = "Crew battles is one of the most exciting tournament formats. In crew battles, some amount of players (usually 5) are on a team, and each have three stocks. Both teams send up their first player, and they fight until one loses all his stocks. Then, if the winner still has, say, 2 stocks left, he will remain and take on the next player from the other team with just his two stocks. The first team to run out of stocks first loses.";
+        dbtermdesc[9] = "Dittos are simply when two players choose the same character and fight each other.";
+        dbtermdesc[10] = "DSR - Dave's Stupid Rule";
+        dbtermdesc[11] = "Frames are a unit of measurement - there are 60 frames in a second, and moves take a set amount of frames. Frame Data is the list of how long each move lasts and when it comes out, along with other stats.";
+        dbtermdesc[12] = "Frame Trap";
+        dbtermdesc[13] = "If you get gimped, it means you died at a low percent, by being taken off the edge and not being able to return. Bayonetta gimps characters all the time with her forward air.";
+        dbtermdesc[14] = "Heavy Armor";
+        dbtermdesc[15] = "Hitbox";
+        dbtermdesc[16] = "Hitstun";
+        dbtermdesc[17] = "Hoo Hah is the name of Diddy Kong's down throw to up air combo, which was more deadly before he was nerfed.";
+        dbtermdesc[18] = "Hurtbox";
+        dbtermdesc[19] = "Intangibility";
+        dbtermdesc[20] = "Invincibility";
+        dbtermdesc[21] = "Ironmans are when two players fight with every character. Usually you both start on one end of the smash list, like with mario. You set to one stock. If you lose the first round, then you move on to the next character (luigi), and your opponent sticks with mario. First one to run out of characters loses.";
+        dbtermdesc[22] = "Jank";
+        dbtermdesc[23] = "Misfire is the name for when Luigi's side special move goes extremely far very quickly. The odds of this happening are ?";
+        dbtermdesc[24] = "Pop-Off";
+        dbtermdesc[25] = "Pummel";
+        dbtermdesc[26] = "If you read someone, you predict what they are going to do. Generally this gives you an opportunity to punish someone, or get out of a bad situation.";
+        dbtermdesc[27] = "Sheikville and Starterville both refer to smashville, as it is the usual starting stage, and sheik excels here.";
+        dbtermdesc[28] = "Sourspot, sweetspot";
+        dbtermdesc[29] = "Stage spikes happen when you hit your opponent aagainst the outside edge of the stage, sending them down, making it very hard for them to recover.";
+        dbtermdesc[30] = "Stale-Fresh";
+        dbtermdesc[31] = "Star KOs are when the character takes a long time to die, as you can see them disappearing in the background.";
+        dbtermdesc[32] = "Super Armor";
+        dbtermdesc[33] = "Tilt, Smash, Special attacks";
+        dbtermdesc[34] = "Tomahawking is when you short or full hop in front of your opponent, making them think you will throw out an aerial. THey shield, and you land without doing anything, and grab them.";
+        dbtermdesc[35] = "Trading is when you hit your opponent and they hit you, and you both take damage and knockback at the same time.";
+        dbtermdesc[36] = "True combos are combos that are unavoidable, with or without DI, and will always connect if performed correctly. Most true combos start or stop being combos as percents rise.";
+        dbtermdesc[37] = "Whiff, Flub";
+        dbtermdesc[38] = "Whispy is the name of the tree on Dreamland that blows wind every so often.";
+
+
+        for (int i=0;i<39;i++) {
+            ContentValues values = new ContentValues(2);
+            values.put("termname", dbterms[i]);
+            values.put("termdescription", dbtermdesc[i]);
+            db.insert("terms", null, values);
+        }
 
     }
 

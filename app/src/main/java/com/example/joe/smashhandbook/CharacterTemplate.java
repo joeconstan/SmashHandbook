@@ -33,7 +33,7 @@ public class CharacterTemplate extends AppCompatActivity{
         String selstr = Integer.toString(sel);
         DBHelper db = new DBHelper(this);
 
-        SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
+        SQLiteDatabase sqLiteDatabase = db.getWritableDatabase();
 
         db.createChar(sqLiteDatabase);
         String tableName = "characters";

@@ -91,6 +91,9 @@
         <activity android:name=".LylatCruise">
 
         </activity>
+        <activity android:name=".TermsTemplate">
+
+        </activity>
     </application>
 
 </manifest>
