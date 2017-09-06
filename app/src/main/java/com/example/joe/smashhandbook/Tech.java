@@ -32,7 +32,7 @@ public class Tech extends AppCompatActivity{
         }
 
 
-        String[] tech_list = new String[14];
+        String[] tech_list = new String[12];
         tech_list[0] = "Perfect Pivot";
         tech_list[1] = "Jab Lock";
         tech_list[2] = "Extended Dash Dancing";
@@ -43,10 +43,10 @@ public class Tech extends AppCompatActivity{
         tech_list[7] = "B-Reverse";
         tech_list[8] = "Wavebounce";
         tech_list[9] = "DI/SDI";
-        tech_list[10] = "Wall Cling";
-        tech_list[11] = "Wall Jump";
-        tech_list[12] = "Instant ledge wall jump"; //ally does this in locus' analysis stream. and again in pax west game 3 vs void second ally stock
-        tech_list[13] = "Foxtrot";
+        tech_list[10] = "Wall Cling/Jump";
+        //tech_list[11] = "Wall Jump";
+        tech_list[11] = "Instant ledge wall jump"; //ally does this in locus' analysis stream. and again in pax west game 3 vs void second ally stock
+        //tech_list[13] = "Foxtrot";
 
 
         ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, tech_list);

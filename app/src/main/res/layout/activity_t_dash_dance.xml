@@ -16,7 +16,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/t_jl_text"
+        android:id="@+id/t_dd_text"
         android:text="@string/t_dashdance"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="15dp"

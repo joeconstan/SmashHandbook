@@ -94,6 +94,9 @@
         <activity android:name=".TermsTemplate">
 
         </activity>
+        <activity android:name=".ILWJ">
+
+        </activity>
     </application>
 
 </manifest>

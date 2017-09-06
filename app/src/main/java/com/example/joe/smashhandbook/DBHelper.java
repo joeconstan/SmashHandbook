@@ -52,7 +52,7 @@ public class DBHelper extends SQLiteOpenHelper{
         dbterms[25] = "Rage";
         dbterms[26] = "Read";
         dbterms[27] = "Sheikville, Starterville";
-        dbterms[28] = "Sourspot, sweetspot";
+        dbterms[28] = "Sourspot, Sweetspot";
         dbterms[29] = "Stage Spike";
         dbterms[30] = "Stale-Fresh";
         dbterms[31] = "Star KO";
@@ -65,20 +65,20 @@ public class DBHelper extends SQLiteOpenHelper{
         dbterms[38] = "Whispy";
 
         String[] dbtermdesc = new String[39];
-        dbtermdesc[0] = "Air dodging is like spot dodging, but in the air. It makes you momentarily intangible, and comes out for most characters on frames 2,3 or 4, and lasts a little 20 frames. You can air dodge multiple times in the air, and it does not affect your ability to perform moves after it. However, airdodges can be read, leading to huge punishes.";
-        dbtermdesc[1] = "Many stages are banned from tournament play in the recommended ruleset. This is due to effects out of the players control, or things that otherwise hinder gameplay. Sometimes, though rarely, characters can be banned as well. Meta Knight was banned for a whihle in Brawl. Many people are pushing for a tournament ban of Bayonetta in smash 4, as well as a ban of Cloud in doubles.";
+        dbtermdesc[0] = "Air dodging is like spot dodging, but in the air. It makes you momentarily intangible, and comes out for most characters on frames 2, 3 or 4, and lasts a little longer than 20 frames. You can air dodge multiple times in the air, and it does not affect your ability to perform moves after it. However, airdodges can be read, leading to huge punishes.";
+        dbtermdesc[1] = "Many stages are banned from tournament play in the recommended ruleset. This is due to effects out of the players control, or things that otherwise hinder gameplay. Sometimes, though rarely, characters can be banned as well. Meta Knight was banned for a while in Brawl. Many people are pushing for a tournament ban of Bayonetta, as well as a ban of Cloud in doubles.";
         dbtermdesc[2] = "The blastzones are the very edges of the stages that you cannot pass without dying.";
         dbtermdesc[3] = "Bread and butter combos are combos that are true and simple for a certain character, and are used very frequently because of this. For example, Bowser's bread and butter would probably be up throw to neutral air.";
-        dbtermdesc[4] = "Nintento sometimes releases updates with buffs or nerfs in them. Buffs are updates to a character's traits or moveset that makes him better, while nerfs are the opposite. Diddy, Sheik, Bayonetta, and many other characters have been nerfed, more than once. While many have also been buffed. Puff, though, has never been buffed. #Buffpuff";
+        dbtermdesc[4] = "Nintento sometimes releases updates with buffs or nerfs in them. Buffs are updates to a character's traits or moveset that makes them better, while nerfs are the opposite. Diddy, Sheik, Bayonetta, and many other characters have been nerfed, more than once. While many have also been buffed. Puff, though, has never been buffed. #Buffpuff";
         dbtermdesc[5] = "Counter is a move that acts as a counterattack. For example, if you are marth, and hit down special (down B) right as Bowser attacks you, you will not take any damage, and you will hit him instead.";
-        dbtermdesc[6] = "Counterpicking can refer to characters or stages. If you counterpick, then you just lost a game and are changing things to try to turn the next game in your favor.";
-        dbtermdesc[7] = "Crew battles is one of the most exciting tournament formats. In crew battles, some amount of players (usually 5) are on a team, and each have three stocks. Both teams send up their first player, and they fight until one loses all his stocks. Then, if the winner still has, say, 2 stocks left, he will remain and take on the next player from the other team with just his two stocks. The first team to run out of stocks first loses.";
+        dbtermdesc[6] = "Counterpicking can refer to characters or stages. If you counterpick a stage, then you just lost a game and are changing to a stage you think you can win on. If you are playing badly, you can counterpick to a different character.";
+        dbtermdesc[7] = "Crew battles is one of the most exciting tournament formats. In crew battles, some amount of players (usually 5) are on a team, and each have three stocks. Both teams send up their first player, and they fight until one loses all his stocks. Then, if the winner still has, say, 2 stocks left, he will remain and take on the next player from the other team with just his two stocks. The first team to run out of stocks loses.";
         dbtermdesc[8] = "Dittos are simply when two players choose the same character and fight each other.";
         dbtermdesc[9] = "DSR is the rule that says that you cannot choose to return to a stage you previously won on, in the same set.";
         dbtermdesc[10] = "Frames are a unit of measurement - there are 60 frames in a second, and moves take a set amount of frames. Frame Data is the list of how long each move lasts and when it comes out, along with other stats.";
         dbtermdesc[11] = "Frame traps are certain situations in which you cannot avoid getting hit, usually occurring with moves that have low landing lag. For example, at some percents, fox can down throw you, then try to follow up with a bair. If you airdodge the bair, he will simply land and uptilt you before you can act. This is possible because his uptilt has a very quick startup.";
         dbtermdesc[12] = "If you get gimped, it means you died at a low percent, by being taken off the edge and not being able to return. Bayonetta gimps characters all the time with her forward air.";
-        dbtermdesc[13] = "Heavy Armor is a kind of armor that can break depending on an attacks knockback or damage. If it does not break, though, your character will take no damage while armor is active.";
+        dbtermdesc[13] = "Heavy Armor is a kind of armor that can break depending on an attacks knockback or damage. While the armor is active, your character will take no damage.";
         dbtermdesc[14] = "A hitbox is simply the area of your move that can hit and damage the opponent.";
         dbtermdesc[15] = "Hitstun occurs when you've been hit by an attack, and temporarily cannot act out of it. This was a much bigger deal in melee.";
         dbtermdesc[16] = "Hoo Hah is the name of Diddy Kong's down throw to up air combo, which was more deadly before he was nerfed.";
@@ -87,7 +87,7 @@ public class DBHelper extends SQLiteOpenHelper{
         dbtermdesc[19] = "While you have invincibility (like during certain moves) someone attacking you will still hit you, but you will not take any damage or knockback. This is different than intangibility because it means the attacker will still suffer hitlag.";
         dbtermdesc[20] = "Ironmans are when two players fight with every character. Usually you both start on one end of the smash list, like with mario. You set to one stock. If you lose the first round, then you move on to the next character (luigi), and your opponent sticks with mario. First one to run out of characters loses.";
         dbtermdesc[21] = "Jank is a term for when something really wacky happpens. For example, Bowser's up throw has a windbox that can cause really early deaths.";
-        dbtermdesc[22] = "Misfire is the name for when Luigi's side special move goes extremely far very quickly. The odds of this happening are ?";
+        dbtermdesc[22] = "Misfire is the name for when Luigi's side special move goes extremely far very quickly. It is based on RNG, and does not happen very often.";
         dbtermdesc[23] = "Popping off is what people do when they win a game or set, and are excited about it. It just means celebrating. It's the source of many memes.";
         dbtermdesc[24] = "Pummelling is when you have grabbed your opponent but not thrown them yet, but instead you press grab again, or A. It adds a small amount of damage everytime you pummel someone.";
         dbtermdesc[25] = "Rage is unique to smash 4, and refers to the fact that as your percent goes up, your moves have more knockback. It begins when you reach 35%, and maxes out at 150%.";
@@ -99,9 +99,9 @@ public class DBHelper extends SQLiteOpenHelper{
         dbtermdesc[31] = "Star KOs are when the character takes a long time to die, as you can see them disappearing in the background.";
         dbtermdesc[32] = "Super Armor is a type of armor in which you will still take full damage while it is active, but no knockback.";
         dbtermdesc[33] = "Tilts are one kind of attack, performed by lightly pressing the stick in a direction and then pressing A. Smash attacks are done by hard pressing a and tilting the control stick at the same time. You can also set one or the other to the c-stick in the controls, from the menu. Special attacks refer to attacks that are done by tilting the stick in a direction and pressing b (or just pressing b).";
-        dbtermdesc[34] = "Tomahawking is when you short or full hop in front of your opponent, making them think you will throw out an aerial. THey shield, and you land without doing anything, and grab them.";
+        dbtermdesc[34] = "Tomahawking is when you short or full hop in front of your opponent, making them think you will throw out an aerial. They shield, and you land without doing anything, and grab them.";
         dbtermdesc[35] = "Trading is when you hit your opponent and they hit you, and you both take damage and knockback at the same time.";
-        dbtermdesc[36] = "True combos are combos that are unavoidable, with or without DI, and will always connect if performed correctly. Most true combos start or stop being combos as percents rise.";
+        dbtermdesc[36] = "True combos are combos that are unavoidable, with or without DI, and will always connect if performed correctly. Most true combos start or stop being true as percents rise.";
         dbtermdesc[37] = "Whiffing or flubbing refers to missing a punish or just missing a move or a tech.";
         dbtermdesc[38] = "Whispy is the name of the tree on Dreamland that blows wind every so often.";
 

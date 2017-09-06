@@ -50,12 +50,12 @@ public class Terms extends AppCompatActivity{
         terms[25] = "Rage";
         terms[26] = "Read";
         terms[27] = "Sheikville, Starterville";
-        terms[28] = "Sourspot, sweetspot";
+        terms[28] = "Sourspot, Sweetspot";
         terms[29] = "Stage Spike";
         terms[30] = "Stale-Fresh";
         terms[31] = "Star KO";
         terms[32] = "Super Armor";
-        terms[33] = "Tilt, Smash, Special attacks";
+        terms[33] = "Tilt, Smash, Special Attacks";
         terms[34] = "Tomahawk";
         terms[35] = "Trade";
         terms[36] = "True Combo";

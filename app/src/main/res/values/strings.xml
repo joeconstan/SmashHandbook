@@ -12,7 +12,7 @@
     <string name="t_breverse">B reversing is done by using a special move (any move with B), and then immediately afer inputting the move, inputting the direction opposite your momentum. This will abruptly reverse your momentum, which can be very unexpected and useful. This is especially useful for Diddy, Lucario, and sheik, though almost every character can use it to some extent.</string>
     <string name="t_wavebounce">Wavebouncing is very similar to B reversing - the difference is, you will stay facing the same direction, while reversing your momentum. To do a wavebounce while you are facing right - flick the stick backwards, then press B, then immediately press the control stick forward again. This is essentially the same as doing a RAR B reverse.</string>
     <string name="t_di">DI stands for directional influence and is done by holding your stick in one direction after being hit. Performing this correctly can let you live much longer than with no DI. DI in smash 4 is different than the other games, and there is a specific way to do it. As the corners of the stages are the farthest awway, you want to hold toward them. Fox\'s upsmash, for exmaple, will send you away from him, in the direction that he is facing. So you want to DI away from him. To the right in this case. </string>
-    <string name="t_wallcling">To perform a wall cling, simply hold toward a wall while in midair. Only 5 characters can perform this - Greninja, Bayonetta, Diddy Kong, Sheik, and Lucario.</string>
+    <string name="t_wallcling">To perform a wall cling, simply hold toward a wall while in midair. Only 5 characters can perform this - Greninja, Bayonetta, Diddy Kong, Sheik, and Lucario. Wall jumps are the same, except as the name implies, you don\'t remain on the wall for more thana split second. Characters that can wall jump: Diddy, Greninja, Lucario, Bayonetta, Sheik, Mario, Toon Link, Samus, Zero Suit Samus, Little Mac, Fox, Falco, Pikachu, Duck Hunt, Captain Falcon, Villager, Wii Fit Trainer, Doctor Mario, Pac-Man, Mega Man, Sonic, Mii Brawler, Mii Gunner, Mewtwo, plus DLC</string>
     <string name="home">Home</string>
     <string name="characters">Characters</string>
     <string name="pgr">PGR</string>
@@ -102,8 +102,7 @@
     <string name= "TwoFerame">Two Frame </string>
     <string name= "WallCling">Wall Cling </string>
     <string name= "WaveBounce">Wave Bounce </string>
-
-
+    <string name="t_ilwj">temp</string>
 
 
 </resources>

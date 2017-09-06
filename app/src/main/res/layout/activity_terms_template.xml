@@ -11,9 +11,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/termstemplatetitle"
         android:textColor="@color/white"
-        android:layout_marginTop="15dp"
-        android:textSize="50sp"
+        android:layout_marginTop="15sp"
+        android:textSize="40sp"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10sp"
         />
 
 
@@ -24,6 +25,9 @@
         android:layout_below="@+id/termstemplatetitle"
         android:textColor="@color/white"
         android:textSize="15sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="20sp"
         />
 
 
