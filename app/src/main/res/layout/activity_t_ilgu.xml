@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/ilgu_iv"
         android:adjustViewBounds="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="40sp"
         />
 
     <TextView
@@ -17,10 +17,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/t_jl_text"
         android:text="@string/t_ilgu"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="15sp"
         android:textStyle="bold"
-        android:textSize="14dp"
+        android:textSize="14sp"
         android:textColor="@color/white"
         />
 

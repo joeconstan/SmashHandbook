@@ -64,10 +64,10 @@
 
     <Button
         android:id="@+id/battlefieldButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
         android:layout_below="@+id/custom_toolbar"
         android:layout_toRightOf="@+id/smashvilleButton"
         android:text="Battlefield"
@@ -78,12 +78,12 @@
 
     <Button
         android:id="@+id/towncityButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignLeft="@+id/smashvilleButton"
         android:layout_alignStart="@+id/smashvilleButton"
         android:layout_below="@+id/smashvilleButton"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="30sp"
         android:text="Town and City"
         android:background="@mipmap/tctransp"
         android:textColor="@color/white"
@@ -92,9 +92,9 @@
 
     <Button
         android:id="@+id/fdButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_marginTop="30sp"
         android:layout_below="@id/battlefieldButton"
         android:layout_alignRight="@+id/towncityButton"
         android:layout_alignEnd="@+id/battlefieldButton"
@@ -105,9 +105,9 @@
 
     <Button
         android:id="@+id/dreamlandButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
+        android:layout_marginTop="30sp"
         android:layout_alignLeft="@+id/lylatButton"
         android:layout_alignStart="@+id/towncityButton"
         android:layout_below="@+id/towncityButton"
@@ -119,12 +119,12 @@
 
     <Button
         android:id="@+id/lylatButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignEnd="@+id/fdButton"
         android:layout_below="@+id/fdButton"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
         android:layout_toRightOf="@id/dreamlandButton"
         android:background="@mipmap/lctransp"
         android:text="Lylat Cruise"

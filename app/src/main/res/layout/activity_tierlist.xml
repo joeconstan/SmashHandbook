@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/holo_red_dark"
-        android:elevation="4dp"
+        android:elevation="4sp"
         android:orientation="vertical"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -22,7 +22,7 @@
             android:layout_gravity="left"
             android:text="@string/tierList"
             android:textColor="#ffffff"
-            android:textSize="22dp" />
+            android:textSize="22sp" />
 
         <ImageButton
             android:id="@+id/toolbar_info_button"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/toolbartext"
             android:background="@null"
-            android:paddingLeft="200dp"
+            android:paddingLeft="200sp"
             android:src="@drawable/ic_info_outline" />
 
         <ImageButton
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/toolbar_info_button"
             android:background="@null"
-            android:paddingLeft="12dp"
+            android:paddingLeft="12sp"
             android:src="@drawable/ic_settings_button" />
 
 

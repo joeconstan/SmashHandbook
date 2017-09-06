@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/holo_red_dark"
-        android:elevation="4dp"
+        android:elevation="4sp"
         android:orientation="vertical"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
@@ -26,7 +26,7 @@
             android:layout_gravity="left"
             android:text="@string/home"
             android:textColor="#ffffff"
-            android:textSize="22dp" />
+            android:textSize="22sp" />
 
         <ImageButton
             android:id="@+id/toolbar_info_button"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/toolbartext"
             android:background="@null"
-            android:paddingLeft="200dp"
+            android:paddingLeft="200sp"
             android:src="@drawable/ic_info_outline"
             android:onClick="infoClick"
             />
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/toolbar_info_button"
             android:background="@null"
-            android:paddingLeft="12dp"
+            android:paddingLeft="12sp"
             android:src="@drawable/ic_settings_button" />
 
 
@@ -53,16 +53,16 @@
 
     <Button
         android:id="@+id/charactersButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/generalTechButton"
-        android:layout_marginLeft="64dp"
-        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64sp"
+        android:layout_marginStart="64sp"
         android:background="@drawable/pikachu"
         android:backgroundTint="@color/yellow"
-        android:elevation="0dp"
+        android:elevation="0sp"
         android:onClick="characterScreen"
 
         android:text="Characters"
@@ -72,11 +72,11 @@
 
     <Button
         android:id="@+id/generalTechButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_below="@+id/custom_toolbar"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
         android:layout_toRightOf="@+id/charactersButton"
         android:background="@drawable/ryu"
         android:backgroundTint="@color/red"
@@ -88,12 +88,12 @@
 
     <Button
         android:id="@+id/termsButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignLeft="@+id/charactersButton"
         android:layout_alignStart="@+id/charactersButton"
         android:layout_below="@+id/charactersButton"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="30sp"
         android:background="@drawable/termss"
         android:backgroundTint="@color/dodgerblue"
         android:onClick="termsScreen"
@@ -104,12 +104,12 @@
 
     <Button
         android:id="@+id/currentPGRButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignEnd="@+id/generalTechButton"
         android:layout_alignRight="@+id/termsButton"
         android:layout_below="@id/generalTechButton"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="30sp"
         android:background="@drawable/trophypic"
         android:backgroundTint="@color/gold"
         android:onClick="pgrScreen"
@@ -118,12 +118,12 @@
 
     <Button
         android:id="@+id/tierListButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignLeft="@+id/frameDataButton"
         android:layout_alignStart="@+id/termsButton"
         android:layout_below="@+id/termsButton"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="30sp"
         android:background="@drawable/firstplace"
         android:backgroundTint="@color/darkgreen"
         android:onClick="tierScreen"
@@ -134,12 +134,12 @@
 
     <Button
         android:id="@+id/frameDataButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="130sp"
+        android:layout_height="130sp"
         android:layout_alignRight="@+id/currentPGRButton"
         android:layout_below="@+id/currentPGRButton"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="30sp"
         android:layout_toRightOf="@id/tierListButton"
         android:background="@drawable/stages"
         android:backgroundTint="@color/purple"

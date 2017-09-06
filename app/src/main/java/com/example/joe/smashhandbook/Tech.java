@@ -42,7 +42,7 @@ public class Tech extends AppCompatActivity{
         tech_list[6] = "Shield Drop";
         tech_list[7] = "B-Reverse";
         tech_list[8] = "Wavebounce";
-        tech_list[9] = "DI/SDI";
+        tech_list[9] = "DI";
         tech_list[10] = "Wall Cling/Jump";
         //tech_list[11] = "Wall Jump";
         tech_list[11] = "Instant ledge wall jump"; //ally does this in locus' analysis stream. and again in pax west game 3 vs void second ally stock
@@ -103,7 +103,7 @@ public class Tech extends AppCompatActivity{
                         startActivity(ten_intent);
                         break;
                     case 11:
-                        Intent eleven_intent = new Intent(view.getContext(), Characters.class);
+                        Intent eleven_intent = new Intent(view.getContext(), ILWJ.class);
                         startActivity(eleven_intent);
                         break;
 
