@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/termstemplatetitle"
+        android:textColor="@color/white"
         />
 
     <TextView
@@ -17,6 +18,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/termstemplatedescription"
         android:layout_below="@+id/termstemplatetitle"
+        android:textColor="@color/white"
         />
 
 
