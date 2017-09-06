@@ -201,16 +201,16 @@ public class DBHelper extends SQLiteOpenHelper{
         //fact check doc
         desc[11] = "Duck Hunt is one of the most complex characters. His neutral is very good, and his meta has been developing quickly since Raito and the Japanese Duck Hunts started competing more.";
         desc[12] = "Fox is a very solid character. He is a rushdown, pressure-heavy type, with room for creative combos relying heavily on his uptilt. He can struggle to get kills, though he has more than a few kill confirms. His uptilt is exceptionally good at catching 2-frames.";
-        desc[13] = "Falco";
+        desc[13] = "Falco is a very slow character, and so he depends on mix-ups, reads, and combos. His back air is extremely powerful, and his forward air can combo into itself. He is not a very common pick, though he has had some results in majors.";
         desc[14] = "Ganondorf is exceptionally slow, and his moves have a lot of lag. However, he has some interesting combos, and his moves hit very hard. His upsmash has deceivingly little end lag, and can catch people off guard.";
         desc[15] = "Greninja";
         desc[16] = "Ike";
         desc[17] = "Jigglypuff is one of the worst in the game, though some don't think she belongs there. Puff has some redeeming qualities in her aerial movement, good air attacks, and highest number of jumps in the game (6). However, her ground attacks leave some to be desired. She does have true rest setups though, many of which are underused.";
-        desc[18] = "King Dedede";
+        desc[18] = "King Dedede is considered by some to be the worst in the game. His movement is slow, and most of his moveset is slow as well. He has a decent projectile game with his gordos, which can also lead to some nasty ledge traps. He suffers against a large portion of the cast, though.";
         desc[19] = "Kirby is a low tier(?) character with a good amount of winning matchups. Kirby has high combo ability on fast fallers, such as fox.";
         desc[20] = "Link";
         desc[21] = "Little Mac is definitely one of the most fun characters to play. His ground game is one of the best, and his frame data is ridiculous. He struggles, though, in the air and when recovering. For these reasons he currently has more than a few losing matchups.";
-        desc[22] = "Lucario";
+        desc[22] = "Lucario is a scary character to play against, as he has aura on his side. This means that some of his moves can start KOing at extremely early percents when he has some amount of aura.";
         //aura percents, doubles strat
         desc[23] = "Lucas";
         desc[24] = "Lucina is very similar to marth, with a few exceptions. Lucina has a slightly shorter reach, not because of the length of the sword, but because of the reach of her arm. Her sword has no tipper effect, and the entire length of it does the same amount of damage. So this makes spacing easier,but results in her not having moves as strong as marth's tippers.";
@@ -219,34 +219,37 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[27] = "Marth";
         desc[28] = "Mega Man";
         desc[29] = "Meta Knight";
-        desc[30] = "Mewtwo";
-        desc[31] = "Mii Swordfighter";
-        desc[32] = "Mii Gunner";
-        desc[33] = "Mii Brawler";
+        desc[30] = "Mewtwo is a bit of a glass cannon. He has some exciting combos and he is very fun to watch. He is floaty, so can be difficult to combo, but he is also very light and will usually die very early.";
+        desc[31] = "Mii Swordfighter desc";
+        desc[32] = "Mii Gunner desc";
+        desc[33] = "Mii Brawler desc";
         desc[34] = "Mr. G&W is 2D, and is therefore one of the lightest characters in the game. ..";
-        desc[35] = "Ness";
+        desc[35] = "Ness has the strongest throw in the game in his back throw. He can get gimped by characters that can absorb his up special, like Rosalina or Ness/Lucas.";
         desc[36] = "Olimar";
-        desc[37] = "Pac-Man";
+        desc[37] = "Pac-Man is a janky character with interesting hydrant/fruit setups. He";
         desc[38] = "Palutena"; //moves with invincibility - bair, dash attack,...anything with shield
-        desc[39] = "Peach";
-        desc[40] = "Pikachu";
+        desc[39] = "Peach is a very difficult character to play at a high level.";
+        //float cancelling, odds of pulling bombs n stuff
+        desc[40] = "Pikachu is a good all around character. He can be played very aggressively, and can go far off stage due to his very good recovery. His combos on fast fallers can be very extended and deal well over 50 damage.";
         desc[41] = "Pit is the same as Dark Pit, the only differences being speed and power. look up stats.";
         desc[42] = "ROB";
-        desc[43] = "Robin";
+        desc[43] = "Robin is a slow, zoning character, whose main projectile acts differently depending on the level of charge.";
+        //elthunder, thoron, etc
         desc[44] = "Rosalina and Luma require a very unique playstyle to play. Luma's moves have a ridiculous amount of base knockback, and";
         desc[45] = "Roy is traditionally a lower tier character but";
         desc[46] = "Ryu is one of the most exciting characters to use. He has long combo strings on most characters, some of which can lead to death. His dtilt and utilt lead to shoryu, and his nair combos into itself and into dair."; //street fighter inputs
         desc[47] = "Samus is not a very common character. She has a good combo game, and good kill power. Her roll is one of the slowest, and ";
         //shinespark
-        desc[48] = "Sheik";
-        desc[49] = "Shulk";
+        desc[48] = "Sheik is no doubt a top tier character. Sheik's combos are ridiculous, as is her recovery. Her biggest downfall is probably her weight, leading to some early deaths.";
+        desc[49] = "Shulk is not an easy character to play. He requires a high level of micromanaging with his monado arts, and can be played in many different styles.";
+        //monado art stats
         desc[50] = "Sonic";
         desc[51] = "Toon Link";
         desc[52] = "Villager";
         desc[53] = "Wario";
         desc[54] = "Wii Fit Trainer";
         desc[55] = "Yoshi";
-        desc[56] = "Zelda";
+        desc[56] = "Zelda is the definition of a glass cannon. Some consider her the worst in the game. There are good things about her though. Her neutral b has invincibility frames (check) and ";
         desc[57] = "ZSS";
 
         String[] tier = new String[58];

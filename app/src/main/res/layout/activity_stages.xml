@@ -63,7 +63,7 @@
         android:textColor="@color/white" />
 
 
-    <Button
+    <ImageButton
         android:id="@+id/battlefieldButton"
         android:layout_width="130dp"
         android:layout_height="130dp"
@@ -72,9 +72,9 @@
         android:layout_below="@+id/custom_toolbar"
         android:layout_toRightOf="@+id/smashvilleButton"
         android:text="Battlefield"
-        android:background="@drawable/ryu"
+        android:src="@drawable/bffill1"
         android:textColor="@color/white"
-        android:backgroundTint="@color/red"
+        android:background="@color/mainTheme"
 
         />
 

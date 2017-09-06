@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 public class Stages extends AppCompatActivity{
@@ -25,7 +26,7 @@ public class Stages extends AppCompatActivity{
         Button lc = (Button) findViewById(R.id.lylatButton);
         Button dl = (Button) findViewById(R.id.dreamlandButton);
         Button tnc = (Button) findViewById(R.id.towncityButton);
-        Button bf = (Button) findViewById(R.id.battlefieldButton);
+        ImageButton bf = (ImageButton) findViewById(R.id.battlefieldButton);
 
         sv.setOnClickListener(new View.OnClickListener() {
             @Override
