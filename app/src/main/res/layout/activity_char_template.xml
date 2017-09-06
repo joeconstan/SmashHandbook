@@ -60,27 +60,32 @@
         />
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
         android:id="@+id/character_name"
         android:layout_below="@+id/character_image"
         android:textColor="@color/white"
+        android:background="@color/purple"
          />
+
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:id="@+id/character_tier"
         android:layout_toRightOf="@id/character_name"
         android:layout_below="@id/character_image"
         android:textColor="@color/white"
+        android:background="@color/red"
+
         />
 
-   <!-- <TextView
+   <TextView
         android:id="@+id/notableplayers"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:layout_below="@id/character_desc_playstyle"
-      /> -->
+       android:layout_below="@id/character_name"
+
+      />
     <Button
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -93,10 +98,12 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/character_frame_data"
-        android:layout_below="@id/character_name"
-        android:layout_toRightOf="@id/character_spec_tech"
         android:textColor="@color/white"
-        />
+        android:background="@color/darkgreen"
+        android:layout_alignBaseline="@+id/notableplayers"
+        android:layout_alignBottom="@+id/notableplayers"
+        android:layout_toRightOf="@+id/character_spec_tech"
+        android:layout_toEndOf="@+id/character_spec_tech" />
 
     <TextView
         android:layout_width="match_parent"
@@ -104,10 +111,8 @@
         android:id="@+id/character_desc_playstyle"
         android:layout_below="@id/character_frame_data"
         android:textColor="@color/white"
+        android:background="@color/gold"
         />
-
-
-
 
 
 </RelativeLayout>
