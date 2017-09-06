@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainTheme"
+    android:background="@color/black"
     >
 
 
@@ -63,7 +63,7 @@
         android:textColor="@color/white" />
 
 
-    <ImageButton
+    <Button
         android:id="@+id/battlefieldButton"
         android:layout_width="130dp"
         android:layout_height="130dp"
@@ -72,9 +72,8 @@
         android:layout_below="@+id/custom_toolbar"
         android:layout_toRightOf="@+id/smashvilleButton"
         android:text="Battlefield"
-        android:src="@drawable/bffill1"
         android:textColor="@color/white"
-        android:background="@color/mainTheme"
+        android:background="@mipmap/bftransp"
 
         />
 
@@ -102,9 +101,8 @@
         android:layout_alignRight="@+id/towncityButton"
         android:layout_alignEnd="@+id/battlefieldButton"
         android:text="Final Destination"
-        android:background="@drawable/trophypic"
+        android:background="@mipmap/fdtransp"
         android:textColor="@color/white"
-        android:backgroundTint="@color/gold"
         />
 
     <Button
@@ -117,8 +115,7 @@
         android:layout_below="@+id/towncityButton"
         android:text="Dreamland"
         android:textColor="@color/white"
-        android:backgroundTint="@color/darkgreen"
-        android:background="@drawable/firstplace"
+        android:background="@mipmap/dltransp"
 
         />
 
@@ -131,9 +128,8 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/dreamlandButton"
-        android:background="@drawable/stages"
+        android:background="@mipmap/lctransp"
         android:text="Lylat Cruise"
-        android:backgroundTint="@color/purple"
         android:textColor="@color/white"
 
 

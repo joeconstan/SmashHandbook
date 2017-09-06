@@ -26,7 +26,7 @@ public class Stages extends AppCompatActivity{
         Button lc = (Button) findViewById(R.id.lylatButton);
         Button dl = (Button) findViewById(R.id.dreamlandButton);
         Button tnc = (Button) findViewById(R.id.towncityButton);
-        ImageButton bf = (ImageButton) findViewById(R.id.battlefieldButton);
+        Button bf = (Button) findViewById(R.id.battlefieldButton);
 
         sv.setOnClickListener(new View.OnClickListener() {
             @Override
