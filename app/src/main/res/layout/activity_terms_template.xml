@@ -11,7 +11,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/termstemplatetitle"
         android:textColor="@color/white"
+        android:layout_marginTop="15dp"
+        android:textSize="50sp"
+        android:layout_centerHorizontal="true"
         />
+
 
     <TextView
         android:layout_width="match_parent"
@@ -19,6 +23,7 @@
         android:id="@+id/termstemplatedescription"
         android:layout_below="@+id/termstemplatetitle"
         android:textColor="@color/white"
+        android:textSize="15sp"
         />
 
 

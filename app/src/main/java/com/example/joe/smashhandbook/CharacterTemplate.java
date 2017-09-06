@@ -41,7 +41,7 @@ public class CharacterTemplate extends AppCompatActivity{
         Cursor results = sqLiteDatabase.query(tableName, null, selection, new String[] {selstr}, null, null, null);
         results.moveToFirst();
         TextView tier = (TextView) findViewById(R.id.character_tier);
-        TextView character_name = (TextView) findViewById(R.id.character_name);
+       // TextView character_name = (TextView) findViewById(R.id.character_name);
         TextView desc_plays = (TextView) findViewById(R.id.character_desc_playstyle);
         TextView frame_data = (TextView) findViewById(R.id.character_frame_data);
         ImageView char_pic = (ImageView) findViewById(R.id.character_image);
@@ -53,8 +53,8 @@ public class CharacterTemplate extends AppCompatActivity{
         String descData = results.getString(results.getColumnIndex("description"));
 
         char_pic.setImageResource(R.drawable.pikachu);
-        character_name.setText(nameData);
-        tier.setText(tierData);
+        tb.setTitle(nameData);
+        tier.setText("TIER:" + tierData);
         desc_plays.setText(descStr + descData);
         spec_tech_button.setText("LOL");
         frame_data.setText("HAHAHAHA");
