@@ -2,12 +2,10 @@ package com.example.joe.smashhandbook;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
-        //add MU's?
+        //add MU's in update
 
     }
 
@@ -61,13 +59,6 @@ public class MainActivity extends AppCompatActivity{
     }
 
     @Override
-    public boolean onPrepareOptionsMenu(final Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //if (item.getItemId()==R.id.toolbar_info_button) {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
@@ -93,8 +84,6 @@ public class MainActivity extends AppCompatActivity{
         AlertDialog alert11 = builder1.create();
         alert11.show();
         //}
-        String str = Integer.toString(item.getItemId());
-        //Log.v(TAG, str);
         return super.onOptionsItemSelected(item);
     }
 }

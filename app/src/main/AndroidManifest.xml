@@ -28,9 +28,6 @@
         <activity android:name=".TierList">
 
         </activity>
-        <activity android:name=".Bayo">
-
-        </activity>
         <activity android:name=".PerfectPivot">
 
         </activity>
