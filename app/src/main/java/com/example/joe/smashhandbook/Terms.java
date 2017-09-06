@@ -21,7 +21,7 @@ public class Terms extends AppCompatActivity{
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
 
-        String[] terms = new String[38];
+        String[] terms = new String[39];
         terms[0] = "Air Dodge";
         terms[1] = "Ban";
         terms[2] = "Blastzone";

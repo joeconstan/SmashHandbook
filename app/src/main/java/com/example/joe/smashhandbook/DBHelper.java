@@ -118,7 +118,7 @@ public class DBHelper extends SQLiteOpenHelper{
     public void createChar(SQLiteDatabase db){
         db.execSQL(
                 "create table if not exists characters " +
-                        "(id integer primary key, name text, description text, tier text, framedatalink text, type text, weight text, fallspeed text, players text)" //plus picture name or pic somehow
+                        "(id integer primary key, name text, description text, tier text, type text, weight text, fallspeed text, players text)" //plus picture name or pic somehow
         );
 
 

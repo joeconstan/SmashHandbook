@@ -35,7 +35,9 @@
             android:layout_toRightOf="@+id/toolbartext"
             android:background="@null"
             android:paddingLeft="200dp"
-            android:src="@drawable/ic_info_outline" />
+            android:src="@drawable/ic_info_outline"
+            android:onClick="infoClick"
+            />
 
         <ImageButton
             android:id="@+id/toolbar_settings_button"

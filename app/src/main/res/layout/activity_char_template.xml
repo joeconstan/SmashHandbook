@@ -85,20 +85,12 @@
         android:layout_below="@+id/character_tier"
         />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/character_frame_data"
-        android:textColor="@color/white"
-        android:layout_below="@+id/notableplayers"
-        android:layout_alignParentStart="true"
-         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/character_desc_playstyle"
-        android:layout_below="@id/character_frame_data"
+        android:layout_below="@id/character_spec_tech"
         android:textColor="@color/white"
 
         />
