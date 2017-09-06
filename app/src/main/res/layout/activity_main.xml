@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/black"
-    tools:context=".MainActivity"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    tools:context=".MainActivity">
+
     <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/custom_toolbar"
@@ -56,13 +56,15 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/generalTechButton"
-        android:layout_marginLeft="60dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
         android:background="@drawable/pikachu"
         android:backgroundTint="@color/yellow"
+        android:elevation="0dp"
         android:onClick="characterScreen"
-        android:text="Characters"
 
+        android:text="Characters"
+        android:textAlignment="center"
         android:textColor="@color/white" />
 
 
@@ -70,15 +72,15 @@
         android:id="@+id/generalTechButton"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="30dp"
         android:layout_below="@+id/custom_toolbar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
         android:layout_toRightOf="@+id/charactersButton"
-        android:text="General Tech"
         android:background="@drawable/ryu"
-        android:textColor="@color/white"
         android:backgroundTint="@color/red"
         android:onClick="techScreen"
+        android:text="General Tech"
+        android:textColor="@color/white"
 
         />
 
@@ -90,42 +92,41 @@
         android:layout_alignStart="@+id/charactersButton"
         android:layout_below="@+id/charactersButton"
         android:layout_marginTop="30dp"
-        android:text="Terms"
         android:background="@drawable/termss"
-        android:textColor="@color/white"
         android:backgroundTint="@color/dodgerblue"
         android:onClick="termsScreen"
+        android:text="Terms"
+        android:textAlignment="center"
 
-        />
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/currentPGRButton"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="30dp"
-        android:layout_below="@id/generalTechButton"
-        android:layout_alignRight="@+id/termsButton"
         android:layout_alignEnd="@+id/generalTechButton"
-        android:text="Current PGR"
+        android:layout_alignRight="@+id/termsButton"
+        android:layout_below="@id/generalTechButton"
+        android:layout_marginTop="30dp"
         android:background="@drawable/trophypic"
-        android:textColor="@color/white"
         android:backgroundTint="@color/gold"
         android:onClick="pgrScreen"
-        />
+        android:text="Current PGR"
+        android:textColor="@color/white" />
 
     <Button
         android:id="@+id/tierListButton"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginTop="30dp"
         android:layout_alignLeft="@+id/frameDataButton"
         android:layout_alignStart="@+id/termsButton"
         android:layout_below="@+id/termsButton"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/firstplace"
+        android:backgroundTint="@color/darkgreen"
+        android:onClick="tierScreen"
         android:text="Tier List"
         android:textColor="@color/white"
-        android:backgroundTint="@color/darkgreen"
-        android:background="@drawable/firstplace"
-        android:onClick="tierScreen"
 
         />
 
@@ -139,10 +140,10 @@
         android:layout_marginTop="30dp"
         android:layout_toRightOf="@id/tierListButton"
         android:background="@drawable/stages"
-        android:text="Stages"
         android:backgroundTint="@color/purple"
-        android:textColor="@color/white"
         android:onClick="stageScreen"
+        android:text="Stages"
+        android:textColor="@color/white"
 
 
         />
