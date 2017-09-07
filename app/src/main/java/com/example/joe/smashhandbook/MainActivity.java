@@ -6,9 +6,14 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 
 public class MainActivity extends AppCompatActivity{
@@ -18,10 +23,22 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        AdRequest request = new AdRequest.Builder().addTestDevice("4A51EAF0C631CA74D07FC7762D27FCD0")
+                .build();
+
+        Boolean ans = request.isTestDevice(this);
+        if (ans)
+            Log.v(TAG, "all good");
+
+
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
-        //add MU's in update
 
+        MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
+
+        AdView adView = (AdView) findViewById(R.id.bannerAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
     }
 
 
