@@ -192,7 +192,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[4] = "Charizard sucks.";
         desc[5] = "Cloud is clearly the best character in doubles, and top 3 in singles. He has amazing aerials, amazing movement options, and great mixups. His only staggering weakness is his short and linear recovery.";
         //snapping to ledge with upb - no vertical momentum
-        desc[6]= "Corrin";
+        desc[6]= "Corrin is a great juggler and good at racking up damage. Her kill power is nothing to laught at either, and she is more mobile than she seems.";
         desc[7] = "Dark Pit is the least used character in the game. There are no glaring weaknesses with Dark Pit, but there are also no glowing strengths. Dark Pit is a very honest, all-around, average character.";
         desc[8] = "Diddy is a great all around character who can be played aggressively or defensively. His meta has been pushed farther than many characters, though there are still many useful techniques not being used by diddy mains. His play centers around his banana, giving him great stage control and easy kill confirms. Watch ZeRo play to learn the basic bread and butter combos, and watch zinoto to see some unique combos and set ups.";
         desc[9] = "Donkey Kong has been on the rise lately, with HIKARU and Konga doing well, as well as Tweek and Larry using him as a secondary. He is a grappler through and through, and can kill most characters at extremely low percents. He does struggle at landing, though.";
@@ -204,11 +204,11 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[13] = "Falco is a very slow character, and so he depends on mix-ups, reads, and combos. His back air is extremely powerful, and his forward air can combo into itself. He is not a very common pick, though he has had some results in majors.";
         desc[14] = "Ganondorf is exceptionally slow, and his moves have a lot of lag. However, he has some interesting combos, and his moves hit very hard. His upsmash has deceivingly little end lag, and can catch people off guard.";
         desc[15] = "Greninja";
-        desc[16] = "Ike";
+        desc[16] = "Ike is slow and therefore depends on mixups, footsies, and reads. However he has some basic throw combos to rack up damage, and very solid killing power in many of his moves.";
         desc[17] = "Jigglypuff is one of the worst in the game, though some don't think she belongs there. Puff has some redeeming qualities in her aerial movement, good air attacks, and highest number of jumps in the game (6). However, her ground attacks leave some to be desired. She does have true rest setups though, many of which are underused.";
         desc[18] = "King Dedede is considered by some to be the worst in the game. His movement is slow, and most of his moveset is slow as well. He has a decent projectile game with his gordos, which can also lead to some nasty ledge traps. He suffers against a large portion of the cast, though.";
         desc[19] = "Kirby is a low tier(?) character with a good amount of winning matchups. Kirby has high combo ability on fast fallers, such as fox.";
-        desc[20] = "Link";
+        desc[20] = "Link ";
         desc[21] = "Little Mac is definitely one of the most fun characters to play. His ground game is one of the best, and his frame data is ridiculous. He struggles, though, in the air and when recovering. For these reasons he currently has more than a few losing matchups.";
         desc[22] = "Lucario is a scary character to play against, as he has aura on his side. This means that some of his moves can start KOing at extremely early percents when he has some amount of aura.";
         //aura percents, doubles strat
@@ -217,7 +217,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[25] = "Luigi is represented at the highest level by only a single player. He has very low friction, and therefore relies heavily on power shielding for counterattacks. He has endless combos out of down throw";
         desc[26] = "Mario has some of the most exciting combos in the game. Most of them start with a down throw, though certain characters are able to break out of the typical combo chains. Therefore mario mains must mix up their combo strategies. He has decent kill power, but not a lot of true kill combos at any percent.";
         desc[27] = "Marth";
-        desc[28] = "Mega Man";
+        desc[28] = "Mega Man is a very zone-based, stage-control character. His numerous projectiles make him frustrating to play against, and";
         desc[29] = "Meta Knight";
         desc[30] = "Mewtwo is a bit of a glass cannon. He has some exciting combos and he is very fun to watch. He is floaty, so can be difficult to combo, but he is also very light and will usually die very early.";
         desc[31] = "Mii Swordfighter desc";
@@ -244,11 +244,11 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[49] = "Shulk is not an easy character to play. He requires a high level of micromanaging with his monado arts, and can be played in many different styles.";
         //monado art stats
         desc[50] = "Sonic";
-        desc[51] = "Toon Link";
+        desc[51] = "Toon Link is a better version of Link. He ";
         desc[52] = "Villager";
-        desc[53] = "Wario";
+        desc[53] = "Wario's moves are slow, and ";
         desc[54] = "Wii Fit Trainer";
-        desc[55] = "Yoshi";
+        desc[55] = "Yoshi is the character everyone used to think was underrated. He has never seen much success.";
         desc[56] = "Zelda is the definition of a glass cannon. Some consider her the worst in the game. There are good things about her though. Her neutral b has invincibility frames (check) and ";
         desc[57] = "ZSS";
 
