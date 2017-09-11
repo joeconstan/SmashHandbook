@@ -556,7 +556,7 @@ public class DBHelper extends SQLiteOpenHelper{
         players[55] = "Sky, Raptor, Papa Wall, Seth, Ron, Xeon";
         players[56] = "Purple Guy, Riot, ven, Fairess";
         players[57] = "Nairo, Marss, ANTi, quiK, Choco, Griffith, Luhtie, Mistake, Remzi";
-        
+
 
         for (int i=0;i<58;i++) {
             ContentValues values = new ContentValues(7);
