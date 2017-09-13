@@ -27,6 +27,7 @@ public class CharacterTemplate extends AppCompatActivity{
         setContentView(R.layout.activity_char_template);
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
+        getSupportActionBar().setTitle(" ");
         Bundle bundle = getIntent().getExtras();
         int sel = bundle.getInt("char_select");
         sel++;
@@ -41,7 +42,7 @@ public class CharacterTemplate extends AppCompatActivity{
         Cursor results = sqLiteDatabase.query(tableName, null, selection, new String[] {selstr}, null, null, null);
         results.moveToFirst();
         TextView tier = (TextView) findViewById(R.id.character_tier);
-       // TextView character_name = (TextView) findViewById(R.id.character_name);
+        // TextView character_name = (TextView) findViewById(R.id.character_name);
         TextView desc_plays = (TextView) findViewById(R.id.character_desc_playstyle);
         ImageView char_pic = (ImageView) findViewById(R.id.character_image);
         Button spec_tech_button = (Button) findViewById(R.id.character_spec_tech);
@@ -52,7 +53,7 @@ public class CharacterTemplate extends AppCompatActivity{
         String descData = results.getString(results.getColumnIndex("description"));
 
         char_pic.setImageResource(R.drawable.pikachu);
-        tb.setTitle(nameData);
+        getSupportActionBar().setTitle(nameData);
         tier.setText("TIER:" + tierData);
         desc_plays.setText(descStr + descData);
         spec_tech_button.setText("Tech");

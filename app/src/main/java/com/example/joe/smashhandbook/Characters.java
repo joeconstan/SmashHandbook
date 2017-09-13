@@ -99,10 +99,9 @@ public class Characters extends AppCompatActivity{
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        Intent intent = new Intent(view.getContext(), CharacterTemplate.class);
-                        intent.putExtra("char_select", position);
-                        startActivity(intent);
-
+                Intent intent = new Intent(view.getContext(), CharacterTemplate.class);
+                intent.putExtra("char_select", position);
+                startActivity(intent);
 
             }
         });

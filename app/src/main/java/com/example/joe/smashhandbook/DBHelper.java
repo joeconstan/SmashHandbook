@@ -575,10 +575,8 @@ public class DBHelper extends SQLiteOpenHelper{
                             allRows.getString(allRows.getColumnIndex(name)));
                 }
                 tableString += "\n";
-
             } while (allRows.moveToNext());
         }
-
         return tableString;
     }*/
 
