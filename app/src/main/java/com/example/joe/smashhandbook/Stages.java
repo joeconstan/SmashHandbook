@@ -87,12 +87,6 @@ public class Stages extends AppCompatActivity{
 
 
     }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //this adds the icons to the action bar
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
 
     @Override

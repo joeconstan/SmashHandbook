@@ -31,11 +31,11 @@ public class Tech extends AppCompatActivity{
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
-        if (getActionBar()!=null) {
+        if (getActionBar() != null) {
             getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
             getActionBar().setCustomView(R.layout.action_bar_tech);
         }
-        if (getSupportActionBar()!=null) { // compatible with other versions
+        if (getSupportActionBar() != null) { // compatible with other versions
             getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
             getSupportActionBar().setCustomView(R.layout.action_bar_tech);
         }
@@ -56,14 +56,14 @@ public class Tech extends AppCompatActivity{
         tech_list[11] = "Wavebounce";
 
 
-        ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, tech_list);
+        ArrayAdapter<String> tech_listAdapter = new ArrayAdapter<String>(this, R.layout.list_item_white, R.id.list_item_white_id, tech_list);
         ListView listView = (ListView) findViewById(R.id.at_listview);
         listView.setAdapter(tech_listAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position){
+                switch (position) {
 
                     case 0:
                         Intent zero_intent = new Intent(view.getContext(), BReverse.class);
@@ -115,18 +115,11 @@ public class Tech extends AppCompatActivity{
                         break;
 
 
-
                     default:
                         break;
                 }
             }
         });
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //this adds the icons to the action bar
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
     }
 
 

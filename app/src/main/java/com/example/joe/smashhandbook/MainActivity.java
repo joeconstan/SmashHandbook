@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -67,14 +65,24 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //this adds the icons to the action bar
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
-    @Override
+    //------toolbar onClicks--find a way to keep in single class, not in every activity---------------------------------
+    public void infoClick(View view){
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setMessage("Credit to:\n2gg, VGBootCamp, TimmyTims, Master0fHyrule, BeefySmashDoods, UnrivaledTournaments, MySmashCorner, Locus, Smashboards").setCancelable(true).setPositiveButton(
+                "Close",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        builder1.create().show();
+    }
+    public void settingsClick(View view){startActivity(new Intent(view.getContext(), AppSettings.class));}
+    //-----------------------------------------------------------------------------------------------------------------
+
+
+  /*  @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         //if (item.getItemId()==R.id.toolbar_info_button) {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
@@ -94,5 +102,5 @@ public class MainActivity extends AppCompatActivity{
         alert11.show();
         //}
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
