@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         //if (item.getItemId()==R.id.toolbar_info_button) {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-        builder1.setMessage("Credit to:\n2gg, VGBootCamp, TimmyTims, Master0fHyrule, BeefySmashDoods, UnrivaledTournaments, MySmashCorner, Locus");
+        builder1.setMessage("Credit to:\n2gg, VGBootCamp, TimmyTims, Master0fHyrule, BeefySmashDoods, UnrivaledTournaments, MySmashCorner, Locus, Smashboards");
         builder1.setCancelable(true);
 
         builder1.setPositiveButton(

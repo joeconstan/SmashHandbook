@@ -24,6 +24,7 @@ public class Stages extends AppCompatActivity{
 
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
+
         MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
         AdView adView = (AdView) findViewById(R.id.stagesAd);
         AdRequest adRequest = new AdRequest.Builder().build();
