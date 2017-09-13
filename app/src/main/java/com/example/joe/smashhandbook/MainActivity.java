@@ -1,5 +1,6 @@
 package com.example.joe.smashhandbook;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -70,9 +71,42 @@ public class MainActivity extends AppCompatActivity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //this adds the icons to the action bar
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        //xgetMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
+    //------toolbar onClicks--find a way to keep in single class, not in every activity---------------------------------
+    public void infoClick(View view){
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setMessage("Credit to:\n2gg, VGBootCamp, TimmyTims, Master0fHyrule, BeefySmashDoods, UnrivaledTournaments, MySmashCorner, Locus, Smashboards");
+        builder1.setCancelable(true);
+        builder1.setPositiveButton(
+                "Close",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert11 = builder1.create();
+        alert11.show();
+    }
+
+    public void settingsClick(View view){
+        AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+        builder1.setMessage("How bout them settings");
+        builder1.setCancelable(true);
+        builder1.setPositiveButton(
+                "Close",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alert11 = builder1.create();
+        alert11.show();
+    }
+    //------toolbar onClicks--find a way to keep in single class, not in every activity---------------------------------
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

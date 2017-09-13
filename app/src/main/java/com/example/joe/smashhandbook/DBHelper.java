@@ -234,7 +234,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[47] = "Samus is not a very common character. She has a good combo game, and good kill power. Her roll is one of the slowest, and ";
         desc[48] = "Sheik is no doubt a top tier character. Sheik's combos are ridiculous, as is her recovery. Her biggest downfall is probably her weight, leading to some early deaths.";
         desc[49] = "Shulk is not an easy character to play. He requires a high level of micromanaging with his monado arts, and can be played in many different styles.";
-        desc[50] = "Sonic";
+        desc[50] = "Sonic is a high tier, and can be played campy or aggressively. ";
         desc[51] = "Toon Link is a better version of Link. He ";
         desc[52] = "Villager";
         desc[53] = "Wario's moves are slow, and ";
