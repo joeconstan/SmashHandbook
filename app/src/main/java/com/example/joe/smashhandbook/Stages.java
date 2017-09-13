@@ -83,16 +83,11 @@ public class Stages extends AppCompatActivity{
                 startActivity(intent);
             }
         });
-
-
-
     }
 
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }

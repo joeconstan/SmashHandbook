@@ -111,8 +111,6 @@ public class Characters extends AppCompatActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }

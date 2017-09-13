@@ -15,8 +15,6 @@ public class TierList extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tierlist);
-        //needs a graphic instead of a listview
-        //https://smashboards.com/tiers/#WiiU
 
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
@@ -24,12 +22,6 @@ public class TierList extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //this adds the icons to the action bar
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
 
     @Override

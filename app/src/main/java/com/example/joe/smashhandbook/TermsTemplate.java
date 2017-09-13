@@ -19,8 +19,7 @@ public class TermsTemplate extends AppCompatActivity {
         setContentView(R.layout.activity_terms_template);
 
         Bundle bundle = getIntent().getExtras();
-        int sel = bundle.getInt("term_select");
-        sel++;
+        int sel = (bundle.getInt("term_select"))+1;
         String selstr = Integer.toString(sel);
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
@@ -45,12 +44,6 @@ public class TermsTemplate extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        //this adds the icons to the action bar
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
 
 
     @Override
