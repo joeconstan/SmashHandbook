@@ -97,6 +97,9 @@
         <activity android:name=".ILWJ">
 
         </activity>
+        <activity android:name=".AppSettings">
+
+        </activity>
     </application>
 
 </manifest>
