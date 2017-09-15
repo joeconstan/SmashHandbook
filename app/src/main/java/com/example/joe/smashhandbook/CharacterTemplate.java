@@ -1,6 +1,7 @@
 package com.example.joe.smashhandbook;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.DatabaseUtils;
@@ -52,13 +53,18 @@ public class CharacterTemplate extends AppCompatActivity{
         String nameData = results.getString(results.getColumnIndex("name"));
         String descData = results.getString(results.getColumnIndex("description"));
 
-        char_pic.setImageResource(R.drawable.pikachu);
+        //char_pic.setImageResource(R.drawable.pikachu);
         getSupportActionBar().setTitle(nameData);
         tier.setText("TIER:" + tierData);
         desc_plays.setText(descStr + descData);
         spec_tech_button.setText("Tech");
 
+        //get the name of picture and set it as drawable resource
+        Context context = char_pic.getContext();
+        int id = context.getResources().getIdentifier(results.getString(results.getColumnIndex("picture")), "drawable", context.getPackageName());
+        char_pic.setImageResource(id);
         results.close();
+
     }
 
 

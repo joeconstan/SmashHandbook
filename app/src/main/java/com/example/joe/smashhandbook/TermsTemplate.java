@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -30,7 +31,6 @@ public class TermsTemplate extends AppCompatActivity {
 
         TextView tvtitle = (TextView) findViewById(R.id.termstemplatetitle);
         TextView tvdesc = (TextView) findViewById(R.id.termstemplatedescription);
-
         String tableName = "terms";
         String selection = "id=?";
         Cursor results = sqLiteDatabase.query(tableName, null, selection, new String[] {selstr}, null, null, null);
@@ -38,7 +38,6 @@ public class TermsTemplate extends AppCompatActivity {
 
         tvtitle.setText(results.getString(results.getColumnIndex("termname")));
         tvdesc.setText(results.getString(results.getColumnIndex("termdescription")));
-
 
         results.close();
 

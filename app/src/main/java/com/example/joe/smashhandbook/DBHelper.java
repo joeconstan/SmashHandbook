@@ -118,7 +118,7 @@ public class DBHelper extends SQLiteOpenHelper{
     public void createChar(SQLiteDatabase db){
         db.execSQL(
                 "create table if not exists characters " +
-                        "(id integer primary key, name text, description text, tier text, type text, weight text, fallspeed text, players text)" //plus picture name or pic somehow
+                        "(id integer primary key, name text, description text, tier text, type text, weight text, fallspeed text, players text, picture text)" //plus picture name or pic somehow
         );
 
 
@@ -549,8 +549,74 @@ public class DBHelper extends SQLiteOpenHelper{
         players[57] = "Nairo, Marss, ANTi, quiK, Choco, Griffith, Luhtie, Mistake, Remzi";
 
 
+
+
+
+        String[] pictures = new String[58];
+        pictures[0] = "Bayonetta";
+        pictures[1] = "Bowser";
+        pictures[2] = "BowserJr.";
+        pictures[3] = "CaptainFalcon";
+        pictures[4] = "Charizard";
+        pictures[5] = "Cloud";
+        pictures[6]= "Corrin";
+        pictures[7] = "DarkPit";
+        pictures[8] = "DiddyKong";
+        pictures[9] = "DonkeyKong";
+        pictures[10] = "DrMario";
+        pictures[11] = "DuckHunt";
+        pictures[12] = "Fox";
+        pictures[13] = "Falco";
+        pictures[14] = "Ganondorf";
+        pictures[15] = "Greninja";
+        pictures[16] = "Ike";
+        pictures[17] = "Jigglypuff";
+        pictures[18] = "KingDedede";
+        pictures[19] = "Kirby";
+        pictures[20] = "Link";
+        pictures[21] = "LittleMac";
+        pictures[22] = "Lucario";
+        pictures[23] = "Lucas";
+        pictures[24] = "Lucina";
+        pictures[25] = "Luigi";
+        pictures[26] = "Mario";
+        pictures[27] = "Marth";
+        pictures[28] = "Mega Man";
+        pictures[29] = "Meta Knight";
+        pictures[30] = "Mewtwo";
+        pictures[31] = "Mii Swordfighter";
+        pictures[32] = "Mii Gunner";
+        pictures[33] = "Mii Brawler";
+        pictures[34] = "Mr. G&W";
+        pictures[35] = "Ness";
+        pictures[36] = "Olimar";
+        pictures[37] = "Pac-Man";
+        pictures[38] = "Palutena";
+        pictures[39] = "Peach";
+        pictures[40] = "Pikachupic";
+        pictures[41] = "Pit";
+        pictures[42] = "ROB";
+        pictures[43] = "Robin";
+        pictures[44] = "Rosalina";
+        pictures[45] = "Roy";
+        pictures[46] = "Ryupic";
+        pictures[47] = "Samus";
+        pictures[48] = "Sheik";
+        pictures[49] = "Shulk";
+        pictures[50] = "Sonic";
+        pictures[51] = "Toon Link";
+        pictures[52] = "Villager";
+        pictures[53] = "Wario";
+        pictures[54] = "Wii Fit Trainer";
+        pictures[55] = "Yoshi";
+        pictures[56] = "Zelda";
+        pictures[57] = "ZSS";
+
+
+
+
         for (int i=0;i<58;i++) {
-            ContentValues values = new ContentValues(7);
+            ContentValues values = new ContentValues(8);
             values.put("name", name[i]);
             values.put("description", desc[i]);
             values.put("tier", tier[i]);
@@ -558,6 +624,7 @@ public class DBHelper extends SQLiteOpenHelper{
             values.put("type", type[i]);
             values.put("fallspeed", fallspeed[i]);
             values.put("players", players[i]);
+            values.put("picture", pictures[i]);
             db.insert("characters", null, values);
         }
 
