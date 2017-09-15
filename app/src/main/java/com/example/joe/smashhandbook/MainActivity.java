@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity{
     //------toolbar onClicks--find a way to keep in single class, not in every activity---------------------------------
     public void infoClick(View view){
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
-        builder1.setMessage("Credit to:\n2gg, VGBootCamp, TimmyTims, Master0fHyrule, BeefySmashDoods, UnrivaledTournaments, MySmashCorner, Locus, Smashboards").setCancelable(true).setPositiveButton(
+        builder1.setMessage("Credit to:\n2gg, VGBootCamp, TimmyTims, Master0fHyrule, BeefySmashDoods, SSBWiki, UnrivaledTournaments, MySmashCorner, Locus, Smashboards").setCancelable(true).setPositiveButton(
                 "Close",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
