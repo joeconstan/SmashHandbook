@@ -57,17 +57,17 @@
     <ImageView
         android:id="@+id/character_image"
         android:layout_below="@id/custom_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_centerHorizontal="true"
         />
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="100sp"
         android:id="@+id/character_tier"
         android:layout_below="@id/character_image"
         android:textColor="@color/white"
-
         android:textSize="30sp"
         android:layout_centerHorizontal="true"
 
