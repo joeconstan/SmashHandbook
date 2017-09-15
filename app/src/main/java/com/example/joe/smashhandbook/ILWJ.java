@@ -21,7 +21,7 @@ public class ILWJ extends AppCompatActivity{
 
         ImageView IMAGE_VIEW = (ImageView) findViewById(R.id.ilwj_iv);
         GlideDrawableImageViewTarget iv = new GlideDrawableImageViewTarget(IMAGE_VIEW);
-        Glide.with(this).load(R.raw.croppedilwjgif).into((iv));
+        Glide.with(this).load(R.raw.ilwjgif).into((iv));
 
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);

@@ -21,7 +21,7 @@ public class WallCling extends AppCompatActivity{
 
         ImageView IMAGE_VIEW = (ImageView) findViewById(R.id.wallcling_iv);
         GlideDrawableImageViewTarget iv = new GlideDrawableImageViewTarget(IMAGE_VIEW);
-        Glide.with(this).load(R.raw.wallclinggif2).into((iv));
+        Glide.with(this).load(R.raw.wallclinggif).into((iv));
 
 
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);

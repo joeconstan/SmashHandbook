@@ -21,7 +21,7 @@ public class BReverse extends AppCompatActivity{
 
         ImageView IMAGE_VIEW = (ImageView) findViewById(R.id.breverse_iv);
         GlideDrawableImageViewTarget iv = new GlideDrawableImageViewTarget(IMAGE_VIEW);
-        Glide.with(this).load(R.raw.breversegif).into((iv));
+        Glide.with(this).load(R.raw.breverse2).into((iv));
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
 
@@ -29,10 +29,6 @@ public class BReverse extends AppCompatActivity{
 
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
-        return super.onOptionsItemSelected(item);
-    }
+    public boolean onOptionsItemSelected(MenuItem item) {return super.onOptionsItemSelected(item);}
 
 }
