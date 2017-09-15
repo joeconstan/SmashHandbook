@@ -53,7 +53,7 @@ public class CharacterTemplate extends AppCompatActivity{
         String nameData = results.getString(results.getColumnIndex("name"));
         String descData = results.getString(results.getColumnIndex("description"));
 
-        //char_pic.setImageResource(R.drawable.pikachu);
+        //char_pic.setImageResource(R.drawable.charizard);
         getSupportActionBar().setTitle(nameData);
         tier.setText("TIER:" + tierData);
         desc_plays.setText(descStr + descData);
@@ -61,7 +61,9 @@ public class CharacterTemplate extends AppCompatActivity{
 
         //get the name of picture and set it as drawable resource
         Context context = char_pic.getContext();
-        int id = context.getResources().getIdentifier(results.getString(results.getColumnIndex("picture")), "drawable", context.getPackageName());
+        String picname = "@drawable/" + results.getString(results.getColumnIndex("picture"));
+        Log.v(TAG, picname);
+        int id = context.getResources().getIdentifier(picname, "drawable", context.getPackageName());
         char_pic.setImageResource(id);
         results.close();
 
