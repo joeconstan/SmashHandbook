@@ -31,16 +31,6 @@ public class Tech extends AppCompatActivity{
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
-        if (getActionBar() != null) {
-            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
-            getActionBar().setCustomView(R.layout.action_bar_tech);
-        }
-        if (getSupportActionBar() != null) { // compatible with other versions
-            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
-            getSupportActionBar().setCustomView(R.layout.action_bar_tech);
-        }
-
-
         String[] tech_list = new String[12];
         tech_list[0] = "B-Reverse";
         tech_list[1] = "Dash Dance";

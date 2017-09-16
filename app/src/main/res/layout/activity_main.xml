@@ -20,36 +20,47 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
-        <TextView
-            android:id="@+id/toolbartext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="@string/home"
-            android:textColor="#ffffff"
-            android:textSize="22sp" />
 
-        <ImageButton
-            android:id="@+id/toolbar_info_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:paddingLeft="200sp"
-            android:src="@drawable/ic_info_outline"
-            android:onClick="infoClick"
-            />
 
-        <ImageButton
-            android:id="@+id/toolbar_settings_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/toolbar_info_button"
-            android:background="@null"
-            android:paddingLeft="12sp"
-            android:src="@drawable/ic_settings_button"
-            android:onClick="settingsClick"
-            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <TextView
+                android:id="@+id/toolbartext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/home"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/toolbar_info_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/toolbar_settings_button"
+                android:background="@null"
+                android:src="@drawable/ic_info_outline"
+                android:paddingRight="10sp"
+
+
+                />
+
+            <ImageButton
+                android:id="@+id/toolbar_settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/ic_settings_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:paddingRight="20sp"
+
+                />
+
+        </RelativeLayout>
 
     </android.support.v7.widget.Toolbar>
 
