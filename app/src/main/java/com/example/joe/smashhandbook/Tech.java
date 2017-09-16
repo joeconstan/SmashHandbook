@@ -31,6 +31,8 @@ public class Tech extends AppCompatActivity{
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
 
+
+
         String[] tech_list = new String[12];
         tech_list[0] = "B-Reverse";
         tech_list[1] = "Dash Dance";
