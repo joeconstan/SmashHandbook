@@ -47,18 +47,16 @@ public class CharacterTemplate extends AppCompatActivity{
         TextView desc_plays = (TextView) findViewById(R.id.character_desc_playstyle);
         ImageView char_pic = (ImageView) findViewById(R.id.character_image);
         Button spec_tech_button = (Button) findViewById(R.id.character_spec_tech);
-
+        Button not_play = (Button)  findViewById(R.id.char_notableplayers);
         String descStr = "Playstyle: "+ results.getString(results.getColumnIndex("type")) + " \nWeight: " + results.getString(results.getColumnIndex("weight")) + "\nFallspeed: " + results.getString(results.getColumnIndex("fallspeed")) + "\n\n";
         String tierData = results.getString(results.getColumnIndex("tier"));
         String nameData = results.getString(results.getColumnIndex("name"));
         String descData = results.getString(results.getColumnIndex("description"));
-
         //char_pic.setImageResource(R.drawable.charizard);
         getSupportActionBar().setTitle(nameData);
         tier.setText("Tier:" + tierData);
         desc_plays.setText(descStr + descData);
         spec_tech_button.setText(nameData + " Specific Tech");
-
         //get the name of picture and set it as drawable resource
         Context context = char_pic.getContext();
         String picname = "@drawable/" + results.getString(results.getColumnIndex("picture"));
