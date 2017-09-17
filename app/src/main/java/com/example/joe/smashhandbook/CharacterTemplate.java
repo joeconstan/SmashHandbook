@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -42,21 +43,28 @@ public class CharacterTemplate extends AppCompatActivity{
         String selection = "id=?";
         Cursor results = sqLiteDatabase.query(tableName, null, selection, new String[] {selstr}, null, null, null);
         results.moveToFirst();
+
+        //getting all the data and setting it to the textviews etc
         TextView tier = (TextView) findViewById(R.id.character_tier);
-        // TextView character_name = (TextView) findViewById(R.id.character_name);
         TextView desc_plays = (TextView) findViewById(R.id.character_desc_playstyle);
+        TextView guides = (TextView) findViewById(R.id.character_guides);
         ImageView char_pic = (ImageView) findViewById(R.id.character_image);
         Button spec_tech_button = (Button) findViewById(R.id.character_spec_tech);
-        Button not_play = (Button)  findViewById(R.id.char_notableplayers);
+        TextView not_play = (TextView)  findViewById(R.id.char_notableplayers);
         String descStr = "Playstyle: "+ results.getString(results.getColumnIndex("type")) + " \nWeight: " + results.getString(results.getColumnIndex("weight")) + "\nFallspeed: " + results.getString(results.getColumnIndex("fallspeed")) + "\n\n";
         String tierData = results.getString(results.getColumnIndex("tier"));
         String nameData = results.getString(results.getColumnIndex("name"));
         String descData = results.getString(results.getColumnIndex("description"));
-        //char_pic.setImageResource(R.drawable.charizard);
+        String not_playdata = results.getString(results.getColumnIndex("players"));
+        //combining the two diff guide links
+        String guidesData = results.getString(results.getColumnIndexOrThrow("guides"));
+        guidesData += "/n" + results.getString(results.getColumnIndexOrThrow("guides2"));
         getSupportActionBar().setTitle(nameData);
         tier.setText("Tier:" + tierData);
         desc_plays.setText(descStr + descData);
         spec_tech_button.setText(nameData + " Specific Tech");
+        not_play.setText("Notable Players: " + not_playdata);
+        guides.setText("Guides: " + guidesData);
         //get the name of picture and set it as drawable resource
         Context context = char_pic.getContext();
         String picname = "@drawable/" + results.getString(results.getColumnIndex("picture"));
@@ -64,6 +72,7 @@ public class CharacterTemplate extends AppCompatActivity{
         int id = context.getResources().getIdentifier(picname, "drawable", context.getPackageName());
         char_pic.setImageResource(id);
         results.close();
+
 
     }
 

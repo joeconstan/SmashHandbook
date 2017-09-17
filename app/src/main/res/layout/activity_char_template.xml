@@ -87,13 +87,12 @@
         android:layout_below="@+id/character_image"
         />
 
-    <Button
+    <TextView
         android:id="@+id/char_notableplayers"
         android:layout_width="match_parent"
-        android:text="Notable Players"
         android:layout_height="wrap_content"
+        android:paddingTop="15sp"
         android:layout_below="@+id/character_spec_tech"
-        android:background="#5C5A59"
         android:textColor="@color/white"
         />
 
@@ -109,11 +108,20 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200sp"
+        android:layout_height="wrap_content"
         android:id="@+id/character_desc_playstyle"
         android:layout_below="@id/character_tier"
         android:textColor="@color/white"
+        android:paddingBottom="20sp"
 
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/character_guides"
+        android:layout_below="@+id/character_desc_playstyle"
+        android:textColor="@color/white"
         />
 
 

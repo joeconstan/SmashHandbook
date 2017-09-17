@@ -18,124 +18,6 @@ public class DBHelper extends SQLiteOpenHelper{
 
     }
 
-    public void createSpecTech(SQLiteDatabase db){
-        db.execSQL(
-                "create table if not exists spectech " +
-                        "(id integer primary key, techname text, techgif text, techdesc text)");
-
-        String[] techname = new String[58];
-        techname[0] = "Bat Within, Witch Time";
-        techname[1] = "Tough Guy, Shell Shock";
-        techname[2] = "Bowser Jr.";
-        techname[3] = "Captain Falcon";
-        techname[4] = "Charizard";
-        techname[5] = "Sweetspot Ledge, Limit Stats";
-        techname[6]= "Corrin";
-        techname[7] = "Dark Pit";
-        techname[8] = "Superslide, Angel Drop, Popgun Cancel, Luigi Killer";
-        techname[9] = "Ding Dong, Spikes";
-        techname[10] = "Dr Mario";
-        techname[11] = "Duck Hunt";
-        techname[12] = "Fair Footstool, Airdodge read firefox";
-        techname[13] = "Falco";
-        techname[14] = "Ganondorf";
-        techname[15] = "Footstool Combos";
-        techname[16] = "Ike";
-        techname[17] = "Jigglypuff";
-        techname[18] = "King Dedede";
-        techname[19] = "Kirby";
-        techname[20] = "Link";
-        techname[21] = "Little Mac";
-        techname[22] = "Aura, Doubles Strat";
-        techname[23] = "Lucas";
-        techname[24] = "Lucina";
-        techname[25] = "Misfire Stats, Mashing";
-        techname[26] = "Mario";
-        techname[27] = "Marth";
-        techname[28] = "Mega Man";
-        techname[29] = "Ladder Combo";
-        techname[30] = "Nair Footstool Disable";
-        techname[31] = "Mii Swordfighter";
-        techname[32] = "Mii Gunner";
-        techname[33] = "Mii Brawler";
-        techname[34] = "Toot Toot, Hammer rng judgment";
-        techname[35] = "Ness";
-        techname[36] = "Pikmin Stats";
-        techname[37] = "Fruits";
-        techname[38] = "Invincibility";
-        techname[39] = "Float Cancelling, Turnip Stats";
-        techname[40] = "Pikachu";
-        techname[41] = "Pit";
-        techname[42] = "Gyro->upsmash";
-        techname[43] = "Levels of charge";
-        techname[44] = "Boink (falln)";
-        techname[45] = "Roy";
-        techname[46] = "Inputs";
-        techname[47] = "Shinespark";
-        techname[48] = "Sheik";
-        techname[49] = "Monado Art Stats";
-        techname[50] = "Sonic";
-        techname[51] = "Toon Link";
-        techname[52] = "Pocket";
-        techname[53] = "Wario";
-        techname[54] = "Wii Fit Trainer";
-        techname[55] = "Yoshi";
-        techname[56] = "Zelda";
-        techname[57] = "ZSS";
-
-        String[] techgif = new String[39];
-        techgif[0] = "st_bayo_1";
-        techgif[1] = "Many stages are banned from tournament play in the recommended ruleset. This is due to effects out of the players control, or things that otherwise hinder gameplay. Sometimes, though rarely, characters can be banned as well. Meta Knight was banned for a while in Brawl. Many people are pushing for a tournament ban of Bayonetta, as well as a ban of Cloud in doubles.";
-        techgif[2] = "The blastzones are the very edges of the stages that you cannot pass without dying.";
-        techgif[3] = "Bread and butter combos are combos that are true and simple for a certain character, and are used very frequently because of this. For example, Bowser's bread and butter would probably be up throw to neutral air.";
-        techgif[4] = "Nintento sometimes releases updates with buffs or nerfs in them. Buffs are updates to a character's traits or moveset that makes them better, while nerfs are the opposite. Diddy, Sheik, Bayonetta, and many other characters have been nerfed, more than once. While many have also been buffed. Puff, though, has never been buffed. #Buffpuff";
-        techgif[5] = "Counter is a move that acts as a counterattack. For example, if you are marth, and hit down special (down B) right as Bowser attacks you, you will not take any damage, and you will hit him instead.";
-        techgif[6] = "Counterpicking can refer to characters or stages. If you counterpick a stage, then you just lost a game and are changing to a stage you think you can win on. If you are playing badly, you can counterpick to a different character.";
-        techgif[7] = "Crew battles is one of the most exciting tournament formats. In crew battles, some amount of players (usually 5) are on a team, and each have three stocks. Both teams send up their first player, and they fight until one loses all his stocks. Then, if the winner still has, say, 2 stocks left, he will remain and take on the next player from the other team with just his two stocks. The first team to run out of stocks loses.";
-        techgif[8] = "Dittos are simply when two players choose the same character and fight each other.";
-        techgif[9] = "DSR is the rule that says that you cannot choose to return to a stage you previously won on, in the same set.";
-        techgif[10] = "Frames are a unit of measurement - there are 60 frames in a second, and moves take a set amount of frames. Frame Data is the list of how long each move lasts and when it comes out, along with other stats.";
-        techgif[11] = "Frame traps are certain situations in which you cannot avoid getting hit, usually occurring with moves that have low landing lag. For example, at some percents, fox can down throw you, then try to follow up with a bair. If you airdodge the bair, he will simply land and uptilt you before you can act. This is possible because his uptilt has a very quick startup.";
-        techgif[12] = "If you get gimped, it means you died at a low percent, by being taken off the edge and not being able to return. Bayonetta gimps characters all the time with her forward air.";
-        techgif[13] = "Heavy Armor is a kind of armor that can break depending on an attacks knockback or damage. While the armor is active, your character will take no damage.";
-        techgif[14] = "A hitbox is simply the area of your move that can hit and damage the opponent.";
-        techgif[15] = "Hitstun occurs when you've been hit by an attack, and temporarily cannot act out of it. This was a much bigger deal in melee.";
-        techgif[16] = "Hoo Hah is the name of Diddy Kong's down throw to up air combo, which was more deadly before he was nerfed.";
-        techgif[17] = "A hurtbox is an area of your character that is susceptible to damage and attacks.";
-        techgif[18] = "While you are intangible (for example when first grabbing the ledge or re spawning), attacks will go through you and will not effect you or the opponent at all.";
-        techgif[19] = "While you have invincibility (like during certain moves) someone attacking you will still hit you, but you will not take any damage or knockback. This is different than intangibility because it means the attacker will still suffer hitlag.";
-        techgif[20] = "Ironmans are when two players fight with every character. Usually you both start on one end of the smash list, like with mario. You set to one stock. If you lose the first round, then you move on to the next character (luigi), and your opponent sticks with mario. First one to run out of characters loses.";
-        techgif[21] = "Jank is a term for when something really wacky happpens. For example, Bowser's up throw has a windbox that can cause really early deaths.";
-        techgif[22] = "Misfire is the name for when Luigi's side special move goes extremely far very quickly. It is based on RNG, and does not happen very often.";
-        techgif[23] = "Popping off is what people do when they win a game or set, and are excited about it. It just means celebrating. It's the source of many memes.";
-        techgif[24] = "Pummelling is when you have grabbed your opponent but not thrown them yet, but instead you press grab again, or A. It adds a small amount of damage everytime you pummel someone.";
-        techgif[25] = "Rage is unique to smash 4, and refers to the fact that as your percent goes up, your moves have more knockback. It begins when you reach 35%, and maxes out at 150%.";
-        techgif[26] = "If you read someone, you predict what they are going to do. Generally this gives you an opportunity to punish someone, or get out of a bad situation.";
-        techgif[27] = "Sheikville and Starterville both refer to smashville, as it is the usual starting stage, and sheik excels here.";
-        techgif[28] = "The sweetspot of moves is usually the intended hitbox, and generally hits harder. Sourspot often sends the chaaracter in a very different direction, but can lead to followups because it causes less knockback.";
-        techgif[29] = "Stage spikes happen when you hit your opponent aagainst the outside edge of the stage, sending them down, making it very hard for them to recover.";
-        techgif[30] = "If you use a move too often, it becomes stale, which means it has less knockback and damage. It's a bit complicated, but basically, if you use an up air, for example, and then use another up air within the next 8 moves, the damage and knockback will be slightly less.";
-        techgif[31] = "Star KOs are when the character takes a long time to die, as you can see them disappearing in the background.";
-        techgif[32] = "Super Armor is a type of armor in which you will still take full damage while it is active, but no knockback.";
-        techgif[33] = "Tilts are one kind of attack, performed by lightly pressing the stick in a direction and then pressing A. Smash attacks are done by hard pressing a and tilting the control stick at the same time. You can also set one or the other to the c-stick in the controls, from the menu. Special attacks refer to attacks that are done by tilting the stick in a direction and pressing b (or just pressing b).";
-        techgif[34] = "Tomahawking is when you short or full hop in front of your opponent, making them think you will throw out an aerial. They shield, and you land without doing anything, and grab them.";
-        techgif[35] = "Trading is when you hit your opponent and they hit you, and you both take damage and knockback at the same time.";
-        techgif[36] = "True combos are combos that are unavoidable, with or without DI, and will always connect if performed correctly. Most true combos start or stop being true as percents rise.";
-        techgif[37] = "Whiffing or flubbing refers to missing a punish or just missing a move or a tech.";
-        techgif[38] = "Whispy is the name of the tree on Dreamland that blows wind every so often.";
-
-
-        for (int i=0;i<58;i++) {
-            ContentValues values = new ContentValues(3);
-            values.put("techname", techname[i]);
-            values.put("techgif", techgif[i]);
-            values.put("desc");
-            db.insert("terms", null, values);
-        }
-
-    } //endcreatespectech
-
-
 
     public void createTerms(SQLiteDatabase db){
         db.execSQL(
@@ -237,7 +119,7 @@ public class DBHelper extends SQLiteOpenHelper{
     public void createChar(SQLiteDatabase db){
         db.execSQL(
                 "create table if not exists characters " +
-                        "(id integer primary key, name text, description text, tier text, type text, weight text, fallspeed text, players text, picture text)" //plus picture name or pic somehow
+                        "(id integer primary key, name text, description text, tier text, type text, weight text, fallspeed text, players text, picture text, guides text, guides2 text)" //plus picture name or pic somehow
         );
 
 
@@ -300,6 +182,127 @@ public class DBHelper extends SQLiteOpenHelper{
         name[55] = "Yoshi";
         name[56] = "Zelda";
         name[57] = "ZSS";
+
+        String[] guides = new String[58];
+        guides[0] = "https://smashboards.com/guides/miss-me-baby-a-bayonetta-guide-part-1.939/";
+        guides[1] = "https://youtu.be/usofyNT2hsA";
+        guides[2] = "https://youtu.be/CSC-lMA6GEg";
+        guides[3] = "https://youtu.be/fHUnGGpX8UY";
+        guides[4] = "https://youtu.be/P6PkcQJvimc";
+        guides[5] = "https://youtu.be/E8CFggYa_Gs";
+        guides[6]= "https://smashboards.com/guides/the-dark-power-within-a-general-guide-for-corrin-wip.810/";
+        guides[7] = "https://youtu.be/nR1Znxxa_hA";
+        guides[8] = "https://youtu.be/TwOEjPJWxQM";
+        guides[9] = "https://youtu.be/JlcIN-MKGCk";
+        guides[10] = "https://youtu.be/Z63tK5Mlqds";
+        guides[11] = "https://youtu.be/FiZuIHdo3CY";
+        guides[12] = "https://youtu.be/CC9xUqD-7KE";
+        guides[13] = "Falco";
+        guides[14] = "Ganondorf";
+        guides[15] = "Greninja";
+        guides[16] = "Ike";
+        guides[17] = "Jigglypuff";
+        guides[18] = "King Dedede";
+        guides[19] = "Kirby";
+        guides[20] = "Link";
+        guides[21] = "Little Mac";
+        guides[22] = "Lucario";
+        guides[23] = "Lucas";
+        guides[24] = "Lucina";
+        guides[25] = "Luigi";
+        guides[26] = "Mario";
+        guides[27] = "Marth";
+        guides[28] = "Mega Man";
+        guides[29] = "Meta Knight";
+        guides[30] = "Mewtwo";
+        guides[31] = "Mii Swordfighter";
+        guides[32] = "Mii Gunner";
+        guides[33] = "Mii Brawler";
+        guides[34] = "Mr. G&W";
+        guides[35] = "Ness";
+        guides[36] = "Olimar";
+        guides[37] = "Pac-Man";
+        guides[38] = "Palutena";
+        guides[39] = "Peach";
+        guides[40] = "Pikachu";
+        guides[41] = "Pit";
+        guides[42] = "ROB";
+        guides[43] = "Robin";
+        guides[44] = "Rosalina";
+        guides[45] = "Roy";
+        guides[46] = "Ryu";
+        guides[47] = "Samus";
+        guides[48] = "Sheik";
+        guides[49] = "Shulk";
+        guides[50] = "Sonic";
+        guides[51] = "Toon Link";
+        guides[52] = "Villager";
+        guides[53] = "Wario";
+        guides[54] = "Wii Fit Trainer";
+        guides[55] = "Yoshi";
+        guides[56] = "Zelda";
+        guides[57] = "ZSS";
+
+
+        String[] guides2 = new String[58];
+        guides2[0] = "https://www.youtube.com/watch?v=qjdViVh4qm0";
+        guides2[1] = "https://www.youtube.com/watch?v=W3sgCRc13sk";
+        guides2[2] = "Bowser Jr.";
+        guides2[3] = "https://youtu.be/2TtvvOkf37o";
+        guides2[4] = "https://smashboards.com/guides/a-competitive-guide-to-charizard.49/";
+        guides2[5] = "https://youtu.be/1qWd7CfqTVw";
+        guides2[6]= "https://youtu.be/3-IM_SQQL_Q";
+        guides2[7] = "https://smashboards.com/guides/servant-of-the-goddess-of-light-a-pit-dark-pit-guide-for-smash-wii-u-3ds.1072/";
+        guides2[8] = "https://youtu.be/CipVvVGKu90";
+        guides2[9] = "Donkey Kong";
+        guides2[10] = "Dr Mario";
+        guides2[11] = "https://smashboards.com/threads/duck-hunt-hitbox-visualization.432774/";
+        guides2[12] = "https://smashboards.com/guides/intermediate-to-advanced-fox-guide.994/";
+        guides2[13] = "Falco";
+        guides2[14] = "Ganondorf";
+        guides2[15] = "Greninja";
+        guides2[16] = "Ike";
+        guides2[17] = "Jigglypuff";
+        guides2[18] = "King Dedede";
+        guides2[19] = "Kirby";
+        guides2[20] = "Link";
+        guides2[21] = "Little Mac";
+        guides2[22] = "Lucario";
+        guides2[23] = "Lucas";
+        guides2[24] = "Lucina";
+        guides2[25] = "Luigi";
+        guides2[26] = "Mario";
+        guides2[27] = "Marth";
+        guides2[28] = "Mega Man";
+        guides2[29] = "Meta Knight";
+        guides2[30] = "Mewtwo";
+        guides2[31] = "Mii Swordfighter";
+        guides2[32] = "Mii Gunner";
+        guides2[33] = "Mii Brawler";
+        guides2[34] = "Mr. G&W";
+        guides2[35] = "Ness";
+        guides2[36] = "Olimar";
+        guides2[37] = "Pac-Man";
+        guides2[38] = "Palutena";
+        guides2[39] = "Peach";
+        guides2[40] = "Pikachu";
+        guides2[41] = "Pit";
+        guides2[42] = "ROB";
+        guides2[43] = "Robin";
+        guides2[44] = "Rosalina";
+        guides2[45] = "Roy";
+        guides2[46] = "Ryu";
+        guides2[47] = "Samus";
+        guides2[48] = "Sheik";
+        guides2[49] = "Shulk";
+        guides2[50] = "Sonic";
+        guides2[51] = "Toon Link";
+        guides2[52] = "Villager";
+        guides2[53] = "Wario";
+        guides2[54] = "Wii Fit Trainer";
+        guides2[55] = "Yoshi";
+        guides2[56] = "Zelda";
+        guides2[57] = "ZSS";
 
         String[] desc = new String[58];
         desc[0] = "Bayonetta is easily the most controversial character in smash, and has seen a rise lately with players like salem, mistake, and captain zack doing exceptionally well. Her combos depend on reading SDI, but are some of the best, and it is easy to be creative with her combos. She has some specific mecahnics that no other character has.";
@@ -735,7 +738,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
 
         for (int i=0;i<58;i++) {
-            ContentValues values = new ContentValues(8);
+            ContentValues values = new ContentValues(10);
             values.put("name", name[i]);
             values.put("description", desc[i]);
             values.put("tier", tier[i]);
@@ -744,6 +747,8 @@ public class DBHelper extends SQLiteOpenHelper{
             values.put("fallspeed", fallspeed[i]);
             values.put("players", players[i]);
             values.put("picture", pictures[i]);
+            values.put("guides", guides[i]);
+            values.put("guides2", guides2[i]);
             db.insert("characters", null, values);
         }
 
