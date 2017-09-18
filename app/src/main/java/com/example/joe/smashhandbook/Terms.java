@@ -12,6 +12,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 
 public class Terms extends AppCompatActivity{
     @Override
@@ -20,6 +24,11 @@ public class Terms extends AppCompatActivity{
         setContentView(R.layout.activity_terms);
         Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
         setSupportActionBar(tb);
+
+        MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
+        AdView adView = (AdView) findViewById(R.id.termsAd);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
 
         String[] terms = new String[39];
         terms[0] = "Air Dodge";

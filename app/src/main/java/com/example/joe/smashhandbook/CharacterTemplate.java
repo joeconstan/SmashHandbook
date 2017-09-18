@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -65,6 +66,8 @@ public class CharacterTemplate extends AppCompatActivity{
         spec_tech_button.setText(nameData + " Specific Tech");
         not_play.setText("Notable Players: " + not_playdata);
         guides.setText("Guides: " + guidesData);
+        guides.setMovementMethod(LinkMovementMethod.getInstance());
+
         //get the name of picture and set it as drawable resource
         Context context = char_pic.getContext();
         String picname = "@drawable/" + results.getString(results.getColumnIndex("picture"));
