@@ -1,13 +1,9 @@
 package com.example.joe.smashhandbook;
 
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,13 +14,12 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
-public class Tech extends AppCompatActivity{
+public class Tech extends BaseToolbarActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tech);
-        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
-        setSupportActionBar(tb);
+
 
         MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
         AdView adView = (AdView) findViewById(R.id.techAd);

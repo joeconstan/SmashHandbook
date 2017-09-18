@@ -3,42 +3,26 @@ package com.example.joe.smashhandbook;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
-import java.util.List;
 
 
-public class PGR extends AppCompatActivity {
+public class PGR extends BaseToolbarActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pgr);
-
-        if (getActionBar()!=null) {
-            getActionBar().setDisplayOptions(getActionBar().DISPLAY_SHOW_CUSTOM);
-            getActionBar().setCustomView(R.layout.action_bar_pgr);
-        }
-        if (getSupportActionBar()!=null) { // compatible with other versions
-            getSupportActionBar().setDisplayOptions(getSupportActionBar().DISPLAY_SHOW_CUSTOM);
-            getSupportActionBar().setCustomView(R.layout.action_bar_pgr);
-        }
-
 
 
         MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
         AdView adView = (AdView) findViewById(R.id.pgrAd);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
-
-
 
 
         String[] pgr_list = new String[50];

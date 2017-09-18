@@ -6,46 +6,13 @@
     >
 
 
-    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/custom_toolbar"
+    <include layout="@layout/toolbar_custom"/>
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/holo_red_dark"
-        android:elevation="4sp"
-        android:orientation="vertical"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-        <TextView
-            android:id="@+id/toolbartext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:text="@string/stages"
-            android:textColor="#ffffff"
-            android:textSize="22sp" />
-
-        <ImageButton
-            android:id="@+id/toolbar_info_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/toolbartext"
-            android:background="@null"
-            android:paddingLeft="200sp"
-            android:src="@drawable/ic_info_outline" />
-
-        <ImageButton
-            android:id="@+id/toolbar_settings_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/toolbar_info_button"
-            android:background="@null"
-            android:paddingLeft="12sp"
-            android:src="@drawable/ic_settings_button" />
-
-
-    </android.support.v7.widget.Toolbar>
+        android:layout_height="20sp"
+        android:id="@+id/spacer"
+        />
 
 
     <Button
@@ -64,7 +31,6 @@
         android:id="@+id/smashvilletext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:text="SMASHVILLE"
         android:textColor="@color/white"
         android:layout_marginRight="23dp"

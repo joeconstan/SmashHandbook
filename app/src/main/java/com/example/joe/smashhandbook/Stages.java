@@ -3,27 +3,20 @@ package com.example.joe.smashhandbook;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 
-public class Stages extends AppCompatActivity{
+public class Stages extends BaseToolbarActivity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stages);
-
-        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
-        setSupportActionBar(tb);
 
         MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
         AdView adView = (AdView) findViewById(R.id.stagesAd);
