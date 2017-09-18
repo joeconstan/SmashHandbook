@@ -1,12 +1,10 @@
 package com.example.joe.smashhandbook;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
@@ -32,8 +30,6 @@ public class JabLock extends AppCompatActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }

@@ -1,11 +1,8 @@
 package com.example.joe.smashhandbook;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -19,14 +16,10 @@ public class ST_Bayo extends AppCompatActivity{
         techlist[0] = "Bat Within";
         techlist[1] = "Witch Time";
 
-
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.list_item_white,R.id.list_item_white_id, techlist);
         ListView listView = (ListView) findViewById(R.id.st_list);
         listView.setAdapter(adapter);
 
 
-
     }
-
-
 }

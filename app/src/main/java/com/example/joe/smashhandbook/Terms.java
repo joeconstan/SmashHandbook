@@ -19,8 +19,6 @@ public class Terms extends BaseToolbarActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terms);
-
-
         MobileAds.initialize(this, "4A51EAF0C631CA74D07FC7762D27FCD0");
         AdView adView = (AdView) findViewById(R.id.termsAd);
         AdRequest adRequest = new AdRequest.Builder().build();
@@ -85,8 +83,6 @@ public class Terms extends BaseToolbarActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }

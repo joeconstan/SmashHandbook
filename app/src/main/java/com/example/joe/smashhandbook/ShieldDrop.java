@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
@@ -22,8 +21,6 @@ public class ShieldDrop extends AppCompatActivity {
         ImageView IMAGE_VIEW = (ImageView) findViewById(R.id.shielddrop_iv);
         GlideDrawableImageViewTarget iv = new GlideDrawableImageViewTarget(IMAGE_VIEW);
         Glide.with(this).load(R.raw.shielddropgif).into((iv));
-        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
-        setSupportActionBar(tb);
     }
 
 

@@ -1,12 +1,9 @@
 package com.example.joe.smashhandbook;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
@@ -23,10 +20,6 @@ public class TwoFrame extends AppCompatActivity{
         GlideDrawableImageViewTarget iv = new GlideDrawableImageViewTarget(IMAGE_VIEW);
         Glide.with(this).load(R.raw.twoframegif).into((iv));
 
-        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
-        setSupportActionBar(tb);
-
-
     }
 
 
@@ -34,8 +27,6 @@ public class TwoFrame extends AppCompatActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }

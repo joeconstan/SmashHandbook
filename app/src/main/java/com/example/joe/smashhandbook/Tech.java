@@ -27,7 +27,6 @@ public class Tech extends BaseToolbarActivity{
         adView.loadAd(adRequest);
 
 
-
         String[] tech_list = new String[12];
         tech_list[0] = "B-Reverse";
         tech_list[1] = "Dash Dance";
@@ -112,8 +111,6 @@ public class Tech extends BaseToolbarActivity{
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, Tech.class);
-        startActivity(intent);
         return super.onOptionsItemSelected(item);
     }
 }
