@@ -22,7 +22,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
-public class CharacterTemplate extends AppCompatActivity{
+public class CharacterTemplate extends BaseToolbarActivity{
 
     final static String TAG = "test: ";
 
@@ -30,9 +30,8 @@ public class CharacterTemplate extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_char_template);
-        Toolbar tb = (Toolbar) findViewById(R.id.custom_toolbar);
-        setSupportActionBar(tb);
-        getSupportActionBar().setTitle(" ");
+
+        
         Bundle bundle = getIntent().getExtras();
         int sel = bundle.getInt("char_select");
         sel++;
@@ -65,7 +64,7 @@ public class CharacterTemplate extends AppCompatActivity{
         String guidesData2 = results.getString(results.getColumnIndexOrThrow("guides2"));
         getSupportActionBar().setTitle(nameData);
         tier.setText("Tier:" + tierData);
-        desc_plays.setText(extradescData + descData + "/n Guides:/n");
+        desc_plays.setText(extradescData + descData + "\n\nGuides:");
         spec_tech_button.setText(nameData + " Specific Tech");
         not_play.setText("Notable Players: " + not_playdata);
         guides.setText(guidesData);

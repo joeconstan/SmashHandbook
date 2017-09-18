@@ -316,7 +316,6 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[8] = "Diddy is a great all around character who can be played aggressively or defensively. His meta has been pushed farther than many characters, though there are still many useful techniques not being used by diddy mains. His play centers around his banana, giving him great stage control and easy kill confirms. Watch ZeRo play to learn the basic bread and butter combos, and watch zinoto to see some unique combos and set ups.";
         desc[9] = "Donkey Kong has been on the rise lately, with HIKARU and Konga doing well, as well as Tweek and Larry using him as a secondary. He is a grappler through and through, and can kill most characters at extremely low percents. He does struggle at landing, though.";
         desc[10] = "Dr Mario is essentially a worse version of mario, with a shorter up special, a weaker projectile, and smaller hitboxes.";
-        //fact check doc
         desc[11] = "Duck Hunt is one of the most complex characters. His neutral is very good, and his meta has been developing quickly since Raito and the Japanese Duck Hunts started competing more.";
         desc[12] = "Fox is a very solid character. He is a rushdown, pressure-heavy type, with room for creative combos relying heavily on his uptilt. He can struggle to get kills, though he has more than a few kill confirms. His uptilt is exceptionally good at catching 2-frames.";
         desc[13] = "Falco is a very slow character, and so he depends on mix-ups, reads, and combos. His back air is extremely powerful, and his forward air can combo into itself. He is not a very common pick, though he has had some results in majors.";
@@ -326,7 +325,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[17] = "Jigglypuff is one of the worst in the game, though some don't think she belongs there. Puff has some redeeming qualities in her aerial movement, good air attacks, and highest number of jumps in the game (6). However, her ground attacks leave some to be desired. She does have true rest setups though, many of which are underused.";
         desc[18] = "King Dedede is considered by some to be the worst in the game. His movement is slow, and most of his moveset is slow as well. He has a decent projectile game with his gordos, which can also lead to some nasty ledge traps. He suffers against a large portion of the cast, though.";
         desc[19] = "Kirby is a low tier(?) character with a good amount of winning matchups. Kirby has high combo ability on fast fallers, such as fox.";
-        desc[20] = "Link ";
+        desc[20] = "Link";
         desc[21] = "Little Mac is definitely one of the most fun characters to play. His ground game is one of the best, and his frame data is ridiculous. He struggles, though, in the air and when recovering. For these reasons he currently has more than a few losing matchups.";
         desc[22] = "Lucario is a scary character to play against, as he has aura on his side. This means that some of his moves can start KOing at extremely early percents when he has some amount of aura.";
         desc[23] = "Lucas is very similar to ness, with a few key differences. His side special, when used in the air, will go in a straight line, while Ness' goes at a 45 degree angle. He also has a zair, which can be used as a tether or as an attack. etc";
@@ -348,7 +347,7 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[39] = "Peach is a very difficult character to play at a high level.";
         desc[40] = "Pikachu is a good all around character. He can be played very aggressively, and can go far off stage due to his very good recovery. His combos on fast fallers can be very extended and deal well over 50 damage.";
         desc[41] = "Pit is the same as Dark Pit, the only differences being speed and power. look up stats.";
-        desc[42] = "ROB";
+        desc[42] = "ROB is a character that relies on his strong projectile, zoning, and set up game. He also has confirms off his grabs at most percents. He is very susceptible to combos due to his weight, though.";
         desc[43] = "Robin is a slow, zoning character, whose main projectile acts differently depending on the level of charge.";
         desc[44] = "Rosalina and Luma require a very unique playstyle to play. Luma's moves have a ridiculous amount of base knockback, and";
         desc[45] = "Roy is traditionally a lower tier character but";
@@ -356,14 +355,14 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[47] = "Samus is not a very common character. She has a good combo game, and good kill power. Her roll is one of the slowest, and ";
         desc[48] = "Sheik is no doubt a top tier character. Sheik's combos are ridiculous, as is her recovery. Her biggest downfall is probably her weight, leading to some early deaths.";
         desc[49] = "Shulk is not an easy character to play. He requires a high level of micromanaging with his monado arts, and can be played in many different styles.";
-        desc[50] = "Sonic is a high tier, and can be played campy or aggressively. ";
-        desc[51] = "Toon Link is a better version of Link. He ";
-        desc[52] = "Villager";
-        desc[53] = "Wario's moves are slow, and ";
-        desc[54] = "Wii Fit Trainer";
-        desc[55] = "Yoshi is the character everyone used to think was underrated. He has never seen much success.";
-        desc[56] = "Zelda is the definition of a glass cannon. Some consider her the worst in the game. There are good things about her though. Her neutral b has invincibility frames (check) and ";
-        desc[57] = "ZSS";
+        desc[50] = "Sonic is a high tier, and can be played campy or aggressively. He is extremely fast, and his side special has intangibility frames, making approaching one of his strong suits. However, he can struggle to kill, and can be killed early himself.";
+        desc[51] = "Toon Link is very good at zoning, and his projectiles can lead to damaging combos and mixups. He is also a floaty, meaning he can escape some combos. His weaknesses are not small, though, and they come mostly from his poor aerial frame data and relatively weak KO options.";
+        desc[52] = "Villager is a setup based character. His slingshot is one of the best projectiles in the game, and he excels as a zoning character.";
+        desc[53] = "Wario's moves are slow and have a good amount of end lag, making him a read heavy character. However, he is very mobile both on the ground and in the air, and is therefore good at baiting out unsafe options.";
+        desc[54] = "Wii Fit Trainer is a quirky character with quirky hitboxes that can be difficult to use. She also has a terrible grab game. Though her mobility is good, she still suffers against most of the characters.";
+        desc[55] = "Yoshi is a character with a good mixup game, but he has a terrible grab game, and many of his moves are laggy. Additionally, his shield is a bit different than the rest of the cast. He cannot be shield poked, but he also has very limited out of shield options.";
+        desc[56] = "Zelda is the definition of a glass cannon. Some consider her the worst in the game due to her very bad mobility and situational projectile game. However, she has some very powerful moves that can cause early KOs, as well as confirms and mixups off of her grabs.";
+        desc[57] = "ZSS is an exciting character with an explosive punish game and great frame data. Her recovery is very good, but her grab has quite a bit of end lag and therefore is ver punishable on whiff.";
 
         String[] tier = new String[58];
         tier[0] = "S";

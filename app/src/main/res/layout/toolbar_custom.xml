@@ -34,7 +34,7 @@
                 android:id="@+id/toolbar_info_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/toolbar_settings_button"
+                android:layout_toLeftOf="@+id/toolbar_removeads_button"
                 android:background="@null"
                 android:src="@drawable/ic_info_outline"
                 android:paddingRight="10sp"
@@ -43,11 +43,11 @@
                 />
 
             <ImageButton
-                android:id="@+id/toolbar_settings_button"
+                android:id="@+id/toolbar_removeads_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@null"
-                android:src="@drawable/ic_settings_button"
+                android:src="@drawable/icon_remove_ads"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
