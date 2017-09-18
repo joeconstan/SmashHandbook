@@ -4,23 +4,16 @@ package com.example.joe.smashhandbook;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
-import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class CharacterTemplate extends BaseToolbarActivity{
 
@@ -31,7 +24,7 @@ public class CharacterTemplate extends BaseToolbarActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_char_template);
 
-        
+
         Bundle bundle = getIntent().getExtras();
         int sel = bundle.getInt("char_select");
         sel++;
