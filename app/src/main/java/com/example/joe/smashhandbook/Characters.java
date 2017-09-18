@@ -20,7 +20,7 @@ public class Characters extends BaseToolbarActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character);
-        
+
         //-------------
        // Toolbar toolbar = (Toolbar) findViewById(R.id.custom_toolbar);
         //setSupportActionBar(toolbar);

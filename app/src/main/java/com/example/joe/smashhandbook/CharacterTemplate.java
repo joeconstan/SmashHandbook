@@ -20,6 +20,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 public class CharacterTemplate extends AppCompatActivity{
 
     final static String TAG = "test: ";
@@ -49,24 +51,28 @@ public class CharacterTemplate extends AppCompatActivity{
         TextView tier = (TextView) findViewById(R.id.character_tier);
         TextView desc_plays = (TextView) findViewById(R.id.character_desc_playstyle);
         TextView guides = (TextView) findViewById(R.id.character_guides);
+        TextView guides2 = (TextView) findViewById(R.id.character_guides2);
         ImageView char_pic = (ImageView) findViewById(R.id.character_image);
         Button spec_tech_button = (Button) findViewById(R.id.character_spec_tech);
         TextView not_play = (TextView)  findViewById(R.id.char_notableplayers);
-        String descStr = "Playstyle: "+ results.getString(results.getColumnIndex("type")) + " \nWeight: " + results.getString(results.getColumnIndex("weight")) + "\nFallspeed: " + results.getString(results.getColumnIndex("fallspeed")) + "\n\n";
+        String extradescData = "Playstyle: "+ results.getString(results.getColumnIndex("type")) + " \nWeight: " + results.getString(results.getColumnIndex("weight")) + "\nFallspeed: " + results.getString(results.getColumnIndex("fallspeed")) + "\n\n";
         String tierData = results.getString(results.getColumnIndex("tier"));
         String nameData = results.getString(results.getColumnIndex("name"));
         String descData = results.getString(results.getColumnIndex("description"));
         String not_playdata = results.getString(results.getColumnIndex("players"));
         //combining the two diff guide links
         String guidesData = results.getString(results.getColumnIndexOrThrow("guides"));
-        guidesData += "/n" + results.getString(results.getColumnIndexOrThrow("guides2"));
+        String guidesData2 = results.getString(results.getColumnIndexOrThrow("guides2"));
         getSupportActionBar().setTitle(nameData);
         tier.setText("Tier:" + tierData);
-        desc_plays.setText(descStr + descData);
+        desc_plays.setText(extradescData + descData + "/n Guides:/n");
         spec_tech_button.setText(nameData + " Specific Tech");
         not_play.setText("Notable Players: " + not_playdata);
-        guides.setText("Guides: " + guidesData);
+        guides.setText(guidesData);
+        guides2.setText(guidesData2);
+        //make guide links clickable - not sure if this is needed or not.
         guides.setMovementMethod(LinkMovementMethod.getInstance());
+        guides2.setMovementMethod(LinkMovementMethod.getInstance());
 
         //get the name of picture and set it as drawable resource
         Context context = char_pic.getContext();

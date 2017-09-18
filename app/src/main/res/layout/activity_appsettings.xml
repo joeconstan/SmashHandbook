@@ -20,6 +20,7 @@
         android:text="Remove Ads"
         android:id="@+id/adsRemoveButton"
         android:textColor="#FFFFFF"
+
         />
 
 
