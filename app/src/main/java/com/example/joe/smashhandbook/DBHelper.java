@@ -340,13 +340,13 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[35] = "Ness has the strongest throw in the game in his back throw. He can get gimped by characters that can absorb his up special, like Rosalina or Ness/Lucas.";
         desc[36] = "Olimar is on the rise, with players like Shuton pushing him farther and farther. He requires micrmanagement and knowledge of the pikmin to play well.";
         desc[37] = "Pac-Man is a janky character with interesting hydrant/fruit setups. He";
-        desc[38] = "Palutena";
-        desc[39] = "Peach is a very difficult character to play at a high level.";
-        desc[40] = "Pikachu is a good all around character. He can be played very aggressively, and can go far off stage due to his very good recovery. His combos on fast fallers can be very extended and deal well over 50 damage.";
-        desc[41] = "Pit is the same as Dark Pit, the only differences being speed and power. look up stats.";
-        desc[42] = "ROB is a character that relies on his strong projectile, zoning, and set up game. He also has confirms off his grabs at most percents. He is very susceptible to combos due to his weight, though.";
-        desc[43] = "Robin is a slow, zoning character, whose main projectile acts differently depending on the level of charge.";
         //done from here down-------
+        desc[38] = "Palutena has strong KO power and a good grab game, but struggles to find kills due to her bad frame data.";
+        desc[39] = "Peach has powerful aerials that can kill early, and a great air game in general due to her ability to float. Her weaknesses lie in getting juggled and getting overwhelmed by rushdown characters.";
+        desc[40] = "Pikachu is a good all around character. He can be played very aggressively, and can go far off stage due to his very good recovery. His combos on fast fallers can be very extended and deal a huge amount of damage, and he has a good neutral in general. However he can struggle to find a kill, often relying on reads or baits.";
+        desc[41] = "Pit is a very average character. He has no pronounced weaknesses, but also no huge strengths. Because of this he is a mid tier character, with very little representation.";
+        desc[42] = "ROB is a character that relies on his strong projectile, zoning, and set up game. He also has confirms off his grabs at most percents. He is very susceptible to combos due to his weight, though.";
+        desc[43] = "Robin is a slow, zoning character, whose main projectile acts differently depending on the level of charge. He is extremely slow, both on the ground and in the air, and is very susceptible to being both juggled and comboed.";
         desc[44] = "Rosalina together with Luma is a high tier character, who is very good at zoning and stage control, as well as ledge traps. She has a very strong neutral, but is lightweight and can die very early.";
         desc[45] = "Roy is similar to marth, with one of the biggest differences being his sweetspots. Roy's sweetspots are at the base of his sword, meaning that he has to get in close to do real damage. This can be a serious disadvantage. He therefore relies often on setups and reads.";
         desc[46] = "Ryu is one of the most exciting characters to use. He has a good combo game on many characters as many of his moves link together. His KO power is ridiculous, and it's not uncommon to get kills below 80%. He can struggle with mobility, though, as he has terrible air acceleration, and moves through the air differently than other characters.";
