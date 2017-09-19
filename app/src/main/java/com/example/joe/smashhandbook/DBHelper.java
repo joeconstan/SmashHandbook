@@ -304,8 +304,9 @@ public class DBHelper extends SQLiteOpenHelper{
         String[] desc = new String[58];
         desc[0] = "Bayonetta is easily the most controversial character in smash, and has seen a rise lately with players like salem, mistake, and captain zack doing exceptionally well. Her combos depend on reading SDI, but are some of the best, and it is easy to be creative with her combos. She has some specific mecahnics that no other character has.";
         desc[1] = "Bowser is a grappler, very similar to DK. He is slow, and can struggle to land and get off the ledge, but his damage output is insane.";
-        desc[2] = "Bowser Jr. is not a very common character, but high level play with him can be very fun to watch, and fun to pull off as well. idk man i dont know much abt this character";
-        desc[3] = "Captain Falcon is one of the most exciting characters to watch- he has flashy combos and often relies on airdodge reads. However, his recovery is very linear and easy to interrupt.";
+        desc[2] = "Bowser Jr. is slow, and has a bad grab game. However, he has good range with all of his moves, and some decent KO power.";
+        desc[3] = "Captain Falcon is one of the most exciting characters to watch-he has flashy combos and often relies on hard reads. However, his recovery is very linear and easy to interrupt, and he is very susceptible to combos, being a fast faller and a tall character.";
+//
         desc[4] = "Charizard is heavy and slow. With those traits, though, come a surplus of kill power, and two double jumps.";
         desc[5] = "Cloud is clearly the best character in doubles, and top 3 in singles. He has amazing aerials, amazing movement options, and great mixups. His only staggering weakness is his short and linear recovery.";
         desc[6] = "Corrin is a great juggler and good at racking up damage. Her kill power is nothing to laught at either, and she is more mobile than she seems.";
@@ -325,14 +326,15 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[20] = "Link is a bit of a controversial character lately. His frame data isn't great, and he is fairly slow. However, he does have strong KO options and a decent grab game.";
         desc[21] = "Little Mac is definitely one of the most fun characters to play. His ground game is one of the best, and his frame data is ridiculous. He struggles, though, in the air and when recovering. For these reasons he currently has more than a few losing matchups.";
         desc[22] = "Lucario is a scary character to play against, as he has aura on his side. This means that some of his moves can start KOing at extremely early percents when he has some amount of aura.";
-        desc[23] = "Lucas is very similar to ness, with a few key differences. His side special, when used in the air, will go in a straight line, while Ness' goes at a 45 degree angle. He also has a zair, which can be used as a tether or as an attack. etc";
-        desc[24] = "Lucina is very similar to marth, with a few exceptions. Lucina has a slightly shorter reach, not because of the length of the sword, but because of the reach of her arm. Her sword has no tipper effect, and the entire length of it does the same amount of damage. So this makes spacing easier,but results in her not having moves as strong as marth's tippers.";
-        desc[25] = "Luigi is represented at the highest level by only a single player. He has very low friction, and therefore relies heavily on power shielding for counterattacks. He has endless combos out of down throw";
-        desc[26] = "Mario has some of the most exciting combos in the game. Most of them start with a down throw, though certain characters are able to break out of the typical combo chains. Therefore mario mains must mix up their combo strategies. He has decent kill power, but not a lot of true kill combos at any percent.";
+        desc[23] = "Lucas is very similar to Ness, with a few key differences. His side special, when used in the air, will go in a straight line, while Ness' goes at a 45 degree angle. He also has a zair, which can be used as a tether or as an attack. etc";
+
+//done from here down-------
+        desc[24] = "Lucina is very similar to Marth, with a few exceptions. Lucina has a slightly shorter reach, not because of the length of the sword, but because of the reach of her arm. Her sword has no tipper effect, and the entire length of it does the same amount of damage. So this makes spacing easier,but results in her not having moves as strong as Marth's tippers.";
+        desc[25] = "Luigi is represented at the highest level by only a single player. He has very low friction, and therefore relies heavily on power shielding for counterattacks. He has endless combos out of down throw, but can suffer in some matchups due to his short range.";
+        desc[26] = "Mario has some of the most exciting combos in the game. Most of them start with a down throw, though certain characters are able to break out of the typical combo chains. Therefore mario mains must mix up their combo strategies. He has decent kill power, but not a lot of true kill combos at most percents.";
         desc[27] = "Marth is a high tier character with a good recovery and strong KO options. His sword is stronger at the end, and so his moves have to be spaced properly.";
-        desc[28] = "Mega Man is a very zone-based, stage-control character. His numerous projectiles make him frustrating to play against, and";
+        desc[28] = "Mega Man is a very zone-based, stage-control character. His numerous projectiles make him a very good zoner. However, he is relatively slow and can struggle against aggressive or rushdown characters.";
         desc[29] = "Meta Knight has very good mobility and a great recovery, but he is only a B tier due to his vulnerability to combos and difficulty against campy characters.";
-        //done from here down-------
         desc[30] = "Mewtwo is a bit of a glass cannon. He has some exciting combos and he is very fun to watch. He is floaty, so can be difficult to combo, but he is also very light and will usually die very early.";
         desc[31] = "Mii Swordfighter";
         desc[32] = "Mii Gunner";
