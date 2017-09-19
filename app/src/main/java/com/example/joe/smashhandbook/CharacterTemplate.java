@@ -53,9 +53,8 @@ public class CharacterTemplate extends BaseToolbarActivity{
         String descData = results.getString(results.getColumnIndex("description"));
         String not_playdata = results.getString(results.getColumnIndex("players"));
         //combining the two diff guide links
-        String guidesData = results.getString(results.getColumnIndexOrThrow("guides"));
-        String guidesData2 = results.getString(results.getColumnIndexOrThrow("guides2"));
-        getSupportActionBar().setTitle(nameData);
+        String guidesData = results.getString(results.getColumnIndex("guides"));
+        String guidesData2 = results.getString(results.getColumnIndex("guides2"));
         tier.setText("Tier:" + tierData);
         desc_plays.setText(extradescData + descData + "\n\nGuides:");
         spec_tech_button.setText(nameData + " Specific Tech");

@@ -329,18 +329,18 @@ public class DBHelper extends SQLiteOpenHelper{
         desc[24] = "Lucina is very similar to marth, with a few exceptions. Lucina has a slightly shorter reach, not because of the length of the sword, but because of the reach of her arm. Her sword has no tipper effect, and the entire length of it does the same amount of damage. So this makes spacing easier,but results in her not having moves as strong as marth's tippers.";
         desc[25] = "Luigi is represented at the highest level by only a single player. He has very low friction, and therefore relies heavily on power shielding for counterattacks. He has endless combos out of down throw";
         desc[26] = "Mario has some of the most exciting combos in the game. Most of them start with a down throw, though certain characters are able to break out of the typical combo chains. Therefore mario mains must mix up their combo strategies. He has decent kill power, but not a lot of true kill combos at any percent.";
-        desc[27] = "Marth";
+        desc[27] = "Marth is a high tier character with a good recovery and strong KO options. His sword is stronger at the end, and so his moves have to be spaced properly.";
         desc[28] = "Mega Man is a very zone-based, stage-control character. His numerous projectiles make him frustrating to play against, and";
-        desc[29] = "Meta Knight";
+        desc[29] = "Meta Knight has very good mobility and a great recovery, but he is only a B tier due to his vulnerability to combos and difficulty against campy characters.";
+        //done from here down-------
         desc[30] = "Mewtwo is a bit of a glass cannon. He has some exciting combos and he is very fun to watch. He is floaty, so can be difficult to combo, but he is also very light and will usually die very early.";
         desc[31] = "Mii Swordfighter";
         desc[32] = "Mii Gunner";
         desc[33] = "Mii Brawler";
-        desc[34] = "Mr. G&W is 2D, and is therefore one of the lightest characters in the game. ..";
-        desc[35] = "Ness has the strongest throw in the game in his back throw. He can get gimped by characters that can absorb his up special, like Rosalina or Ness/Lucas.";
-        desc[36] = "Olimar is on the rise, with players like Shuton pushing him farther and farther. He requires micrmanagement and knowledge of the pikmin to play well.";
-        desc[37] = "Pac-Man is a janky character with interesting hydrant/fruit setups. He";
-        //done from here down-------
+        desc[34] = "Mr. G&W is 2D, and is therefore one of the lightest characters in the game. His aerial moves have very low end lag, and he has a great recovery, but he can struggle to find kills.";
+        desc[35] = "Ness has the strongest throw in the game in his back throw. He has a good combo game as well. But he can get gimped by characters that can absorb or clank with his up special, like Rosalina or Ness/Lucas. He also has poor range, which can be a problem in certain matchups.";
+        desc[36] = "Olimar is on the rise, with players like Shuton pushing him farther and farther. He requires micromanagement and knowledge of the pikmin to play well. He has a great grab, but his defense is not great, being light and vulnerable to juggling.";
+        desc[37] = "Pac-Man is a janky character with interesting hydrant/fruit setups. He is somewhat susceptible to gimps, and his projectiles can be used against him. Since he is not very common, he can benefit a lot from players' lack of experience against Pac-Man.";
         desc[38] = "Palutena has strong KO power and a good grab game, but struggles to find kills due to her bad frame data.";
         desc[39] = "Peach has powerful aerials that can kill early, and a great air game in general due to her ability to float. Her weaknesses lie in getting juggled and getting overwhelmed by rushdown characters.";
         desc[40] = "Pikachu is a good all around character. He can be played very aggressively, and can go far off stage due to his very good recovery. His combos on fast fallers can be very extended and deal a huge amount of damage, and he has a good neutral in general. However he can struggle to find a kill, often relying on reads or baits.";
