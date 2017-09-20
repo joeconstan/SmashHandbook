@@ -47,12 +47,16 @@
         android:id="@+id/battlefieldButton"
         android:layout_width="130sp"
         android:layout_height="130sp"
-        android:layout_below="@+id/battlefieldtext"
-        android:layout_toRightOf="@+id/smashvilleButton"
         android:textColor="@color/white"
         android:background="@mipmap/bftransp"
+        android:paddingLeft="50sp"
+        android:paddingStart="50sp"
 
-        />
+        android:layout_below="@+id/battlefieldtext"
+        android:layout_alignRight="@+id/stagesAd"
+        android:layout_alignEnd="@+id/stagesAd"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
     <TextView
         android:id="@+id/battlefieldtext"
         android:layout_width="wrap_content"
@@ -139,14 +143,11 @@
         android:id="@+id/lylatButton"
         android:layout_width="130sp"
         android:layout_height="130sp"
-        android:layout_below="@+id/fdButton"
-        android:layout_marginTop="30sp"
-        android:layout_toRightOf="@id/dreamlandButton"
-        android:layout_alignRight="@+id/towncityButton"
-        android:layout_alignEnd="@+id/battlefieldButton"
-        android:background="@mipmap/fdtransp"
+        android:background="@mipmap/lctransp"
         android:textColor="@color/white"
-    />
+        android:layout_below="@+id/lylattext"
+        android:layout_alignLeft="@+id/fdButton"
+        android:layout_alignStart="@+id/fdButton" />
 
     <TextView
         android:id="@+id/lylattext"
