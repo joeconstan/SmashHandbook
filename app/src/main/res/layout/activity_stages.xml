@@ -6,7 +6,12 @@
     >
 
 
-    <include layout="@layout/toolbar_custom"/>
+    <include layout="@layout/toolbar_custom"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -19,9 +24,7 @@
         android:id="@+id/smashvilleButton"
         android:layout_width="130sp"
         android:layout_height="130sp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/battlefieldButton"
+        android:layout_below="@+id/smashvilletext"
         android:layout_marginLeft="55sp"
         android:layout_marginStart="55sp"
         android:background="@mipmap/svtransp"
@@ -33,24 +36,35 @@
         android:layout_height="wrap_content"
         android:text="SMASHVILLE"
         android:textColor="@color/white"
-        android:layout_marginRight="23dp"
-        android:layout_marginEnd="23dp"
-        android:layout_alignTop="@+id/smashvilleButton"
-        android:layout_toLeftOf="@+id/battlefieldButton"
-        android:layout_toStartOf="@+id/battlefieldButton" />
+        android:paddingTop="35sp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_below="@+id/spacer"
+        android:layout_alignLeft="@+id/smashvilleButton"
+        android:layout_alignStart="@+id/smashvilleButton" />
+
     <Button
         android:id="@+id/battlefieldButton"
         android:layout_width="130sp"
         android:layout_height="130sp"
-        android:layout_marginTop="30sp"
-        android:layout_marginLeft="30sp"
-        android:layout_below="@+id/custom_toolbar"
+        android:layout_below="@+id/battlefieldtext"
         android:layout_toRightOf="@+id/smashvilleButton"
-        android:text="Battlefield"
         android:textColor="@color/white"
         android:background="@mipmap/bftransp"
 
         />
+    <TextView
+        android:id="@+id/battlefieldtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BATTLEFIELD"
+        android:paddingTop="35sp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/spacer"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_alignLeft="@+id/battlefieldButton"
+        android:layout_alignStart="@+id/battlefieldButton" />
 
     <Button
         android:id="@+id/towncityButton"
@@ -60,12 +74,22 @@
         android:layout_alignStart="@+id/smashvilleButton"
         android:layout_below="@+id/smashvilleButton"
         android:layout_marginTop="30sp"
-        android:text="Town and City"
         android:background="@mipmap/tctransp"
         android:textColor="@color/white"
 
         />
-
+    <TextView
+        android:id="@+id/towncitytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOWN AND CITY"
+        android:textColor="@color/white"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/smashvilleButton"
+        android:layout_alignLeft="@+id/smashvilleButton"
+        android:layout_alignStart="@+id/smashvilleButton" />
     <Button
         android:id="@+id/fdButton"
         android:layout_width="130sp"
@@ -74,11 +98,19 @@
         android:layout_below="@id/battlefieldButton"
         android:layout_alignRight="@+id/towncityButton"
         android:layout_alignEnd="@+id/battlefieldButton"
-        android:text="Final Destination"
         android:background="@mipmap/fdtransp"
         android:textColor="@color/white"
         />
-
+    <TextView
+        android:id="@+id/fdtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINAL DESTINATION"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/battlefieldButton"
+        android:layout_alignLeft="@+id/fdButton"
+        android:layout_alignStart="@+id/fdButton" />
     <Button
         android:id="@+id/dreamlandButton"
         android:layout_width="130sp"
@@ -87,25 +119,48 @@
         android:layout_alignLeft="@+id/lylatButton"
         android:layout_alignStart="@+id/towncityButton"
         android:layout_below="@+id/towncityButton"
-        android:text="Dreamland"
         android:textColor="@color/white"
         android:background="@mipmap/dltransp"
 
         />
-
+    <TextView
+        android:id="@+id/dreamlandtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DREAMLAND"
+        android:textColor="@color/white"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_below="@+id/towncityButton"
+        android:layout_marginTop="16dp"
+        android:layout_alignLeft="@+id/dreamlandButton"
+        android:layout_alignStart="@+id/dreamlandButton" />
     <Button
         android:id="@+id/lylatButton"
         android:layout_width="130sp"
         android:layout_height="130sp"
-        android:layout_alignEnd="@+id/fdButton"
         android:layout_below="@+id/fdButton"
-        android:layout_marginLeft="30sp"
         android:layout_marginTop="30sp"
         android:layout_toRightOf="@id/dreamlandButton"
-        android:background="@mipmap/lctransp"
-        android:text="Lylat Cruise"
+        android:layout_alignRight="@+id/towncityButton"
+        android:layout_alignEnd="@+id/battlefieldButton"
+        android:background="@mipmap/fdtransp"
         android:textColor="@color/white"
     />
+
+    <TextView
+        android:id="@+id/lylattext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LYLAT CRUISE"
+        android:textColor="@color/white"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/fdButton"
+        android:layout_alignLeft="@+id/lylatButton"
+        android:layout_alignStart="@+id/lylatButton" />
+
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/stagesAd"
