@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     >
 
 
+    <include layout="@layout/toolbar_custom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/spacerfd"
+        />
 
     <ImageView android:id="@+id/fd_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/fd"
+        android:layout_below="@id/spacerfd"
+        android:paddingTop="20dp"
     />
+
     <TextView
         android:id="@+id/fdtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/fd_text"
         android:textColor="@color/white"
+        android:layout_below="@id/fd_iv"
+        android:paddingTop="20dp"
         />
 
 
-</LinearLayout>
+
+
+</RelativeLayout>

@@ -28,7 +28,6 @@
         android:paddingBottom="35sp"
         />
 
-
     <Button
         android:layout_width="match_parent"
         android:background="#5C5A59"
@@ -36,7 +35,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/character_spec_tech"
         android:layout_below="@+id/character_image"
-        />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:id="@+id/char_notableplayers"
@@ -51,11 +51,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/character_tier"
-        android:layout_below="@id/char_notableplayers"
         android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
 
-        />
+        android:layout_below="@+id/char_notableplayers"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="match_parent"

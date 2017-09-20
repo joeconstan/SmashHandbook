@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     >
-
-
+    <include layout="@layout/toolbar_custom"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:id="@+id/spacerbf"
+        />
 
     <ImageView android:id="@+id/bf_iv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/bf"
+        android:layout_below="@id/spacerbf"
+        android:paddingTop="20dp"
         />
     <TextView
         android:id="@+id/bftext"
@@ -18,7 +24,9 @@
         android:layout_height="wrap_content"
         android:text="@string/bf_text"
         android:textColor="@color/white"
+        android:layout_below="@id/bf_iv"
+        android:paddingTop="20dp"
         />
 
 
-</LinearLayout>
+</RelativeLayout>
