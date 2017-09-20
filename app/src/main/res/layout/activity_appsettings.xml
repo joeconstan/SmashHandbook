@@ -5,16 +5,8 @@
     android:background="@color/black"
     >
 
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/testCheckbox"
-        android:text="Testing"
-        android:textColor="#FFFFFF"
-        />
 
     <Button
-        android:layout_below="@id/testCheckbox"
         android:layout_width="100sp"
         android:layout_height="wrap_content"
         android:text="Remove Ads"
